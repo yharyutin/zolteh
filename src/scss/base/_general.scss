@@ -1,0 +1,16 @@
+
+$containerPadding: 40px;
+$containerWidth: 1620px;
+
+
+.general {
+    &__container {
+        width: 100%;
+        max-width: calc($containerWidth + $containerPadding * 2);
+        margin-left: auto;
+        margin-right: auto;
+        padding-left: $containerPadding;
+        padding-right: $containerPadding;
+        box-sizing: border-box;
+    }
+}

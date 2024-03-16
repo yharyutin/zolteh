@@ -1,0 +1,13 @@
+@@if(link != '') {
+    <a href="link" class="button @@class">
+}
+@@if(link == '') {
+    <button type="@@type" class="button @@class">
+}
+    @@text
+@@if(link != '') {
+    </a>
+}
+@@if(link == '') {
+    </button>
+}
