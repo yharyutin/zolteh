@@ -1,17 +1,17 @@
 .header {
-    background: var(--background);
-    &__in {
-        padding-top: 54px;
-        padding-bottom: 54px;
-    }
-
     &__logo {
         width: 253px;
         display: block;
         font-size: 0;
+        position: relative;
+        z-index: 10;
     }
-
     &__top {
+        background: var(--background);
+    }
+    &__top_in {
+        padding-top: 54px;
+        padding-bottom: 54px;
         display: flex;
         align-items: center;
         justify-content: space-between;
@@ -55,5 +55,25 @@
         display: block;
         font-size: 0;
         width: 26px;
+    }
+    &__bottom {
+        background: #000;
+    }
+    &__menu {
+        padding: 12px 0;
+        margin: 0;
+        list-style: none;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        a {
+            color: #E0E0E0;
+            font-size: 18px;
+            font-style: normal;
+            font-weight: 700;
+            line-height: normal;
+            text-transform: uppercase;
+            text-decoration: none;
+        }
     }
 }

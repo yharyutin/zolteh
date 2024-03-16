@@ -42,6 +42,7 @@
     "webpack-stream": "latest"
   },
   "dependencies": {
+    "gsap": "^3.12.5",
     "jquery": "^3.6.0",
     "vue": "^2.6.14"
   }

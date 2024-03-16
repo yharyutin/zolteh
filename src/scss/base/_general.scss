@@ -2,7 +2,12 @@
 $containerPadding: 40px;
 $containerWidth: 1620px;
 
-
+body {
+    font-family: "Inter", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    font-variation-settings: "slnt" 0;
+}
 .general {
     &__container {
         width: 100%;
@@ -13,4 +18,20 @@ $containerWidth: 1620px;
         padding-right: $containerPadding;
         box-sizing: border-box;
     }
+}
+
+
+.button {
+    border: none;
+    cursor: pointer;
+    text-decoration: none;
+    padding: 15px 38px;
+    border-radius: 10px;
+    background: linear-gradient(0deg, #FFF 0%, #FFF 100%), linear-gradient(90deg, #AC731A -34.96%, #BD8E3E 0.13%, #F8EDAF 58.12%, #BD8E3E 103.97%, #AC731A 138.12%);
+    color: #000;
+    text-align: center;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
 }

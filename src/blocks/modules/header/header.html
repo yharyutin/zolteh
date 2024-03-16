@@ -1,41 +1,58 @@
 <header class="header" style="--background: url('/@img/header_bg.png') 50% 50%/cover no-repeat;">
-    <div class="header__in general__container">
+    <div class="header__in">
         <div class="header__top">
-            <div class="header__left">
-                <a href="./index.html" class="header__logo">
-                    <img src="@img/logo.png" width="100%" alt="">
-                </a>
-                <div class="header__worktime">
-                    <date class="date">07 Февраля 2024, Среда</date>
-                    <time class="time">16:12 МСК</time>
+            <div class="header__top_in general__container">
+                <div class="header__left">
+                    <a href="./index.html" class="header__logo header__logo--js">
+                        <img src="@img/logo.png" width="100%" alt="">
+                    </a>
+                    <div class="header__worktime">
+                        <date class="date">07 Февраля 2024, Среда</date>
+                        <time class="time">16:12 МСК</time>
+                    </div>
                 </div>
-            </div>
-            <div class="header__right">
-                <div class="header__search">
-                    <img src="@img/icons/icons.svg#search_icon_white" alt="search_icon_white"/>
-                </div>
-                <div class="header__socials">
-                    @@include('../../components/icons/header_social.html', {
-                        "icon": "/@img/icons/icons.svg#vk_white",
-                        "class": "header__social--vk"
-                    })
-                    @@include('../../components/icons/header_social.html', {
-                        "icon": "/@img/icons/icons.svg#twitter_white",
-                        "class": "header__social--twitter"
-                    })
-                </div>
-                <div class="header__auth">
-                    @@include('../../components/buttons/button.html', {
-                        "text": "Вход / Регистрация",
-                        "link": "",
-                        "type": "button",
-                        "class": "header__auth--button"
-                    })
+                <div class="header__right">
+                    <div class="header__search header__search--opener">
+                        <img src="@img/icons/icons.svg#search_icon_white" alt="search_icon_white"/>
+                    </div>
+                    <div class="header__socials">
+                        @@include('../../components/icons/header_social.html', {
+                            "icon": "/@img/icons/icons.svg#vk_white",
+                            "class": "header__social--vk"
+                        })
+                        @@include('../../components/icons/header_social.html', {
+                            "icon": "/@img/icons/icons.svg#twitter_white",
+                            "class": "header__social--twitter"
+                        })
+                    </div>
+                    <div class="header__auth">
+                        @@include('../../components/buttons/button.html', {
+                            "text": "Вход / Регистрация",
+                            "link": "#",
+                            "type": "button",
+                            "class": "header__auth--button"
+                        })
+                    </div>
                 </div>
             </div>
         </div>
-        <div class="header__bottom"></div>
+        <div class="header__bottom">
+            <div class="header__bottom_in general__container">
+                <nav class="header__nav">
+                    <ul class="header__menu">
+                        <li><a href="#">Новости</a></li>
+                        <li><a href="#">Аналитика</a></li>
+                        <li><a href="#">инвестиционные проекты</a></li>
+                        <li><a href="#">мсб</a></li>
+                        <li><a href="#">журнал</a></li>
+                        <li><a href="#">спецпроекты</a></li>
+                        <li><a href="#">контакты</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
         
         <!-- <img src="@img/icons/icons.svg#vk_white" alt="benefit_1"/> -->
     </div>
 </header>
+@@include('../search/search.html')
