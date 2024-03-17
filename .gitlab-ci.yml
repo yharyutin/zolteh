@@ -1,19 +1,8 @@
 # .gitlab-ci.yml
 stages:
-  - build
   - deploy
 
-build:
-  stage: build
-  image: node:latest
-  script:
-    - npm install --verbose
-    - npm run build
-  artifacts:
-    paths:
-      - dist
-
-web:pages:
+pages:
   stage: deploy
   image: alpine:latest
   script:
