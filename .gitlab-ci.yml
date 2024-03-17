@@ -11,7 +11,7 @@ web:build:
     - npm run build
   artifacts:
     paths:
-      - public
+      - dist
 
 pages:
   stage: deploy
