@@ -7,7 +7,7 @@ web:build:
   stage: build
   image: node:latest
   script:
-    - npm install
+    - npm install --verbose
     - npm run build
     - echo '/* /index.html 200' > dist/_redirects
   artifacts:
