@@ -8,32 +8,23 @@ const Search = class Search {
         this.logoClass = logoClass;
         this.init();
     }
-    addSearchHandler({handlerClass, direction}) {
-        document.querySelector(handlerClass).addEventListener('click', (event) => {
-            
-            document.querySelector(this.searchClass).classList.toggle('isOpened');
-            this.calculateLogoPosition(direction);
-        })
-    }
     addOpenHandler() {
         if (!document.querySelector(this.openerClass) && !document.querySelector(this.searchClass)) return;
-
-        this.addSearchHandler({
-            handlerClass: this.openerClass,
-            direction: '>',
-        });
+        document.querySelector(this.openerClass).addEventListener('click', (event) => {
+            this.toggleSearch('>')
+        })
 
     }
     addCloseHandler() {
         if (!document.querySelector(this.closerClass) && !document.querySelector(this.searchClass)) return;
-        this.addSearchHandler({
-            handlerClass: this.closerClass,
-            direction: '<',
-        });
+        document.querySelector(this.closerClass).addEventListener('click', (event) => {
+            this.toggleSearch('<')
+        })
     }
 
     calculateLogoPosition(direction) {
         if (!document.querySelector(this.logoClass)) return;
+        
         gsap.to(this.logoClass, {
             x: direction == '>' ? (position, element) => {
                 let containerWidth = (element.closest('.header__top_in').clientWidth - 80) / 2;
@@ -42,6 +33,12 @@ const Search = class Search {
                 return containerWidth - elementWidth;
             } : 0
         })
+    }
+    toggleSearch(direction) {
+        document.querySelector(this.searchClass).classList.toggle('isOpened');
+        setTimeout(() => {
+            this.calculateLogoPosition(direction);
+        }, direction == '>' ? 500 : 0)
     }
     init() {
         this.addOpenHandler();

@@ -1,4 +1,4 @@
-<header class="header" style="--background: url('/@img/header_bg.png') 50% 50%/cover no-repeat;">
+<header class="header" style="--background: url('@img/header_bg.png') 50% 50%/cover no-repeat;">
     <div class="header__in">
         <div class="header__top">
             <div class="header__top_in general__container">
@@ -17,11 +17,11 @@
                     </div>
                     <div class="header__socials">
                         @@include('../../components/icons/header_social.html', {
-                            "icon": "/@img/icons/icons.svg#vk_white",
+                            "icon": "@img/icons/icons.svg#vk_white",
                             "class": "header__social--vk"
                         })
                         @@include('../../components/icons/header_social.html', {
-                            "icon": "/@img/icons/icons.svg#twitter_white",
+                            "icon": "@img/icons/icons.svg#twitter_white",
                             "class": "header__social--twitter"
                         })
                     </div>
@@ -32,6 +32,11 @@
                             "type": "button",
                             "class": "header__auth--button"
                         })
+                    </div>
+                    <div class="header__burger">
+                        <div class="header__burger_opener">
+                            <img src="@img/icons/icons.svg#burger_opener" width="100%" alt="">
+                        </div>
                     </div>
                 </div>
             </div>
