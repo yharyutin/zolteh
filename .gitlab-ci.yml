@@ -9,10 +9,9 @@ web:build:
   script:
     - npm install --verbose
     - npm run build
-    - echo '/* /index.html 200' > dist/_redirects
   artifacts:
     paths:
-      - dist
+      - public
 
 pages:
   stage: deploy
