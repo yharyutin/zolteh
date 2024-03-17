@@ -6,26 +6,28 @@
                     <a href="./index.html" class="header__logo header__logo--js">
                         <img src="@img/logo.png" width="100%" alt="">
                     </a>
-                    <div class="header__worktime">
+                    <div class="header__worktime hide_on_mobile">
                         <date class="date">07 Февраля 2024, Среда</date>
                         <time class="time">16:12 МСК</time>
                     </div>
                 </div>
                 <div class="header__right">
-                    <div class="header__search header__search--opener">
+                    <div class="header__search header__search--opener hide_on_mobile">
                         <img src="@img/icons/icons.svg#search_icon_white" alt="search_icon_white"/>
                     </div>
-                    <div class="header__socials">
-                        @@include('../../components/icons/header_social.html', {
-                            "icon": "@img/icons/icons.svg#vk_white",
-                            "class": "header__social--vk"
-                        })
-                        @@include('../../components/icons/header_social.html', {
-                            "icon": "@img/icons/icons.svg#twitter_white",
-                            "class": "header__social--twitter"
-                        })
+                    <div class="header__socials__wrap">
+                        <div class="header__socials" data-transfer-to="header__burger_socials" data-transfer-back="header__socials__wrap">
+                            @@include('../../components/icons/header_social.html', {
+                                "icon": "@img/icons/icons.svg#vk_white",
+                                "class": "header__social--vk"
+                            })
+                            @@include('../../components/icons/header_social.html', {
+                                "icon": "@img/icons/icons.svg#twitter_white",
+                                "class": "header__social--twitter"
+                            })
+                        </div>
                     </div>
-                    <div class="header__auth">
+                    <div class="header__auth" data-transfer-to="header__burger_auth" data-transfer-back="header__right">
                         @@include('../../components/buttons/button.html', {
                             "text": "Вход / Регистрация",
                             "link": "#",
@@ -33,17 +35,28 @@
                             "class": "header__auth--button"
                         })
                     </div>
-                    <div class="header__burger">
-                        <div class="header__burger_opener">
+                    <div class="header__burger hide_on_desktop">
+                        <div class="header__burger_opener header__burger_opener--js">
                             <img src="@img/icons/icons.svg#burger_opener" width="100%" alt="">
+                            <img src="@img/icons/icons.svg#closer" width="100%" alt="">
                         </div>
                     </div>
                 </div>
             </div>
+            @@include('../search/search.html')
         </div>
-        <div class="header__bottom">
+        <div class="header__burger_body hide_on_desktop header__burger_body--js">
+            <div class="header__burger_body_in">
+                <div class="header__burger_search"></div>
+                <div class="header__burger_menu"></div>
+                <div class="header__burger_socials"></div>
+                <div class="header__burger_auth"></div>
+            </div>
+        </div>
+        
+        <div class="header__bottom hide_on_mobile">
             <div class="header__bottom_in general__container">
-                <nav class="header__nav">
+                <nav class="header__nav" data-transfer-to="header__burger_menu" data-transfer-back="header__bottom_in">
                     <ul class="header__menu">
                         <li><a href="#">Новости</a></li>
                         <li><a href="#">Аналитика</a></li>
@@ -60,4 +73,3 @@
         <!-- <img src="@img/icons/icons.svg#vk_white" alt="benefit_1"/> -->
     </div>
 </header>
-@@include('../search/search.html')

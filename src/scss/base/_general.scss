@@ -1,6 +1,9 @@
 
-$containerPadding: 40px;
+$containerPadding: 20px;
 $containerWidth: 1620px;
+
+$desktopStart: 1025px;
+$mobileStart: 1024px;
 
 body {
     font-family: "Inter", sans-serif;
@@ -34,4 +37,16 @@ body {
     font-style: normal;
     font-weight: 600;
     line-height: normal;
+    display: block;
+}
+
+.hide_on_desktop {
+    @media all and (min-width: $desktopStart) {
+        display: none;
+    }
+}
+.hide_on_mobile {
+    @media all and (max-width: $mobileStart) {
+        display: none;
+    }
 }

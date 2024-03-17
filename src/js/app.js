@@ -1,5 +1,9 @@
 import * as globalFunctions from './modules/functions.js';
 globalFunctions.isWebp();
+globalFunctions.transferItems();
+window.addEventListener('resize', () => {
+    globalFunctions.transferItems();
+});
 
 // import Vue from 'vue/dist/vue.js';
 // import $ from 'jquery';
@@ -11,7 +15,12 @@ import Search from '../blocks/modules/search/search.js';
 
 document.addEventListener('DOMContentLoaded', () => {
     window.app = {
-        header: new Header(),
+        header: new Header({
+            headerClass: '.header',
+            openerClass: '.header__burger_opener--js',
+            burgerClass: '.header__burger_body--js',
+            openedClass: 'isOpened'
+        }),
         modals: new Modals({
             modalsSelector: "data-modal",
             modalsOpenerSelector: "data-modal-id",
