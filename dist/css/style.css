@@ -600,6 +600,13 @@ body {
   transition: all 0.5s linear;
 }
 
+.search_modal__in {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
 .search_modal__closer {
   width: 40px;
   height: 40px;
@@ -614,6 +621,36 @@ body {
 .search_modal__closer:hover {
   transform: rotate(90deg);
   transition: all 0.3s ease;
+}
+
+.search_modal__form {
+  width: 892px;
+}
+
+.search_modal__input {
+  outline: none;
+  width: 100%;
+  padding-bottom: 20px;
+  border: none;
+  background: transparent;
+  border-bottom: 2px solid #fff;
+}
+
+.search_modal__input::-moz-placeholder {
+  color: rgba(255, 255, 255, 0.45);
+  font-size: 36px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.search_modal__input::placeholder,
+.search_modal__input {
+  color: rgba(255, 255, 255, 0.45);
+  font-size: 36px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
 }
 
 .modal {

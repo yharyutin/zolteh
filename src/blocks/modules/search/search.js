@@ -8,25 +8,28 @@ const Search = class Search {
         this.logoClass = logoClass;
         this.init();
     }
-    openSearch() {
-        if (!document.querySelector(this.openerClass) && !document.querySelector(this.searchClass)) return;
-
-
-        document.querySelector(this.openerClass).addEventListener('click', (event) => {
+    addSearchHandler({handlerClass, direction}) {
+        document.querySelector(handlerClass).addEventListener('click', (event) => {
+            
             document.querySelector(this.searchClass).classList.toggle('isOpened');
-            setTimeout(() => {
-                this.calculateLogoPosition('>');
-            }, 500)
+            this.calculateLogoPosition(direction);
         })
     }
-    closeSearch() {
+    addOpenHandler() {
+        if (!document.querySelector(this.openerClass) && !document.querySelector(this.searchClass)) return;
+
+        this.addSearchHandler({
+            handlerClass: this.openerClass,
+            direction: '>',
+        });
+
+    }
+    addCloseHandler() {
         if (!document.querySelector(this.closerClass) && !document.querySelector(this.searchClass)) return;
-
-
-        document.querySelector(this.closerClass).addEventListener('click', (event) => {
-            document.querySelector(this.searchClass).classList.remove('isOpened');
-            this.calculateLogoPosition('<');
-        })
+        this.addSearchHandler({
+            handlerClass: this.closerClass,
+            direction: '<',
+        });
     }
 
     calculateLogoPosition(direction) {
@@ -41,8 +44,8 @@ const Search = class Search {
         })
     }
     init() {
-        this.openSearch();
-        this.closeSearch();
+        this.addOpenHandler();
+        this.addCloseHandler();
     }
 }
 

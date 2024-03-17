@@ -12,6 +12,12 @@
         transform: translateY(0%);
         transition: all .5s linear;
     }
+    &__in {
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
     &__closer {
         width: 40px;
         height: 40px;
@@ -24,6 +30,24 @@
         &:hover {
             transform: rotate(90deg);
             transition: all .3s ease;
+        }
+    }
+    &__form {
+        width: 892px;
+    }
+    &__input {
+        outline: none;
+        width: 100%;
+        padding-bottom: 20px;
+        border: none;
+        background: transparent;
+        border-bottom: 2px solid #fff;
+        &::placeholder, & {
+            color: rgba(255, 255, 255, 0.45);
+            font-size: 36px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: normal;
         }
     }
 }
