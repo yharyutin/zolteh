@@ -18,7 +18,7 @@ pages:
   stage: deploy
   image: alpine:latest
   script:
-    - rm -r public
+    # - rm -r public
     - mv ./dist ./public
   artifacts:
     paths:
