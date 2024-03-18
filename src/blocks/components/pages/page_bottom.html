@@ -1,9 +1,11 @@
                 </div>
                 <aside class="general__sidebar">
-                    @@include('../calendar/calendar.html')
-                    @@include('../banners/image_banner/image_banner.html', {
-                        "image": "@img/banner.png"
-                    })
+                    <div class="general__sidebar_in">
+                        @@include('../calendar/calendar.html')
+                        @@include('../banners/image_banner/image_banner.html', {
+                            "image": "@img/banner.png"
+                        })
+                    </div>
                 </aside>
             </div>
         </main>

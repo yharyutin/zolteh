@@ -34,9 +34,13 @@ body {
     }
     &__sidebar {
         width: 390px;
+    }
+    &__sidebar_in {
         display: flex;
         flex-direction: column;
         gap: 30px;
+        position: sticky;
+        top: 30px;
     }
     &__title {
         margin-bottom: 40px;
@@ -79,6 +83,7 @@ body {
         &--two-one {
             display: grid;
             grid-template-columns: 2fr 1fr;
+            grid-gap: 20px;
         }
     }
 }
