@@ -8,14 +8,46 @@
         display: flex;
         align-items: flex-start;
         justify-content: space-between;
+        margin-bottom: 30px;
     }
     &__left {
-        width: 253px;
+        width: 15.62%;
+        display: flex;
+        flex-direction: column;
+        @media all and (max-width: $mobileStart) {
+            width: 100%;
+        }
     }
     &__logo {
         margin-bottom: 40px;
         display: block;
         font-size: 0;
+        @media all and (max-width: $mobileStart) {
+            max-width: 147px;
+            margin-left: auto;
+            margin-right: auto;
+            margin-bottom: 30px;
+        }
+    }
+    &__mobilemenu {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 14px;
+        margin-bottom: 20px;
+        li {}
+        a {
+            color: #E0E0E0;
+            font-size: 16px;
+            font-style: normal;
+            font-weight: 500;
+            line-height: normal;
+            text-transform: uppercase;
+            text-decoration: none;
+        }
     }
     &__leftmenu {
         list-style: none;
@@ -35,11 +67,25 @@
             text-decoration: none;
         }
     }
+    &__socials__wrap {
+        @media all and (min-width: $desktopStart) {
+            order: 10;
+        }
+        @media all and (max-width: $mobileStart) {
+            margin-bottom: 20px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }     
+    }
     &__contacts {
         display: flex;
         flex-direction: column;
         gap: 10px;
         margin-bottom: 20px;
+        @media all and (max-width: $mobileStart) {
+            align-items: center;
+        } 
     }
     &__contact {
         color: #E0E0E0;
@@ -49,10 +95,32 @@
         line-height: normal;
         text-decoration: none;
     }
+    &__right {
+        width: 75.56%;
+    }
     &__menu {
         display: flex;
         align-items: flex-start;
         justify-content: space-between;
+        gap: 6.59%;
+        ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+            li {}
+            a {
+                color: #E0E0E0;
+                font-size: 18px;
+                font-style: normal;
+                font-weight: 700;
+                line-height: normal;
+                text-transform: uppercase;
+                text-decoration: none;
+            }
+        }
     }
     &__copyright {
         color: #818181;

@@ -11,6 +11,7 @@ window.addEventListener('resize', () => {
 import Header from '../blocks/modules/header/header.js';
 import Modals from '../blocks/modules/modals/modals.js';
 import Search from '../blocks/modules/search/search.js';
+import Calendar from '../blocks/components/calendar/calendar.js';
 
 
 document.addEventListener('DOMContentLoaded', () => {
@@ -31,6 +32,9 @@ document.addEventListener('DOMContentLoaded', () => {
             closerClass: '.search_modal--closer',
             searchClass: '.search_modal--js',
             logoClass: '.header__logo--js'
+        }),
+        sidebarCalendar: new Calendar({
+            selector: '#calendar'
         })
     };
 });

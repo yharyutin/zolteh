@@ -5,16 +5,13 @@
                     <a href="/index.html" class="footer__logo">
                         <img src="@img/logo.png" width="100%" alt="">
                     </a>
-                    <ul class="footer__leftmenu">
+                    <ul class="footer__mobilemenu footer__mobilemenu--js"></ul>  <!-- Не заполнять-->
+                    <ul class="footer__leftmenu hide_on_mobile">
                         <li><a href="#">Реклама</a></li>
                         <li><a href="#">Карта сайта</a></li>
                         <li><a href="#">Обратная связь</a></li>
                     </ul>
-                    <div class="footer__contacts">
-                        <a href="tel:+7 (495) 221-76-32" class="footer__contact">+7 (495) 221-76-32</a>
-                        <a href="mailto:bsv@zoloteh.ru" class="footer__contact">bsv@zoloteh.ru</a>
-                    </div>
-                    <div class="header__socials__wrap">
+                    <div class="footer__socials__wrap">
                         <div class="header__socials">
                             @@include('../../components/icons/header_social.html', {
                                 "icon": "@img/icons/icons.svg#vk_white",
@@ -26,21 +23,32 @@
                             })
                         </div>
                     </div>
+                    <div class="footer__contacts">
+                        <a href="tel:+7 (495) 221-76-32" class="footer__contact">+7 (495) 221-76-32</a>
+                        <a href="mailto:bsv@zoloteh.ru" class="footer__contact">bsv@zoloteh.ru</a>
+                    </div>
+                    
+                    @@include('../../components/buttons/button.html', {
+                        "text": "Вход / Регистрация",
+                        "link": "#",
+                        "type": "button",
+                        "class": "footer__auth--button hide_on_desktop"
+                    })
                 </div>
-                <div class="footer__right">
+                <div class="footer__right hide_on_mobile">
                     <nav class="footer__menu">
                         <ul>
                             <li><a href="#">о НАС</a></li>
                             <li><a href="#">МНЕНИЯ</a></li>
                             <li><a href="#">АУКЦИОНЫ И КОНКУРСЫ</a></li>
                         </ul>
-                        <ul>
-                            <li><a href="#">НОВОСТИ</a></li>
-                            <li><a href="#">ИТОГИ</a></li>
-                            <li><a href="#">Инвестиционные проекты</a></li>
-                            <li><a href="#">РЕГИОНЫ</a></li>
-                            <li><a href="#">ИНТЕРВЬЮ</a></li>
-                            <li><a href="#">виДЕО</a></li>
+                        <ul class="footer__menu--mobile">
+                            <li data-transfer-to="footer__mobilemenu--js" data-transfer-back="footer__menu--mobile"><a href="#">НОВОСТИ</a></li>
+                            <li data-transfer-to="footer__mobilemenu--js" data-transfer-back="footer__menu--mobile"><a href="#">ИТОГИ</a></li>
+                            <li data-transfer-to="footer__mobilemenu--js" data-transfer-back="footer__menu--mobile"><a href="#">Инвестиционные проекты</a></li>
+                            <li data-transfer-to="footer__mobilemenu--js" data-transfer-back="footer__menu--mobile"><a href="#">РЕГИОНЫ</a></li>
+                            <li data-transfer-to="footer__mobilemenu--js" data-transfer-back="footer__menu--mobile"><a href="#">ИНТЕРВЬЮ</a></li>
+                            <li data-transfer-to="footer__mobilemenu--js" data-transfer-back="footer__menu--mobile"><a href="#">виДЕО</a></li>
                         </ul>
                         <ul>
                             <li><a href="#">КОТИРОВКИ</a></li>

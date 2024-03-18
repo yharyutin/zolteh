@@ -1,0 +1,22 @@
+<div class="general__title">
+    @@if(link != '') {
+        <a href="@@link" class="general__title_in @@if (back) { general__title_in--back }">
+    }
+    @@if(link == '') {
+        <div type="@@type" class="general__title_in">
+    }
+        <div class="text">@@text</div>
+        @@if(link != '') {
+            <div class="arrow">
+                <img src="@img/icons/icons.svg#arrow_right_black" alt="arrow_right_black"/>
+            </div>
+        }
+    @@if(link != '') {
+        </a>
+    }
+    @@if(link == '') {
+        </div>
+    }
+</div>
+
+

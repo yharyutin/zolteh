@@ -1,10 +1,19 @@
 @@include('blocks/components/pages/page_top.html', {})
-        <main>
-            <!-- <span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem, soluta.</span>
-            <button data-modal-id="1">Modal1 Opener</button>
-            <button data-modal-id="2">Modal2 Opener</button>
-             -->
-        </main>
+	<main class="general__main general__container">
+		@@include('blocks/components/titles/page_title.html', {
+			"text": "Новости отрасли",
+			"back": true,
+			"link": "#"
+		})
+		<div class="general__main_in">
+			<div class="general__content">
+				Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptatem quos id reprehenderit quae exercitationem non, doloribus, pariatur quisquam ab sequi eos dolores maiores quis porro, nesciunt repudiandae molestias officiis! Quae cumque consequuntur dolorem fuga illum dicta mollitia quo eveniet impedit deserunt in, nulla quasi laborum libero, tenet ur numquam animi ullam. Hic iusto aperiam similique, nemo nam maiores blanditiis beatae sunt ducimus aut aliquam eaque odio minus eos natus quo est, ipsa perferendis ad magnam distinctio. Ipsum doloribus possimus earum laboriosam, commodi, ullam pariatur quaerat, ipsa architecto sint voluptatibus. Impedit accusantium deleniti voluptatem nesciunt pariatur quo aliquam odit. Asperiores, aut necessitatibus!
+			</div>
+			<aside class="general__sidebar">
+				@@include('blocks/components/calendar/calendar.html')
+			</aside>
+		</div>
+	</main>
 
 
 @@include('blocks/components/pages/page_bottom.html', {})

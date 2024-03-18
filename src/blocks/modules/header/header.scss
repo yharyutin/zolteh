@@ -21,6 +21,10 @@
         display: flex;
         align-items: center;
         justify-content: space-between;
+        @media all and (max-width: $mobileStart) {
+            padding-top: 24px;
+            padding-bottom: 24px;
+        }
     }
     &__left {
         display: flex;
