@@ -85,6 +85,22 @@ body {
             grid-template-columns: 2fr 1fr;
             grid-gap: 20px;
         }
+        &__row--one-two {
+            display: grid;
+            grid-template-columns: 1fr 2fr;
+            grid-gap: 20px;
+        }
+    }
+    &__block_title {
+        padding-top: 20px;
+        padding-bottom: 20px;
+        border-top: 8px solid #000;
+        color: #444;
+        font-size: 20px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+        text-transform: uppercase;
     }
 }
 

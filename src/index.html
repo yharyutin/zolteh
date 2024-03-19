@@ -5,9 +5,24 @@
 
 <div class="general__rows">
 	<div class="general__row general__row--two-one">
-		@@include('blocks/components/cards/huge/huge.html', {})
+		@@include('blocks/components/cards/huge/huge.html', {
+			"image": "@img/huge_card.png",
+			"is_locked": true,
+			"link": "#",
+			"title": "В 2024 году в Магаданской области планируется добыть 59 тонн золота",
+			"text": "Министр природных ресурсов и экологии Магаданской области Олег Косолапов в интервью «ГТРК-Магадан» рассказал о перспективах горнодобывающей отрасли на текущий год и ближайшую перспективу.<br />- В минувшем году регион добыл 48 тонн золота, это меньше, чем в 2022 году на 3,4 тонны. Упала и добыча серебра, но на",
+			"messages": 1,
+			"eyes": 20302,
+			"likes": 300,
+			"dislikes": 3
+		})
+		@@include('blocks/modules/daily_news/daily_news.html', {
+			"title": "Новости сегодня"
+		})
 	</div>
-	<div class="general__row">asdasdasd</div>
+	<div class="general__row general__row--one-two">
+		
+	</div>
 	<div class="general__row">asdasdasd</div>
 	<div class="general__row">asdasdasd</div>
 </div>

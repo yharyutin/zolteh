@@ -1,0 +1,15 @@
+.daily_news {
+    position: relative;
+    &__in {
+        position: sticky;
+        top: 50px;
+    }
+    &__title {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    &__items {
+        width: 100%;
+    }
+}

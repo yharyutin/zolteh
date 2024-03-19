@@ -1,0 +1,33 @@
+.card_smallest {
+    padding: 14px 0;
+    position: relative;
+    display: flex;
+    border-bottom: 1px solid rgba(130, 130, 130, 0.20);
+    text-decoration: none;
+    &:first-child {
+        border-top: 1px solid rgba(130, 130, 130, 0.20);
+    }
+    &__title {
+        overflow: hidden;
+        display: -webkit-box;
+        -webkit-line-clamp: 2;
+        -webkit-box-orient: vertical; 
+    }
+    &__title {
+        width: calc(100% - 13px);
+        padding-right: 60px;
+        box-sizing: border-box;
+
+        color: #444;
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 140%; /* 25.2px */
+    }
+    &__lock_in {
+        width: 13px;
+        font-size: 0;
+        position: sticky;
+        top: 50px;
+    }
+}
