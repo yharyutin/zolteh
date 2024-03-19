@@ -1,0 +1,67 @@
+.card_middle {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    text-decoration: none;
+    &:before {
+        content: "";
+        display: block;
+        height: 4px;
+        width: 82px;
+        background: #000;
+    }
+    &__lock {
+        display: flex;
+        align-items: center;
+        gap: 11px;
+        .icon {
+            width: 13px;
+            font-size: 0;
+        }
+        .text {
+            color: #828282;
+            font-size: 14px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: normal;
+        }
+    }
+    &__middle {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+    }
+    &__image {
+        width: 103px;
+        font-size: 0;
+        img {
+            max-width: 100%;
+        }
+    }
+    &__title {
+        width: calc(100% - 103px - 10px);
+        padding-right: 90px;
+        box-sizing: border-box;
+        color: #444;
+        overflow: hidden;
+        display: -webkit-box;
+        -webkit-line-clamp: 3;
+        -webkit-box-orient: vertical;
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 140%; /* 25.2px */
+    }
+    &__bottom {
+        overflow: hidden;
+        display: -webkit-box;
+        -webkit-line-clamp: 4;
+        -webkit-box-orient: vertical;
+        color: #828282;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 140%; /* 22.4px */
+        padding-right: 46px;
+    }
+}

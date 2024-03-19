@@ -1,0 +1,9 @@
+.row_news {
+    &__in {
+        display: flex;
+        flex-direction: column;
+        gap: 35px;
+        position: sticky;
+        top: 50px;
+    }
+}

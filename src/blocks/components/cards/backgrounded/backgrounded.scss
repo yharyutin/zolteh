@@ -1,0 +1,68 @@
+.card_backgrounded {
+    position: relative;
+    padding: 46% 40px 40px 40px;
+    text-decoration: none;
+    &:after {
+        content: "";
+        display: block;
+        position: absolute;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        top: 0;
+        background: linear-gradient(0deg, rgba(0, 0, 0, 0.63) 0%, rgba(0, 0, 0, 0.17) 46%);
+    }
+    &__image {
+        position: absolute;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        right: 0;
+        
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            object-position: 50% 50%;
+        }
+    }
+    &__content {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        gap: 17px;
+        height: 100%;
+    }
+    &__lock {
+        display: flex;
+        align-items: center;
+        gap: 11px;
+        position: relative;
+        z-index: 2;
+        .icon {
+            width: 13px;
+            font-size: 0;
+        }
+        .text {
+            color: #FFF;
+            font-size: 14px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: normal;
+        }
+    }
+    &__title {
+        position: relative;
+        z-index: 2;
+        color: #FFF;
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 140%; /* 25.2px */
+        overflow: hidden;
+        display: -webkit-box;
+        -webkit-line-clamp: 2;
+        -webkit-box-orient: vertical;
+        max-width: 425px;
+    }
+}
