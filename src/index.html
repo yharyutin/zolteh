@@ -22,7 +22,9 @@
 	</div>
 	<div class="general__row general__row--one-two">
 		@@include('blocks/modules/row_news/row_news.html', {
-			"title": "Новости сегодня"
+			"title": "Новости сегодня",
+			"data": "/blocks/modules/row_news/data.json",
+			"gap": "35px"
 		})
 		@@include('blocks/components/cards/backgrounded/backgrounded.html', {
 			"title": "Роботизированная лаборатория «Селигдара» в Алдане получила сертификацию Укаргео Укаргео das das das das dasd asd as das dasd asd asd as d",
@@ -32,8 +34,54 @@
 			"link": "#"
 		})
 	</div>
-	<div class="general__row">asdasdasd</div>
-	<div class="general__row">asdasdasd</div>
+	<div class="general__row general__row--two-one">
+		@@include('blocks/modules/grid_news/grid_news.html')
+		@@include('blocks/modules/row_news/row_news.html', {
+			"title": "Новости сегодня",
+			"data": "/blocks/modules/row_news/data2.json",
+			"gap": "30px"
+		})
+	</div>
+	<div class="general__row general__row--three">
+		@@loop('blocks/components/cards/middle/middle.html', "/blocks/modules/row_news/data3.json")
+	</div>
+	<div class="general__row">
+		@@include('blocks/components/buttons/button.html', {
+			"text": "Смотреть все новости",
+			"link": "#",
+			"type": "button",
+			"has_arrow": true,
+			"class": "button--black"
+		})
+	</div>
+	<div class="general__row">
+		@@include('blocks/components/banners/image_banner/image_banner.html', {
+			"image": "@img/banner2.png"
+		})
+	</div>
+	<div class="general__row">
+		@@include('blocks/modules/titled_news/titled_news.html', {
+			"title": "аналитика",
+			"link": "#"
+		})
+	</div>
+	<div class="general__row">
+		@@include('blocks/modules/titled_news/titled_news.html', {
+			"title": "мсб / регионы",
+			"link": "#"
+		})
+	</div>
+	<div class="general__row">
+		@@include('blocks/components/titles/line_title.html', {
+            "title": "Инвестпроекты",
+            "link": "#",
+            "class": "general__row_title"
+        })
+		<div class="general__row_in general__row--two-one">
+			<span>asdasdasddsa</span>
+			<span>asdasdasddsa</span>
+		</div>
+	</div>
 </div>
 			
 

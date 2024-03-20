@@ -1,0 +1,12 @@
+.titled_news {
+    &__in {
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+    }
+    &__items {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-gap: 20px;
+    }
+}

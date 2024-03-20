@@ -1,0 +1,12 @@
+<div class="titled_news">
+    <div class="titled_news__in">
+        @@include('../../components/titles/line_title.html', {
+            "title": "@@title",
+            "link": "@@link",
+            "class": "titled_news__title"
+        })
+        <div class="titled_news__items">
+            @@loop('../../components/cards/regular/regular.html', "/blocks/modules/titled_news/data.json")
+        </div>
+    </div>
+</div>

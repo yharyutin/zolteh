@@ -2,7 +2,7 @@
     &__in {
         display: flex;
         flex-direction: column;
-        gap: 35px;
+        gap: var(--gap, 30px);
         position: sticky;
         top: 50px;
     }

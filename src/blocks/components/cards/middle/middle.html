@@ -8,14 +8,18 @@
         </div>
     </div>
     <div class="card_middle__middle">
-        <div class="card_middle__image">
-            <img src="@@image"/>
-        </div>
-        <div class="card_middle__title">
+        @@if (image) {
+            <div class="card_middle__image">
+                <img src="@@image"/>
+            </div>
+        }
+        <div class="card_middle__title @@if (!image) {card_middle__title--full}">
             @@title
         </div>
     </div>
-    <div class="card_middle__bottom">
-        @@text
-    </div>
+    @@if (text) {
+        <div class="card_middle__bottom">
+            @@text
+        </div>
+    }
 </a>

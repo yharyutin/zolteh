@@ -1,0 +1,16 @@
+.grid_news {
+    &__in {
+        display: grid;
+        grid-gap: 20px;
+        grid-template-areas:
+            'small1 small2'
+            'big big';
+        position: sticky;
+        top: 50px;
+    }
+    &__item {
+        &--big {
+            grid-area: big;
+        }
+    }
+}

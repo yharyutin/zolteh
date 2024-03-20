@@ -4,7 +4,14 @@
 @@if(link == '') {
     <button type="@@type" class="button @@class">
 }
-    @@text
+    <span class="text">
+        @@text
+    </span>
+    @@if (has_arrow) {
+        <span class="arrow">
+            <img src="@img/icons/icons.svg#arrow_right_black" alt="arrow_right_black"/>
+        </span>
+    }
 @@if(link != '') {
     </a>
 }

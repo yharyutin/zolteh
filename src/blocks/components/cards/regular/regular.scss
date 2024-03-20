@@ -1,0 +1,39 @@
+.card_regular {
+    text-decoration: none;
+    &__image {
+        margin-bottom: 20px;
+        width: 100%;
+        img, picture {
+            width: 100%;
+            display: block;
+        }
+    }
+    &__lock {
+        display: flex;
+        align-items: center;
+        gap: 11px;
+        margin-bottom: 17px;
+        .icon {
+            width: 13px;
+            font-size: 0;
+        }
+        .text {
+            color: #828282;
+            font-size: 14px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: normal;
+        }
+    }
+    &__title {
+        color: #444;
+        font-size: 20px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 140%; /* 28px */
+        overflow: hidden;
+        display: -webkit-box;
+        -webkit-line-clamp: 4;
+        -webkit-box-orient: vertical; 
+    }
+}
