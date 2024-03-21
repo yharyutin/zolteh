@@ -1,0 +1,22 @@
+.card_one_lined {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    text-decoration: none;
+    &__image {
+        width: 103px;
+        font-size: 0;
+    }
+    &__title {
+        width: calc(100% - 103px - 10px);
+        color: #444;
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 140%; /* 25.2px */
+        overflow: hidden;
+        display: -webkit-box;
+        -webkit-line-clamp: 3;
+        -webkit-box-orient: vertical;
+    }
+}

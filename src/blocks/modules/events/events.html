@@ -1,0 +1,19 @@
+<div class="events">
+    <div class="events__in events__slider--js glide">
+        @@include('../../components/titles/line_title.html', {
+            "title": "@@title",
+            "link": "@@link",
+            "class": "events__title"
+        })
+        <div class="events__items">
+            <div class="events__track glide__track" data-glide-el="track">
+                <div class="events__slides glide__slides">
+                    @@loop('../../components/cards/backgrounded_with_button/backgrounded_with_button.html', "/blocks/modules/events/data.json")
+                </div>
+            </div>
+        </div>
+        <div class="events__arrows" data-transfer-to="events__title__arrows" data-transfer-back="events__slider--js">
+            @@include('../../components/buttons/arrows.html')
+        </div>
+    </div>
+</div>

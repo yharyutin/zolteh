@@ -1,0 +1,19 @@
+<a href="@@link" class="card_backgrounded card_backgrounded--with_button @@class">
+    <div class="card_backgrounded__image">
+        <img src="@@image" alt="">
+    </div>
+    <div class="card_backgrounded__content">
+        <div class="card_backgrounded__title">
+            @@title
+        </div>
+        <div class="card_backgrounded__button">
+            @@include('../../buttons/button.html', {
+                "link": "",
+                "text": "@@button_text",
+                "has_arrow": false,
+                "type": "button",
+                "class": ""
+            })
+        </div>
+    </div>
+</a>

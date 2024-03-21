@@ -1,0 +1,25 @@
+.masonry_block {
+    &__in {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        position: sticky;
+        top: 50px;
+    }
+    &__grid {
+        display: grid;
+        grid-template-areas: 
+            'big big item1'
+            'big big long'
+            'item2 item3 long';
+        grid-gap: 20px;
+    }
+    &__item {
+        &:first-child {
+            grid-area: big;
+        }
+        &:nth-child(5) {
+            grid-area: long;
+        }
+    }
+}

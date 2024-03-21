@@ -1,0 +1,12 @@
+<div class="legal_issues">
+    <div class="legal_issues__in">
+        @@include('../../components/titles/line_title.html', {
+            "title": "@@title",
+            "link": "@@link",
+            "class": "legal_issues__title"
+        })
+        <div class="legal_issues__items">
+            @@loop('../../components/cards/middle/middle.html', "/blocks/modules/legal_issues/data.json")
+        </div>
+    </div>
+</div>

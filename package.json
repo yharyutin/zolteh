@@ -42,6 +42,7 @@
     "webpack-stream": "latest"
   },
   "dependencies": {
+    "@glidejs/glide": "^3.6.0",
     "air-datepicker": "^3.5.0",
     "gsap": "^3.12.5",
     "jquery": "^3.6.0",

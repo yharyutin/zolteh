@@ -1,0 +1,19 @@
+.tech_news {
+    &__in {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        
+    }
+    &__items_in {
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+        position: sticky;
+        top: 50px;
+    }
+    &__big_item {
+        position: sticky;
+        top: 50px;
+    }
+}

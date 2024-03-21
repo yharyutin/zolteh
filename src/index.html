@@ -28,6 +28,7 @@
 		})
 		@@include('blocks/components/cards/backgrounded/backgrounded.html', {
 			"title": "Роботизированная лаборатория «Селигдара» в Алдане получила сертификацию Укаргео Укаргео das das das das dasd asd as das dasd asd asd as d",
+			"text": "",
 			"is_locked": true,
 			"image": "@img/card_bg.png",
 			"class": "",
@@ -78,9 +79,104 @@
             "class": "general__row_title"
         })
 		<div class="general__row_in general__row--two-one">
-			<span>asdasdasddsa</span>
-			<span>asdasdasddsa</span>
+			@@include('blocks/modules/masonry/masonry.html', {
+				"title": "приглашаем инвесторов. объекты на продажу",
+				"link": "#"
+			})
+			@@include('blocks/modules/investors_news/investors_news.html', {
+				"title": "СТАТЬИ ИНВЕСТОРУ",
+				"data": "/blocks/modules/row_news/data2.json"
+			})
 		</div>
+	</div>
+	<div class="general__row">
+		@@include('blocks/components/titles/line_title.html', {
+            "title": "спецпроекты",
+            "link": "#",
+            "class": "general__row_title"
+        })
+		<div class="general__row_in general__row--one-two">
+			<div class="general__row_columns">
+				@@include('blocks/components/cards/backgrounded/backgrounded.html', {
+					"title": "Глоссарий",
+					"text": "Термины, используемые на рынке драгоценных металлов",
+					"is_locked": true,
+					"image": "@img/card_bg.png",
+					"class": "card_backgrounded--small",
+					"link": "#"
+				})
+				@@include('blocks/components/cards/backgrounded/backgrounded.html', {
+					"title": "Глоссарий",
+					"text": "Термины, используемые на рынке драгоценных металлов",
+					"is_locked": true,
+					"image": "@img/card_bg.png",
+					"class": "card_backgrounded--small",
+					"link": "#"
+				})
+			</div>
+			@@include('blocks/components/cards/backgrounded/backgrounded.html', {
+				"title": "НАСТЕННЫЕ КАРТЫ<br /> МЕСТОРОЖДЕНИЙ ЗОЛОТА",
+				"text": "Редакция журнала 'Золото и технологии' выпускает настенные карты месторождений золота Российской Федерации.",
+				"is_locked": true,
+				"image": "@img/card_bg.png",
+				"class": "card_backgrounded--reversed",
+				"link": "#"
+			})
+		</div>
+	</div>
+	<div class="general__row">
+		@@include('blocks/modules/titled_news/titled_news.html', {
+			"title": "технологии / оборудование",
+			"link": "#"
+		})
+	</div>
+	<div class="general__row">
+		@@include('blocks/modules/interviews/interviews.html', {
+			"title": "Интервью",
+			"link": "#"
+		})
+	</div>
+	<div class="general__row">
+		@@include('blocks/modules/events/events.html', {
+			"title": "мероприятия",
+			"link": "#"
+		})
+	</div>
+	<div class="general__row">
+		@@include('blocks/modules/legal_issues/legal_issues.html', {
+			"title": "правовые вопросы",
+			"link": "#"
+		})
+	</div>
+	<div class="general__row">
+		@@include('blocks/modules/titled_news/titled_news.html', {
+			"title": "эксплуатация месторождений",
+			"link": "#"
+		})
+	</div>
+	<div class="general__row">
+		@@include('blocks/modules/titled_news/titled_news.html', {
+			"title": "техника",
+			"link": "#"
+		})
+	</div>
+	<div class="general__row">
+		@@include('blocks/modules/tech_news/tech_news.html', {
+			"title": "информационные технологии",
+			"link": "#"
+		})
+	</div>
+	<div class="general__row">
+		@@include('blocks/modules/titled_news/titled_news.html', {
+			"title": "обзоры",
+			"link": "#"
+		})
+	</div>
+	<div class="general__row">
+		@@include('blocks/modules/titled_news/titled_news.html', {
+			"title": "геология / поиск / оценка",
+			"link": "#"
+		})
 	</div>
 </div>
 			

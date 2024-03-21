@@ -1,0 +1,12 @@
+.events {
+    &__in {
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+    }
+    &__arrows {
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+    }
+}

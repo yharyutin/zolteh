@@ -1,0 +1,16 @@
+
+@@if(link != '') {
+    <a href="@@link" class="general__section_title @@class">
+}
+@@if(link == '') {
+    <div class="general__section_title @@class">
+}
+        <div class="text">@@text</div>
+@@if(link != '') {
+    </a>
+}
+@@if(link == '') {
+    </div>
+}
+
+

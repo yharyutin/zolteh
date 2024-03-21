@@ -1,0 +1,26 @@
+<div class="tech_news">
+    <div class="tech_news__in">
+        @@include('../../components/titles/line_title.html', {
+            "title": "@@title",
+            "link": "@@link",
+            "class": "interviews__title"
+        })
+        <div class="tech_news__columns general__row--one-two">
+            <div class="tech_news__items">
+                <div class="tech_news__items_in">
+                    @@loop('../../components/cards/one_lined/one_lined.html', "/blocks/modules/tech_news/data.json")
+                </div>
+            </div>
+            <div class="tech_news__big_item">
+                @@include('../../components/cards/backgrounded/backgrounded.html', {
+                    "title": "НАСТЕННЫЕ КАРТЫ<br /> МЕСТОРОЖДЕНИЙ ЗОЛОТА",
+                    "text": "Редакция журнала 'Золото и технологии' выпускает настенные карты месторождений золота Российской Федерации.",
+                    "is_locked": true,
+                    "image": "@img/card_bg.png",
+                    "class": "card_backgrounded--reversed tech_news__big_item",
+                    "link": "#"
+                })
+            </div>
+        </div>
+    </div>
+</div>

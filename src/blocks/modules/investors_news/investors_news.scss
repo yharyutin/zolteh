@@ -1,0 +1,14 @@
+.investors_news {
+    &__in {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        position: sticky;
+        top: 50px;
+    }
+    &__items {
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+    }
+}

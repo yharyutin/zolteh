@@ -1,0 +1,12 @@
+.legal_issues {
+    &__in {
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+    }
+    &__items {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-gap: 50px 82px;
+    }
+}
