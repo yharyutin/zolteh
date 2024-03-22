@@ -95,6 +95,12 @@ body {
             grid-template-columns: repeat(3, 1fr);
             grid-gap: 20px;
         }
+        &--58p-42p {
+            display: grid;
+            grid-template-columns: 58% 42%;
+            grid-gap: 0;
+        }
+        
     }
     &__block_title {
         padding-top: 20px;
@@ -176,6 +182,10 @@ body {
         &--next {
             transform: rotate(180deg);
         }
+    }
+    &__video_column_in {
+        position: sticky;
+        top: 50px;
     }
 }
 

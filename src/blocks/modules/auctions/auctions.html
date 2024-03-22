@@ -1,0 +1,22 @@
+@@include('../../components/titles/line_title.html', {
+    "title": "@@title",
+    "link": "#",
+    "class": "general__row_title"
+})
+<div class="general__row_in general__row--one-two">
+    @@include('../../modules/investors_news/investors_news.html', {
+        "title": "предстоящие аукционы",
+        "data": "/blocks/modules/row_news/data2.json"
+    })
+    <div class="masonry_block">
+        <div class="masonry_block__in">
+            @@include('../../components/titles/section_title.html', {
+                "class": "masonry_block__title",
+                "text": "@@title",
+                "link": "@@link"
+            })
+            @@include('../../modules/grid_news/grid_news.html')
+        </div>
+    </div>
+    
+</div>

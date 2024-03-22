@@ -4,27 +4,27 @@
         "class": "",
         "image": "@img/tech2.png",
         "title": "«Алроса» начнет добычу россыпного золота в Якутии ",
-        "backgrounded": false
+        "backgrounded": true
     },
     {
         "link": "#",
         "class": "",
         "image": "@img/tech2.png",
         "title": "В Красноярском крае арестовали активы золотодобывающей компании",
-        "backgrounded": false
+        "backgrounded": true
     },
     {
         "link": "#",
         "class": "",
         "image": "@img/tech2.png",
         "title": "Ассоциация розничных инвесторов вступилась за миноритариев «Petropavlovsk»",
-        "backgrounded": false
+        "backgrounded": true
     },
     {
         "link": "#",
         "class": "",
         "image": "@img/tech2.png",
         "title": "«Селигдар» получил лицензию на месторождение Мукодекское ",
-        "backgrounded": false
+        "backgrounded": true
     }
 ]

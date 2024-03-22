@@ -3,6 +3,13 @@
     align-items: center;
     gap: 10px;
     text-decoration: none;
+    &--backgrounded {
+        padding: 14px 23px;
+        background: #F2F2F2;
+        &:not(:last-of-type) {
+            border-bottom: 1px solid #828282;
+        }
+    }
     &__image {
         width: 103px;
         font-size: 0;
