@@ -1,0 +1,7 @@
+.newslist {
+    &__in {
+        display: flex;
+        flex-direction: column;
+        gap: 40px;
+    }
+}

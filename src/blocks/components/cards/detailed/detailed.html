@@ -1,0 +1,59 @@
+<a href="@@link" class="card_detailed @@class">
+    <div class="card_detailed__in">
+        <div class="card_detailed__image">
+            <div class="card_detailed__image_in">
+                <img src="@@image" alt="">
+            </div>
+        </div>
+        <div class="card_detailed__info">
+            @@if (is_locked) {
+                <div class="card_detailed__lock">
+                    <div class="icon">
+                        <img src="@img/icons/icons.svg#lock_gray" alt="lock_gray"/>
+                    </div>
+                    <date class="date">07.02.24</date>
+                </div>
+            }
+            <div class="card_detailed__info_in">
+                <div class="card_detailed__text">
+                    <div class="title">@@title</div>
+                    <div class="subtitle">@@text</div>
+                </div>
+                <div class="card_detailed__indicators">
+                    @@if (messages) {
+                        <div class="card_detailed__indicator">
+                            <div class="icon">
+                                <img src="@img/icons/icons.svg#messages_black" alt="messages_black"/>
+                            </div>
+                            <div class="count">@@messages</div>
+                        </div>
+                    }
+                    @@if (eyes) {
+                        <div class="card_detailed__indicator">
+                            <div class="icon">
+                                <img src="@img/icons/icons.svg#eye_black" alt="eye_black"/>
+                            </div>
+                            <div class="count">@@eyes</div>
+                        </div>
+                    }
+                    @@if (likes) {
+                        <div class="card_detailed__indicator">
+                            <div class="icon">
+                                <img src="@img/icons/icons.svg#like_black" alt="like_black"/>
+                            </div>
+                            <div class="count">@@likes</div>
+                        </div>
+                    }
+                    @@if (dislikes) {
+                        <div class="card_detailed__indicator">
+                            <div class="icon">
+                                <img src="@img/icons/icons.svg#dislike_black" alt="dislike_black"/>
+                            </div>
+                            <div class="count">@@dislikes</div>
+                        </div>
+                    }
+                </div>
+            </div>
+        </div>
+    </div>
+</a>
