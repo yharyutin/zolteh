@@ -12,9 +12,10 @@
         @@include('../../modules/header/header.html', {})
 
         <main class="general__main general__container">
+
             @@include('../titles/page_title.html', {
                 "text": "@@page_title",
-                "back": false,
+                "back": @@page_back,
                 "link": "@@page_link"
             })
             <div class="general__main_in">
