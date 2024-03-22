@@ -1,0 +1,45 @@
+<div class="detail__top">
+    <date class="detail__date">
+        07.02.24
+    </date>
+    <h1 class="detail__title">
+        В 2024 году в Магаданской области планируется добыть 59 тонн золота
+    </h1>
+    <div class="detail__short_descrition">
+        Министр природных ресурсов и экологии Магаданской области Олег Косолапов в интервью «ГТРК-Магадан» рассказало перспективах горнодобывающей отрасли на текущий год и ближайшую перспективу
+    </div>
+    <div class="detail__indicators">
+        @@if (messages) {
+            <div class="detail__indicator">
+                <div class="icon">
+                    <img src="@img/icons/icons.svg#messages_black" alt="messages_black"/>
+                </div>
+                <div class="count">@@messages</div>
+            </div>
+        }
+        @@if (eyes) {
+            <div class="detail__indicator">
+                <div class="icon">
+                    <img src="@img/icons/icons.svg#eye_black" alt="eye_black"/>
+                </div>
+                <div class="count">@@eyes</div>
+            </div>
+        }
+        @@if (likes) {
+            <div class="detail__indicator">
+                <div class="icon">
+                    <img src="@img/icons/icons.svg#like_black" alt="like_black"/>
+                </div>
+                <div class="count">@@likes</div>
+            </div>
+        }
+        @@if (dislikes) {
+            <div class="detail__indicator">
+                <div class="icon">
+                    <img src="@img/icons/icons.svg#dislike_black" alt="dislike_black"/>
+                </div>
+                <div class="count">@@dislikes</div>
+            </div>
+        }
+    </div>
+</div>
