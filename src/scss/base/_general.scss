@@ -11,6 +11,16 @@ body {
     font-style: normal;
     font-variation-settings: "slnt" 0;
 }
+.wrapper {
+    &--fullpage {
+        display: flex;
+        flex-direction: column;
+        height: 100vh;
+    }
+    &__grow {
+        flex: 1 1 auto;
+    }
+}
 .general {
     &__container {
         width: 100%;

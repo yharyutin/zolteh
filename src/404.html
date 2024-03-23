@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="wrapper wrapper--fullpage">
+        @@include('blocks/modules/header/header.html', {})
+		<div class="wrapper__grow">
+			@@include('blocks/modules/error_page/error_page.html', {
+				"code": 404,
+				"text": "страница, на которую Вы пытаетесь попасть, не существует или была удалена"
+			})
+		</div>
+
+	</div>
+    <script src="js/app.min.js"></script>
+</body>
+</html>
