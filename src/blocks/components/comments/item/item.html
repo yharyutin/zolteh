@@ -1,0 +1,30 @@
+<div class="comments__item @@class">
+    <div class="comments__item_top">
+        <div class="comments__item_avatar">
+            <img src="@@author.avatar" alt="">
+        </div>
+        <div class="comments__item_author">
+            <div class="name">@@author.name</div>
+            <div class="date">@@author.date</div>
+        </div>
+    </div>
+    <div class="comments__item_text">@@text</div>
+    <div class="comments__item_indicators">
+        @@if (likes) {
+            <div class="comments__item_indicator">
+                <div class="icon">
+                    <img src="@img/icons/icons.svg#like_black" alt="like_black"/>
+                </div>
+                <div class="count">@@likes</div>
+            </div>
+        }
+        @@if (dislikes) {
+            <div class="comments__item_indicator">
+                <div class="icon">
+                    <img src="@img/icons/icons.svg#dislike_black" alt="dislike_black"/>
+                </div>
+                <div class="count">@@dislikes</div>
+            </div>
+        }
+    </div>
+</div>

@@ -1,0 +1,17 @@
+<div class="comments__form">
+    <div class="comments__form_left">
+        <div class="comments__form_avatar">
+            <img src="@img/avatar1.png" alt="">
+        </div>
+    </div>
+    <form class="comments__form_right">
+        <textarea name="" id="" class="comments__form_textarea" placeholder="Введите комментарий"></textarea>
+        @@include('../../buttons/button.html', {
+			"text": "Поделиться",
+			"link": "",
+			"type": "submit",
+			"has_arrow": false,
+			"class": "comments__form_button button--black button--shrink"
+		})
+    </form>
+</div>

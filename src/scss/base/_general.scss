@@ -102,6 +102,9 @@ body {
         }
         
     }
+    &__hr {
+        border-bottom: 1px solid #B6B6B6;
+    }
     &__block_title {
         padding-top: 20px;
         padding-bottom: 20px;
@@ -212,6 +215,19 @@ body {
             line-height: 1;
         }
     }
+    &__paragraphs {
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+        p {
+            margin: 0;
+            color: #646464;
+            font-size: 18px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 140%; /* 25.2px */
+        }
+    }
 }
 
 
@@ -244,6 +260,9 @@ body {
         .arrow {
             filter: invert(1);
         }
+    }
+    &--shrink {
+        display: inline-flex;
     }
 }
 

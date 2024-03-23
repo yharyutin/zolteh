@@ -1,0 +1,18 @@
+<div class="files">
+    <div class="files__in">
+        <div class="files__top">
+            <div class="files__title">@@title</div>
+            <div class="files__subtitle">@@subtitle</div>
+        </div>
+        <div class="files__items">
+            @@for (var i = 0; i < files.length; i++) {
+                <a href="`+files[i].link+`" class="files__item">
+                    <div class="icon">
+                        <img src="@img/icons/icons.svg#file" alt="file">
+                    </div>
+                    <div class="filename">`+files[i].title+`</div>
+                </a>
+            }
+        </div>
+    </div>
+</div>

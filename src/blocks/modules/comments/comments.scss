@@ -1,0 +1,18 @@
+.comments {
+    &__in {
+        display: flex;
+        flex-direction: column;
+        gap: 50px;
+    }
+    &__top {
+        display: flex;
+        flex-direction: column;
+        gap: 35px;
+    }
+    &__items {
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+        max-width: 805px;
+    }
+}

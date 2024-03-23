@@ -1,0 +1,37 @@
+<div class="comments">
+    <div class="comments__in">
+        <div class="comments__top">
+            @@include('../../components/titles/line_title.html', {
+                "class": "comments__title",
+                "title": "@@title",
+                "link": ""
+            })
+            <div class="comments__items">
+                @@loop('../../components/comments/item/item.html', [
+                    {
+                        "author": {
+                            "avatar": "@img/avatar1.png",
+                            "name": "Антон Филатов",
+                            "date": "07.02.2"
+                        },
+                        "text": "Между тем, Колыма обладает серьёзным резервом для увеличения количества добываемого золота",
+                        "likes": 300,
+                        "dislikes": 3
+                    },
+                    {
+                        "author": {
+                            "avatar": "@img/avatar2.png",
+                            "name": "Инна Васильева",
+                            "date": "07.02.2"
+                        },
+                        "text": "Между тем, Колыма обладает серьёзным резервом для увеличения количества добываемого золота",
+                        "likes": 300,
+                        "dislikes": 3
+                    }
+                ])
+            </div>
+        </div>
+        <div class="general__hr comments__hr"></div>
+        @@include('../../components/comments/form/form.html')
+    </div>
+</div>

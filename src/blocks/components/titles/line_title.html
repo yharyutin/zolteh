@@ -1,11 +1,23 @@
 <div class="general__line_title @@class">
-    <a href="@@link" class="general__line_title_left">
+    @@if (link) {
+        <a href="@@link" class="general__line_title_left">
+    }
+    @@if (!link) {
+        <span class="general__line_title_left">
+    }
         <div class="text">
             @@title
         </div>
-        <div class="arrow">
-            <img src="@img/icons/icons.svg#arrow_right_black" alt="arrow_right_black">
-        </div>
-    </a>
+        @@if (link) {
+            <div class="arrow">
+                <img src="@img/icons/icons.svg#arrow_right_black" alt="arrow_right_black">
+            </div>
+        }
+    @@if (link) {
+        </a>
+    }
+    @@if (!link) {
+        </span>
+    }
     <div class="general__mobile_arrows @@class__arrows hide_on_desktop"></div>
 </div>
