@@ -1,5 +1,7 @@
+
+
 @@include('blocks/components/pages/page_top.html', {
-	"page_title" : "Новости",
+	"page_title" : "Результаты поиска",
 	"page_link" : "",
 	"page_back" : false,
 	"has_breadcrumbs": true
@@ -7,6 +9,9 @@
 
 
 <div class="general__rows">
+	<div class="general__row">
+		@@include('blocks/components/search/form/form.html')
+	</div>
 	<div class="general__row">
 		@@include('blocks/modules/newslist/newslist.html', {
 			"data": "/blocks/modules/newslist/data.json"

@@ -228,6 +228,21 @@ body {
             line-height: 140%; /* 25.2px */
         }
     }
+    &__select {
+        width: 100%;
+        height: 53px;
+        border-radius: 10px;
+        background: linear-gradient(0deg, #FFF 0%, #FFF 100%), linear-gradient(90deg, #AC731A -34.96%, #BD8E3E 0.13%, #F8EDAF 58.12%, #BD8E3E 103.97%, #AC731A 138.12%);
+        box-shadow: 0px 4px 25.6px 0px rgba(0, 0, 0, 0.09);
+        border: none;
+        padding: 0 12px;
+
+        color: #000;
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: normal;
+    }
 }
 
 

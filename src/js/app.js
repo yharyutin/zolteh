@@ -15,6 +15,11 @@ import { Slider } from './modules/classes.js';
 
 document.addEventListener('DOMContentLoaded', () => {
     globalFunctions.transferItems();
+
+    // document.querySelectorAll('select').forEach(select => {
+    //     new NiceSelect(select, {searchable: false});
+    // })
+
     window.addEventListener('resize', () => {
         console.log('resize');
         globalFunctions.transferItems();
