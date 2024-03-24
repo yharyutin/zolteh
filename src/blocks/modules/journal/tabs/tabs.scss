@@ -32,4 +32,10 @@
             }
         }
     }
+    &__body {
+        padding-top: 20px;
+        &:not(.isActive) {
+            display: none;
+        }
+    }
 }

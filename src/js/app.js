@@ -16,8 +16,8 @@ import { Slider } from './modules/classes.js';
 document.addEventListener('DOMContentLoaded', () => {
     globalFunctions.transferItems();
     globalFunctions.addTabsChangeHandler({
-        openerSelector: '[data-tab-id]',
-        tabSelector: '[data-tab-body]'
+        openerDataSelector: 'tab-id',
+        tabDataSelector: 'tab-body'
     });
 
     // document.querySelectorAll('select').forEach(select => {

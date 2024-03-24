@@ -5,5 +5,12 @@
                 <div class="tabs__title `+(c == 0 ? 'isActive' : '')+`" data-tab-id="`+data[c].title+`">`+data[c].title+`</div>
             }
         </div>
+        <div class="tabs__bodies">
+            @@for (var c = 0; c < data.length; c++) {
+                <div class="tabs__body `+(c == 0 ? 'isActive' : '')+`" data-tab-body="`+data[c].title+`">
+                    @@include("`+data[c].component+`")
+                </div>
+            }
+        </div>
     </div>
 </div>

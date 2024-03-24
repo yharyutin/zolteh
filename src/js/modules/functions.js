@@ -34,12 +34,23 @@ export function transferItems() {
 
 }
 
-export function addTabsChangeHandler({openerSelector = '[data-tab-id]', tabSelector = '[data-tab-body]'}) {
-    if (!document.querySelector(openerSelector) || !document.querySelector(tabSelector)) return;
+export function addTabsChangeHandler({openerDataSelector = 'tab-id', tabDataSelector = 'tab-body'}) {
+    if (!document.querySelector(`[data-${openerDataSelector}]`) || !document.querySelector(`[data-${tabDataSelector}]`)) return;
 
-    document.querySelectorAll(openerSelector).forEach(opener => {
+    document.querySelectorAll(`[data-${openerDataSelector}]`).forEach(opener => {
         opener.addEventListener('click', (e) => {
-            e.currentTarget.classList.add('isActive')
+            
+            let camelCaseId = openerDataSelector.replace(/-./g, m => m.toUpperCase()[ 1 ])
+            let selector = `[data-${tabDataSelector}="${e.currentTarget.dataset[camelCaseId]}"]`;
+
+            if (document.querySelector(selector)) {
+                document.querySelector(`[data-${openerDataSelector}].isActive`).classList.remove('isActive');
+                document.querySelector(`[data-${tabDataSelector}].isActive`).classList.remove('isActive');
+                
+                e.currentTarget.classList.add('isActive')
+                document.querySelector(selector).classList.add('isActive');
+            }
+            
         })
     })
 }
