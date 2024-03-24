@@ -1,0 +1,91 @@
+<div class="subscription">
+    <div class="subscription__in">
+        <div class="subscription__text">
+            Подписаться на журнал «Золото и технологии» можно как напрямую через редакцию, так и воспользоваться услугами подписного агентства «Урал пресс».
+        </div>
+        <div class="subscription__times">
+            <div class="subscription__time_item">
+                Периодичность выхода журнала: <strong>4 номера в год</strong>
+            </div>
+            <div class="subscription__time_item">
+                График выхода: <strong>№1 - март, №2 - июнь, №3 - сентябрь, №4 - декабрь</strong>
+            </div>
+        </div>
+        <div class="subscription__variants">
+            @@for (var i = 0; i < 2; i++) {
+                <div class="subscription__variant">
+                    <div class="subscription__variant_top">
+                        <div class="subscription__variant_name">Оригинальная версия</div>
+                        <div class="subscription__variant_type">Годовая подписка</div>
+                        <div class="subscription__variant_price">9 640 ₽</div>
+                    </div>
+                    <div class="subscription__variant_button">
+                        @@include('../../components/buttons/button.html', {
+                            "text": "Поделиться",
+                            "link": "#",
+                            "type": "button",
+                            "has_arrow": false,
+                            "class": "button--black"
+                        })
+                    </div>
+                </div>
+            }
+        </div>
+        <div class="subscription__contacts">
+            <div class="subscription__text">
+                Вы также можете оформить подписку, связавшись с нами: 
+            </div>
+            <a href="tel:+7 (495) 616-60-26" class="subscription__contact">
+                <div class="icon">
+                    <img src="@img/icons/icons.svg#phone" alt="phone">
+                </div>
+                <div class="text">+7 (495) 616-60-26</div>
+            </a>
+            <a href="tel:+7 (495) 616-60-26" class="subscription__contact">
+                <div class="icon">
+                    <img src="@img/icons/icons.svg#mail" alt="mail">
+                </div>
+                <div class="text">+7 (495) 616-60-26</div>
+            </a>
+        </div>
+        @@include('../../components/files/files.html', {
+			"title": "Файлы для скачивания:",
+			"subtitle": "Доступно только для зарегистрированных пользователей",
+			"files": [
+				{
+					"title": "Файл 23090",
+					"link": "#"
+				},
+				{
+					"title": "Файл 23091",
+					"link": "#"
+				},
+				{
+					"title": "Файл 23092",
+					"link": "#"
+				},
+				{
+					"title": "Файл 23093",
+					"link": "#"
+				},
+				{
+					"title": "Файл 23094",
+					"link": "#"
+				},
+				{
+					"title": "Файл 23095",
+					"link": "#"
+				}
+			]
+		})
+        <div class="subsription__button">
+            @@include('../../components/buttons/button.html', {
+                "text": "Поделиться",
+                "link": "#",
+                "type": "button",
+                "has_arrow": true,
+                "class": "button--black button--shrink"
+            })
+        </div>
+    </div>
+</div>
