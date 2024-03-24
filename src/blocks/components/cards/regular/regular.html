@@ -11,4 +11,45 @@
     <div class="card_regular__title">
         @@title
     </div>
+    @@if (description) {
+        <div class="card_regular__description">
+            @@description
+        </div>
+    }
+    @@if (icons) {
+        <div class="card_detailed__indicators">
+                        
+            <div class="card_detailed__indicator">
+                <div class="icon">
+                    <img src="img/icons/icons.svg#messages_black" alt="messages_black">
+                </div>
+                <div class="count">1</div>
+            </div>
+        
+        
+            <div class="card_detailed__indicator">
+                <div class="icon">
+                    <img src="img/icons/icons.svg#eye_black" alt="eye_black">
+                </div>
+                <div class="count">20302</div>
+            </div>
+        
+        
+            <div class="card_detailed__indicator">
+                <div class="icon">
+                    <img src="img/icons/icons.svg#like_black" alt="like_black">
+                </div>
+                <div class="count">300</div>
+            </div>
+        
+        
+            <div class="card_detailed__indicator">
+                <div class="icon">
+                    <img src="img/icons/icons.svg#dislike_black" alt="dislike_black">
+                </div>
+                <div class="count">3</div>
+            </div>
+            
+        </div>
+    }
 </a>

@@ -1,0 +1,13 @@
+<div class="investors_news">
+    <div class="investors_news__in">
+        <div class="investors_news__items">
+            @@loop('../../components/cards/regular/regular.html', "/blocks/modules/investor_news_tab/data.json")
+        </div>
+        <div class="newslist__pagination">
+            @@include('../../components/buttons/pagination.html', {
+                "class": ""
+            })
+            @@include('../../components/buttons/arrows.html')
+        </div>
+    </div>
+</div>
