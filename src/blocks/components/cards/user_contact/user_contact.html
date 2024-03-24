@@ -1,0 +1,29 @@
+<div class="user_contact">
+    <div class="user_contact__in">
+        @@if(image) {
+            <div class="user_contact__image">
+                <img src="@@image" alt="">
+            </div>
+        }
+        <div class="user_contact__data">
+            <div class="user_contact__user">
+                <div class="user_contact__name">@@name</div>
+                <div class="user_contact__position">@@position</div>
+            </div>
+            <div class="user_contact__contacts">
+                <a href="tel:@@phone" class="user_contact__contact">
+                    <div class="icon">
+                        <img src="img/icons/icons.svg#phone" alt="phone">
+                    </div>
+                    <div class="text bold">@@phone</div>
+                </a>
+                <a href="mailto:email" class="user_contact__contact">
+                    <div class="icon">
+                        <img src="img/icons/icons.svg#mail" alt="mail">
+                    </div>
+                    <div class="text">@@email</div>
+                </a>
+            </div>
+        </div>
+    </div>
+</div>

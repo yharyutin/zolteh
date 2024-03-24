@@ -1,0 +1,8 @@
+.contacts_page {
+    &__cards {
+        display: flex;
+        align-items: flex-start;
+        flex-wrap: wrap;
+        gap: 30px 70px;
+    }
+}
