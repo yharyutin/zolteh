@@ -1,0 +1,27 @@
+<div class="archive">
+    <div class="archive__in">
+        <select name="" id="" class="archive__select">
+            <option value="2024">2024 (3)</option>
+            <option value="2023">2023 (10)</option>
+            <option value="2022">2022 (15)</option>
+        </select>
+        <div class="archive__items">
+            @@for (var i = 0; i < 8; i++) {
+                <a href="#" class="archive__item">
+                    <div class="archive__item_image">
+                        <img src="@img/archive1.png" alt="archive">
+                    </div>
+                    <div class="archive__item_name">
+                        № 3 (61) сентябрь 2023 г.
+                    </div>
+                </a>
+            }
+        </div>
+        <div class="newslist__pagination">
+            @@include('../../components/buttons/pagination.html', {
+                "class": ""
+            })
+            @@include('../../components/buttons/arrows.html')
+        </div>
+    </div>
+</div>
