@@ -34,5 +34,15 @@ export function transferItems() {
 
 }
 
+export function addTabsChangeHandler({openerSelector = '[data-tab-id]', tabSelector = '[data-tab-body]'}) {
+    if (!document.querySelector(openerSelector) || !document.querySelector(tabSelector)) return;
+
+    document.querySelectorAll(openerSelector).forEach(opener => {
+        opener.addEventListener('click', (e) => {
+            e.currentTarget.classList.add('isActive')
+        })
+    })
+}
+
 
 

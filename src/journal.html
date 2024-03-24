@@ -1,0 +1,64 @@
+@@include('blocks/components/pages/page_top.html', {
+	"page_title" : "Журнал",
+	"page_link" : "",
+	"page_back" : false,
+	"has_breadcrumbs": true
+})
+
+
+<div class="general__rows">
+	<div class="general__row">
+		@@include('blocks/modules/journal/tabs/tabs.html', {
+			"data": [
+				{
+					"title": "о журнале",
+					"component": "",
+					"is_active": "Y"
+				},
+				{
+					"title": "Архив номеров",
+					"component": "",
+					"is_active": ""
+				},
+				{
+					"title": "подписка",
+					"component": "",
+					"is_active": ""
+				}
+			]
+		})
+	</div>
+	<div class="general__row">
+		@@include('blocks/components/banners/image_banner/image_banner.html', {
+			"image": "@img/banner2.png"
+		})
+	</div>
+	<div class="general__row">
+		@@include('blocks/modules/events/events.html', {
+			"title": "мероприятия",
+			"link": "#"
+		})
+	</div>
+	<div class="general__row">
+		@@include('blocks/components/titles/line_title.html', {
+            "title": "видео",
+            "link": "#",
+            "class": "general__row_title"
+        })
+		<div class="general__row_in general__row--58p-42p">
+			@@include('blocks/modules/video/video.html', {
+				"poster": "@img/poster.png"
+			})
+			<div class="general__column general__video_column">
+				<div class="general__video_column_in">
+					@@loop('blocks/components/cards/one_lined/one_lined.html', "/blocks/modules/video/data.json")
+				</div>
+			</div>
+		</div>
+		
+	</div>
+</div>
+			
+
+
+@@include('blocks/components/pages/page_bottom.html', {})

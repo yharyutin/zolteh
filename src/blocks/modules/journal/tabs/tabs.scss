@@ -1,0 +1,35 @@
+.tabs {
+    &__titles {
+        display: flex;
+        align-items: flex-end;
+        gap: 20px;
+    }
+    &__title {
+        flex: 1 1 auto;
+        padding-bottom: 20px;
+        text-align: center;
+        color: #444;
+        font-size: 20px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: normal;
+        text-transform: uppercase;
+        cursor: pointer;
+        position: relative;
+        &:after {
+            content: "";
+            position: absolute;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            height: 1px;
+            background: #000;
+        }
+        &.isActive {
+            color: #000;
+            &:after {
+                height: 2px;
+            }
+        }
+    }
+}
