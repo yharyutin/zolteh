@@ -1,10 +1,12 @@
 <div class="investors_news">
     <div class="investors_news__in">
-        @@include('../../components/titles/section_title.html', {
-            "class": "investors_news__title",
-            "text": "@@title",
-            "link": "@@link"
-        })
+        @@if (title) {
+            @@include('../../components/titles/section_title.html', {
+                "class": "investors_news__title",
+                "text": "@@title",
+                "link": "@@link"
+            })
+        }
         <div class="investors_news__items">
             @@loop('../../components/cards/middle/middle.html', "@@data")
         </div>

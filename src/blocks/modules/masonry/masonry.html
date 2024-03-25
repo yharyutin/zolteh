@@ -1,10 +1,12 @@
 <div class="masonry_block">
     <div class="masonry_block__in">
-        @@include('../../components/titles/section_title.html', {
-            "class": "masonry_block__title",
-            "text": "@@title",
-            "link": "@@link"
-        })
+        @@if (title) {
+            @@include('../../components/titles/section_title.html', {
+                "class": "masonry_block__title",
+                "text": "@@title",
+                "link": "@@link"
+            })
+        }
         <div class="masonry_block__grid">
             @@include('../../components/cards/backgrounded/backgrounded.html', {
                 "title": "Роботизированная лаборатория «Селигдара» в Алдане получила сертификацию Укаргео Укаргео das das das das dasd asd as das dasd asd asd as d",

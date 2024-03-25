@@ -8,8 +8,25 @@
 
 <div class="general__rows">
 	<div class="general__row">
+		<div class="general__row_in general__row--two-one">
+			@@include('blocks/modules/masonry/masonry.html', {
+				"title": "",
+				"link": "#"
+			})
+			@@include('blocks/modules/investors_news/investors_news.html', {
+				"title": "",
+				"data": "/blocks/modules/row_news/data2.json"
+			})
+		</div>
+	</div>
+	<div class="general__row">
 		<div class="general__row_grid-3">
-			@@loop('blocks/components/cards/regular/regular.html', "/blocks/modules/investor_news_tab/data2.json")
+			@@loop('blocks/components/cards/regular/regular.html', "/blocks/modules/titled_news/data.json")
+		</div>
+	</div>
+	<div class="general__row">
+		<div class="general__row_grid-3">
+			@@loop('blocks/components/cards/regular/regular.html', "/blocks/modules/titled_news/data.json")
 		</div>
 	</div>
 	<div class="general__row">
