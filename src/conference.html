@@ -1,0 +1,48 @@
+@@include('blocks/components/pages/page_top.html', {
+	"page_title" : "Конференция",
+	"page_link" : "",
+	"page_back" : false,
+	"has_breadcrumbs": true
+})
+
+
+<div class="general__rows">
+	<div class="general__row">
+		<div class="general__row_grid-3">
+			@@loop('blocks/components/cards/regular/regular.html', "/blocks/modules/investor_news_tab/data4.json")
+		</div>
+	</div>
+	<div class="general__row">
+		@@include('blocks/components/banners/image_banner/image_banner.html', {
+			"image": "@img/banner2.png"
+		})
+	</div>
+	<div class="general__row">
+		@@include('blocks/modules/events/events.html', {
+			"title": "мероприятия",
+			"link": "#"
+		})
+	</div>
+	<div class="general__row">
+		@@include('blocks/components/titles/line_title.html', {
+            "title": "видео",
+            "link": "#",
+            "class": "general__row_title"
+        })
+		<div class="general__row_in general__row--58p-42p">
+			@@include('blocks/modules/video/video.html', {
+				"poster": "@img/poster.png"
+			})
+			<div class="general__column general__video_column">
+				<div class="general__video_column_in">
+					@@loop('blocks/components/cards/one_lined/one_lined.html', "/blocks/modules/video/data.json")
+				</div>
+			</div>
+		</div>
+		
+	</div>
+</div>
+			
+
+
+@@include('blocks/components/pages/page_bottom.html', {})
