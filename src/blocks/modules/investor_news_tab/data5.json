@@ -1,0 +1,29 @@
+[
+    {
+        "title": "Геологоразведка на рудных месторождениях»",
+        "is_locked": false,
+        "link": "photo_detail.html",
+        "class": "titled_news__item",
+        "image": "@img/photo1.png",
+        "description": "",
+        "icons": false
+    },
+    {
+        "title": "Журнал «Золото и технологии»",
+        "is_locked": false,
+        "link": "photo_detail.html",
+        "class": "titled_news__item",
+        "image": "@img/photo2.png",
+        "description": "",
+        "icons": false
+    },
+    {
+        "title": "Россыпные месторождения",
+        "is_locked": false,
+        "link": "photo_detail.html",
+        "class": "titled_news__item",
+        "image": "@img/photo3.png",
+        "description": "",
+        "icons": false
+    }
+]
