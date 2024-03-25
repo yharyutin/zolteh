@@ -1,0 +1,86 @@
+.callback {
+    border-radius: 10px;
+    background: #FFF url('../img/callback_bg.png') 50% 50% / cover no-repeat;
+    position: relative;
+    overflow: hidden;
+    &__in {
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+        padding: 50px;
+    }
+    &__top {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+    &__title {
+        color: #000;
+        font-size: 26px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 1; /* 36.4px */
+        text-transform: uppercase;
+    }
+    &__subtitle {
+        color: #606060;
+        font-size: 20px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 1;
+    }
+    &__form {
+        display: grid;
+        grid-template-columns: 390px 1fr;
+        grid-gap: 20px;
+        input, textarea {
+            border-radius: 10px;
+            border: 1px solid #000;
+            width: 100%;
+            box-sizing: border-box;
+            background: transparent;
+            &, &::placeholder {
+                color: #828282;
+                font-size: 16px;
+                font-style: normal;
+                font-weight: 400;
+                line-height: 140%; /* 22.4px */
+            }
+            & {
+                color: #000;
+            }
+        }
+        input {
+            padding: 12px 20px;
+        }
+        textarea {
+            height: 100%;
+            padding: 16px 20px;
+        }
+    }
+    &__form_left {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+    &__bottom {
+        display: flex;
+        align-items: center;
+        gap: 20px;
+    }
+    &__text {
+        max-width: 345px;
+        color: #828282;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+    }
+    &__accessuar {
+        position: absolute;
+        right: 0;
+        bottom: 0;
+        width: 347px;
+        font-size: 0;
+    }
+}

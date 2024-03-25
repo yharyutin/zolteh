@@ -1,0 +1,37 @@
+<div class="callback">
+    <form action="" class="callback__in">
+        <div class="callback__top">
+            <div class="callback__title">
+                свяжитесь с нами
+            </div>
+            <div class="callback__subtitle">
+                Вы можете отправить нам сообщение
+            </div>
+        </div>
+        <div class="callback__form">
+            <div class="callback__form_left">
+                <input type="text" placeholder="Введите Ваше имя">
+                <input type="email" placeholder="E-mail">
+                <input type="tel" placeholder="+7">
+            </div>
+            <div class="callback__form_right">
+                <textarea name="" placeholder="Введите Ваше сообщение"></textarea>
+            </div>
+        </div>
+        <div class="callback__bottom">
+            <div class="callback__button">
+                @@include('../../components/buttons/button.html', {
+                    "text": "Отправить",
+                    "link": "",
+                    "type": "submiy",
+                    "has_arrow": false,
+                    "class": "button--black"
+                })
+            </div>
+            <div class="callback__text">Отправляя форму Вы соглашаетесь с политикой конфиденциальности. </div>
+        </div>
+    </form>
+    <div class="callback__accessuar">
+        <img src="@img/accessuar1.png" width="100%" alt="">
+    </div>
+</div>

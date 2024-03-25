@@ -1,7 +1,23 @@
-<div class="contacts_page">
-    <div class="contacts_page__in">
-        <div class="contacts_page__cards">
-            @@loop('../../components/cards/user_contact/user_contact.html', "blocks/modules/contacts_page/cards.json")
+<div class="general__row">
+    <div class="contacts_page__cards">
+        @@loop('../../components/cards/user_contact/user_contact.html', "blocks/modules/contacts_page/cards.json")
+    </div>
+</div>
+
+<div class="general__row">
+    <div class="contacts_page__contacts">
+        <div class="contacts_page__contact">
+            <div class="left">Адрес регистрации:</div>
+            <div class="right">129515, г. Москва, ул. Академика Королева, д. 13, стр. 1. </div>
         </div>
+        <div class="contacts_page__contact">
+            <div class="left">Телефон / факс:</div>
+            <a href="+7 (495) 221-76-32" class="right">+7 (495) 221-76-32</a>
+        </div>
+    </div>
+</div>
+<div class="general__row">
+    <div class="contacts_page__form">
+        @@include('../callback/callback.html')
     </div>
 </div>
