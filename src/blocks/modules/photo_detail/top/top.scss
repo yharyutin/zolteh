@@ -4,20 +4,13 @@
         display: flex;
         flex-direction: column;
         gap: 26px;
-        &:not(.noline) {
-            &:before {
-                content: "";
-                display: block;
-                width: 180px;
-                height: 8px;
-                background: #000;
-            }
+        &:before {
+            content: "";
+            display: block;
+            width: 180px;
+            height: 8px;
+            background: #000;
         }
-    }
-    &__top-row {
-        display: flex;
-        align-items: center;
-        gap: 50px;
     }
     &__date {
         color: #828282;
@@ -34,9 +27,6 @@
         font-weight: 700;
         line-height: 140%; /* 50.4px */
         max-width: 912px;
-        &--small {
-            font-size: 26px;
-        }
     }
     &__short_descrition {
         color: #000;

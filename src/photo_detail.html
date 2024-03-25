@@ -1,0 +1,56 @@
+@@include('blocks/components/pages/page_top.html', {
+	"page_title" : "Новости",
+	"page_link" : "/news.html",
+	"page_back" : true,
+	"has_breadcrumbs": true
+})
+
+
+<div class="general__rows">
+	<div class="general__row">
+		@@include('blocks/modules/photo_detail/top/top.html', {
+			"image": "@img/huge_card.png",
+			"link": "/news_detail.html",
+			"title": "Вынесен приговор по делу о трагедии в Красноярском крае",
+			"text": "В Курагино Красноярского края суд вынес приговор генеральному директору и двум производственникам ООО «Сисим». Они признаны виновными в прорыве дамбы на реке Малая Сейба, где велась",
+			"messages": 1,
+			"eyes": 20302,
+			"likes": 300,
+			"dislikes": 3,
+			"class": "newslist__item"
+		})
+	</div>
+	<div class="general__row">
+		@@include('blocks/components/banners/image_banner/image_banner.html', {
+			"image": "@img/banner2.png"
+		})
+	</div>
+	<div class="general__row">
+		@@include('blocks/modules/events/events.html', {
+			"title": "мероприятия",
+			"link": "#"
+		})
+	</div>
+	<div class="general__row">
+		@@include('blocks/components/titles/line_title.html', {
+            "title": "видео",
+            "link": "#",
+            "class": "general__row_title"
+        })
+		<div class="general__row_in general__row--58p-42p">
+			@@include('blocks/modules/video/video.html', {
+				"poster": "@img/poster.png"
+			})
+			<div class="general__column general__video_column">
+				<div class="general__video_column_in">
+					@@loop('blocks/components/cards/one_lined/one_lined.html', "/blocks/modules/video/data.json")
+				</div>
+			</div>
+		</div>
+		
+	</div>
+</div>
+			
+
+
+@@include('blocks/components/pages/page_bottom.html', {})

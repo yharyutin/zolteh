@@ -1,0 +1,57 @@
+<div class="detail__top noline">
+    <div class="detail__top-row">
+        <date class="detail__date">
+            07.02.24
+        </date>
+        <div class="detail__indicators">
+            @@if (messages) {
+                <div class="detail__indicator">
+                    <div class="icon">
+                        <img src="@img/icons/icons.svg#messages_black" alt="messages_black"/>
+                    </div>
+                    <div class="count">@@messages</div>
+                </div>
+            }
+            @@if (eyes) {
+                <div class="detail__indicator">
+                    <div class="icon">
+                        <img src="@img/icons/icons.svg#eye_black" alt="eye_black"/>
+                    </div>
+                    <div class="count">@@eyes</div>
+                </div>
+            }
+            @@if (likes) {
+                <div class="detail__indicator">
+                    <div class="icon">
+                        <img src="@img/icons/icons.svg#like_black" alt="like_black"/>
+                    </div>
+                    <div class="count">@@likes</div>
+                </div>
+            }
+            @@if (dislikes) {
+                <div class="detail__indicator">
+                    <div class="icon">
+                        <img src="@img/icons/icons.svg#dislike_black" alt="dislike_black"/>
+                    </div>
+                    <div class="count">@@dislikes</div>
+                </div>
+            }
+        </div>
+    </div>
+    <h1 class="detail__title detail__title--small">
+        Освоение месторождения Донеценковское на Алтае
+    </h1>
+    <div class="detail__short_descrition">
+        Министр природных ресурсов и экологии Магаданской области Олег Косолапов в интервью «ГТРК-Магадан» рассказал о перспективах горнодобывающей отрасли на текущий год и ближайшую перспективу. - В минувшем году регион добыл 48 тонн золота, это меньше, чем в 2022 году на 3,4 тонны. Упала и добыча серебра, но на
+    </div>
+    @@include('../../../components/slider_gallery/slider_gallery.html', {
+        "images": [
+            "@img/gallery1.png",
+            "@img/gallery2.png",
+            "@img/gallery3.png",
+            "@img/gallery1.png",
+            "@img/gallery2.png",
+            "@img/gallery3.png"
+        ]
+    })
+</div>
