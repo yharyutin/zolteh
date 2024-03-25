@@ -2,12 +2,14 @@
     <div class="card_regular__image">
         <img src="@@image" alt="">
     </div>
-    <div class="card_regular__lock">
-        <div class="icon">
-            <img src="@img/icons/icons.svg#lock_gray" alt="lock_gray"/>
+    @@if(is_locked) {
+        <div class="card_regular__lock">
+            <div class="icon">
+                <img src="@img/icons/icons.svg#lock_gray" alt="lock_gray"/>
+            </div>
+            <div class="text">07.02.24</div>
         </div>
-        <div class="text">07.02.24</div>
-    </div>
+    }
     <div class="card_regular__title">
         @@title
     </div>

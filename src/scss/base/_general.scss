@@ -253,6 +253,11 @@ body {
         font-weight: 600;
         line-height: normal;
     }
+    &__row_grid-3 {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-gap: 40px 20px;
+    }
 }
 
 
