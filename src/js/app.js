@@ -68,6 +68,25 @@ document.addEventListener('DOMContentLoaded', () => {
                 perView: 3,
                 bound: true
             }
+        }),
+        photosGallery: new Slider({
+            selector: '.slider_gallery--js',
+            options: {
+                gap: 0,
+                perView: 1
+            }
         })
     };
+
+
+
+    window.app.photosGallery.slider.on('move.after', function() {
+        if (!document.querySelector('.slider_gallery--js')) return;
+        setTimeout(() => {
+            let height = document.querySelector('.slider_gallery--js .glide__track').offsetHeight;
+
+            console.log(height);
+            document.querySelector('.slider_gallery__thumbs').style.height = `${height}px`;
+        }, 0)
+    })
 });
