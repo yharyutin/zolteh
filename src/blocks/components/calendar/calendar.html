@@ -1,3 +1,30 @@
-<div class="calendar">
-    <div class="calendar__in" id="calendar"></div>
+<div class="calendar @@if(isInline){ calendar--is_inline }">
+    <div class="calendar__in @@class" data-selected-dates="@@selectedDates">
+        <template class="calendar__title--js">
+            <div class="calendar__top">
+                @@titleMarkup
+            </div>
+        </template>
+        @@if (events.length) {
+            <div class="calendar__events_wrap js-closest">
+                <div class="calendar__events">
+                    @@for (var i = 0; i < events.length; i++) {
+                        <div class="calendar__event">
+                            <div class="calendar__event_dates">`+ events[i].date +`</div>
+                            <div class="calendar__event_city">`+ events[i].city +`</div>
+                            <div class="calendar__event_text">
+                                <a href="#">`+ events[i].text +`</a>
+                            </div>
+                        </div>
+                    }
+                </div>
+                <div class="calendar__events_opener calendar__events_opener--js">
+                    <div class="text"></div>
+                    <div class="icon">
+                        <img src="@img/icons/icons.svg#arrow_bottom_black" alt="arrow_bottom_black">
+                    </div>
+                </div>
+            </div>
+        }
+    </div>
 </div>

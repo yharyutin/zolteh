@@ -1,7 +1,11 @@
 .air-datepicker-cell.-year-.-other-decade-,
 .air-datepicker-cell.-day-.-other-month- {
-    color: var(--adp-color-other-month)
+    color: var(--adp-color-other-month);
+    &:after {
+        display: none;
+    }
 }
+
 
 .air-datepicker-cell.-year-.-other-decade-:hover,
 .air-datepicker-cell.-day-.-other-month-:hover {
@@ -185,7 +189,8 @@
 
 .air-datepicker-body--cells.-days- {
     grid-template-columns: repeat(7, var(--adp-day-cell-width));
-    grid-auto-rows: var(--adp-day-cell-height)
+    grid-auto-rows: var(--adp-day-cell-height);
+    pointer-events: none !important;
 }
 
 .air-datepicker-body--cells.-months- {
@@ -526,7 +531,7 @@
     --adp-transition-duration: .3s;
     --adp-transition-ease: ease-out;
     --adp-transition-offset: 8px;
-    --adp-background-color: #fff;
+    --adp-background-color: #FAFAFA;
     --adp-background-color-hover: #f0f0f0;
     --adp-background-color-active: #eaeaea;
     --adp-background-color-in-range: rgba(92, 196, 239, .1);
@@ -806,7 +811,7 @@
 .air-datepicker--content {
     box-sizing: content-box;
     padding: var(--adp-padding);
-    grid-area: body
+    grid-area: body;
 }
 
 .-only-timepicker- .air-datepicker--content {
@@ -851,11 +856,17 @@
 
 
 .calendar {
+    // background: #FAFAFA;
+    &__in {
+        display: flex;
+        flex-direction: column;
+    }
     &__top {
         display: flex;
         flex-direction: column;
         align-items: center;
         gap: 7px;
+        text-decoration: none;
     }
     &__title,
     .air-datepicker-nav--title {
@@ -866,13 +877,95 @@
         line-height: normal;
         text-transform: uppercase;
     }
+    &--is_inline .air-datepicker-nav--title {
+        padding: 11px 40px;
+        pointer-events: none !important;
+        // position: sticky;
+        // top: 50px;
+    }
+    &--is_inline .air-datepicker {
+        border-left: none;
+        border-right: none;
+        border-radius: var(--adp-border-radius) var(--adp-border-radius) 0 0;
+    }
     &__seeall {
         font-size: 16px;
         display: flex;
         align-items: center;
         gap: 9px;
+        text-decoration: none;
         .icon {
             font-size: 0;
+        }
+        .text {
+            color: #fff;
+            text-decoration: none;
+        }
+    }
+    &__events_wrap {
+        order: 10;
+        padding: 30px 18px 0;
+        background: #fff;
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+    }
+    &__events {}
+    &__event {
+        display: grid;
+        grid-template-columns: max-content min-content auto;
+        grid-gap: 7px;
+    }
+    &__events_wrap:not(.isOpened) &__event {
+        &:nth-child(n+2) {
+            display: none;
+        }
+    }
+    &__event_dates {
+        color: #141414;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+    }
+    &__event_city,
+    &__event_text {
+        color: #999;
+        font-size: 15px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: normal;
+        a {
+            color: inherit;
+        }
+    }
+    &__events_opener {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        cursor: pointer;
+        user-select: none;
+        .text {
+            color: #000;
+            font-size: 16px;
+            font-style: normal;
+            font-weight: 700;
+            line-height: normal;
+            &:before {
+                content: "Раскрыть все";
+            }
+        }
+        .icon {
+            font-size: 0;
+            width: 14px;
+        }
+    }
+    &__events_wrap.isOpened &__events_opener {
+        .text:before {
+            content: "Свернуть";
+        }
+        .icon {
+            transform: rotate(180deg);
         }
     }
 }

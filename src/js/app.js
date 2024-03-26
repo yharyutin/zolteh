@@ -47,7 +47,21 @@ document.addEventListener('DOMContentLoaded', () => {
             logoClass: '.header__logo--js'
         }),
         sidebarCalendar: new Calendar({
-            selector: '#calendar'
+            selector: '.calendar--global',
+            settings: {
+                selectOtherMonths: false,
+                showOtherMonths: false,
+                multipleDates: true
+            }
+        }),
+        eventsCalendar: new Calendar({
+            selector: '.calendar--events',
+            settings: {
+                moveToOtherMonthsOnSelect: true,
+                selectOtherMonths: false,
+                showOtherMonths: false,
+                multipleDates: true
+            }
         }),
         interviews: new Slider({
             selector: '.interviews__slider--js',
@@ -79,14 +93,15 @@ document.addEventListener('DOMContentLoaded', () => {
     };
 
 
+    if (window.app.photosGallery.slider) {
+        window.app.photosGallery.slider.on('move.after', function() {
+            if (!document.querySelector('.slider_gallery--js')) return;
+            setTimeout(() => {
+                let height = document.querySelector('.slider_gallery--js .glide__track').offsetHeight;
 
-    window.app.photosGallery.slider.on('move.after', function() {
-        if (!document.querySelector('.slider_gallery--js')) return;
-        setTimeout(() => {
-            let height = document.querySelector('.slider_gallery--js .glide__track').offsetHeight;
-
-            console.log(height);
-            document.querySelector('.slider_gallery__thumbs').style.height = `${height}px`;
-        }, 0)
-    })
+                console.log(height);
+                document.querySelector('.slider_gallery__thumbs').style.height = `${height}px`;
+            }, 0)
+        })
+    }
 });
