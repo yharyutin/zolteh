@@ -43,6 +43,14 @@ const Calendar = class Calendar {
     init() {
         this.initDatepicker();
         this.addEventsOpenerHandler();
+
+        if (document.querySelector('.calendar__top a')) {
+            document.querySelectorAll('.calendar__top a').forEach(link => {
+                link.addEventListener('click', (event) => {
+                    event.stopPropagation();
+                })
+            })
+        }
     }
 }
 
