@@ -1,0 +1,130 @@
+[
+    {
+        "title": "Главная страница",
+        "is_locked": false,
+        "link": "index.html",
+        "class": "row_news__item",
+        "image": "",
+        "text": ""
+    },
+    {
+        "title": "Страница 'Новости'",
+        "is_locked": false,
+        "link": "news.html",
+        "class": "row_news__item",
+        "image": "",
+        "text": ""
+    },
+    {
+        "title": "Страница 'Детальная новости'",
+        "is_locked": false,
+        "link": "news_detail.html",
+        "class": "row_news__item",
+        "image": "",
+        "text": ""
+    },
+    {
+        "title": "Страница 404",
+        "is_locked": false,
+        "link": "404.html",
+        "class": "row_news__item",
+        "image": "",
+        "text": ""
+    },
+    {
+        "title": "Страница 'Журнал'",
+        "is_locked": false,
+        "link": "journal.html",
+        "class": "row_news__item",
+        "image": "",
+        "text": ""
+    },
+    {
+        "title": "Страница 'Инвестиционные проекты'",
+        "is_locked": false,
+        "link": "investment_projects.html",
+        "class": "row_news__item",
+        "image": "",
+        "text": ""
+    },
+    {
+        "title": "Страница 'Контакты'",
+        "is_locked": false,
+        "link": "contacts.html",
+        "class": "row_news__item",
+        "image": "",
+        "text": ""
+    },
+    {
+        "title": "Страница 'Календарь'",
+        "is_locked": false,
+        "link": "calendar.html",
+        "class": "row_news__item",
+        "image": "",
+        "text": ""
+    },
+    {
+        "title": "Страница 'Спецпроекты'",
+        "is_locked": false,
+        "link": "special_projects.html",
+        "class": "row_news__item",
+        "image": "",
+        "text": ""
+    },
+    {
+        "title": "Страница 'Информационный проект'",
+        "is_locked": false,
+        "link": "info_projects.html",
+        "class": "row_news__item",
+        "image": "",
+        "text": ""
+    },
+    {
+        "title": "Страница 'Информационный проект детальная'",
+        "is_locked": false,
+        "link": "info_projects_detail.html",
+        "class": "row_news__item",
+        "image": "",
+        "text": ""
+    },
+    {
+        "title": "Страница 'Настенные карты месторождений золота'",
+        "is_locked": false,
+        "link": "wall_maps.html",
+        "class": "row_news__item",
+        "image": "",
+        "text": ""
+    },
+    {
+        "title": "Страница 'Настенные карты месторождений золота детальная'",
+        "is_locked": false,
+        "link": "wall_maps_detail.html",
+        "class": "row_news__item",
+        "image": "",
+        "text": ""
+    },
+    {
+        "title": "Страница 'Конференция'",
+        "is_locked": false,
+        "link": "conference.html",
+        "class": "row_news__item",
+        "image": "",
+        "text": ""
+    },
+    {
+        "title": "Страница 'Фото'",
+        "is_locked": false,
+        "link": "photo.html",
+        "class": "row_news__item",
+        "image": "",
+        "text": ""
+    },
+    {
+        "title": "Страница 'Фото детальная'",
+        "is_locked": false,
+        "link": "photo_detail.html",
+        "class": "row_news__item",
+        "image": "",
+        "text": ""
+    }
+]
