@@ -1,0 +1,27 @@
+<div class="feed">
+    <div class="feed__in">
+        <div class="feed__top">
+            <div class="feed__title">@@title</div>
+            <div class="feed__subtitle">@@subtitle</div>
+        </div>
+        <div class="feed__image">
+            <img src="@@image" alt="">
+        </div>
+        @@if (data.length) {
+            <div class="feed__items">
+                @@for (var i = 0; i < data.length; i++) {
+                    <div class="feed__item">
+                        <div class="feed__item_lock">
+                            <div class="icon">
+                                <img src="@img/icons/icons.svg#lock_gray" alt="lock_gray"/>
+                            </div>
+                            <div class="date">07.02.24</div>
+                        </div>
+                        <div class="feed__item_name">`+ data[i].name +`</div>
+                        <div class="feed__item_description">`+ data[i].description +`</div>
+                    </div>
+                }
+            </div>
+        }
+    </div>
+</div>
