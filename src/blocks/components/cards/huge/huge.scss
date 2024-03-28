@@ -2,7 +2,7 @@
     padding: 30px 20px;
     background: #F6F6F6;
     &__image {
-        margin-bottom: 24px;
+        margin-bottom: 21px;
     }
     &__lock {
         display: flex;
@@ -26,11 +26,12 @@
         font-size: 26px;
         font-style: normal;
         font-weight: 700;
-        line-height: 140%; /* 36.4px */
+        line-height: 137%; /* 36.4px */
         text-transform: uppercase;
         text-decoration: none;
         margin-bottom: 10px;
         display: block;
+        padding-right: 10px;
     }
     &__about {
         color: #828282;
@@ -43,6 +44,7 @@
         -webkit-line-clamp: 4;
         -webkit-box-orient: vertical; 
         margin-bottom: 20px;
+        padding-right: 26px;
     }
     &__link {
         display: flex;
@@ -68,14 +70,14 @@
     &__indicators {
         display: flex;
         align-items: center;
-        gap: 20px;
+        gap: 23px;
     }
     &__indicator {
         display: flex;
         align-items: center;
         gap: 5px;
         .icon {
-            width: 16px;
+            width: 18px;
             font-size: 0;
         }
         .count {

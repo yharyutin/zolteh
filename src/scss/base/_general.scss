@@ -32,7 +32,7 @@ body {
         box-sizing: border-box;
     }
     &__main {
-        padding-top: 40px;
+        padding-top: 20px;
         padding-bottom: 100px;
     }
     &__main_in {
@@ -92,12 +92,12 @@ body {
     &__row {
         &--two-one {
             display: grid;
-            grid-template-columns: 2fr 1fr;
+            grid-template-columns: 2.05fr 1fr;
             grid-gap: 20px;
         }
         &--one-two {
             display: grid;
-            grid-template-columns: 1fr 2fr;
+            grid-template-columns: 1fr 2.05fr;
             grid-gap: 20px;
         }
         &--three {

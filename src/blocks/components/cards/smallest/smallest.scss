@@ -1,5 +1,5 @@
 .card_smallest {
-    padding: 14px 0;
+    padding: 13px 0 12px;
     position: relative;
     display: flex;
     border-bottom: 1px solid rgba(130, 130, 130, 0.20);
@@ -25,9 +25,10 @@
         line-height: 140%; /* 25.2px */
     }
     &__lock_in {
-        width: 13px;
+        width: 17px;
         font-size: 0;
         position: sticky;
         top: 50px;
+        padding-top: 2px;
     }
 }

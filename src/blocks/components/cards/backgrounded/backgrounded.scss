@@ -1,13 +1,13 @@
 .card_backgrounded {
     position: relative;
-    padding: 41% 40px 40px 40px;
+    padding: 41% 40px 30px 40px;
     text-decoration: none;
     display: block;
     &--reversed {
         padding: 40px 40px 37.7% 40px;
     }
     &--small {
-        padding: 27% 20px 20px 20px;
+        padding: 38% 20px 20px 20px;
     }
     &--with_button {
         padding: 20px;
@@ -41,7 +41,7 @@
         display: flex;
         flex-direction: column;
         justify-content: flex-end;
-        gap: 17px;
+        gap: 11px;
         height: 100%;
     }
     &--small &__content {
@@ -54,7 +54,7 @@
         position: relative;
         z-index: 2;
         .icon {
-            width: 13px;
+            width: 14px;
             font-size: 0;
         }
         .text {
