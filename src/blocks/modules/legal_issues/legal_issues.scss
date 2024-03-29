@@ -8,5 +8,8 @@
         display: grid;
         grid-template-columns: repeat(3, 1fr);
         grid-gap: 50px 82px;
+        .card_middle__title {
+            font-size: 20px;
+        }
     }
 }

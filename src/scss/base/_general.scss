@@ -49,8 +49,8 @@ body {
         display: flex;
         flex-direction: column;
         gap: 30px;
-        position: sticky;
-        top: 30px;
+        // position: sticky;
+        // top: 30px;
     }
     &__title {
         margin-bottom: 40px;
@@ -304,6 +304,10 @@ body {
     }
     &--shrink {
         display: inline-flex;
+    }
+    &--huge {
+        padding: 21px 38px;
+        font-size: 20px;
     }
 }
 
