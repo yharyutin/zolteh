@@ -1,3 +1,19 @@
 <div class="error_page">
-    @@code
+    <div class="error_page__bg error_page__bg--bottom">
+        <img src="@img/404_bg5.png" width="100%" alt="">
+    </div>
+    <div class="error_page__content">
+        <div class="error_page__text">
+            @@text
+        </div>
+        <div class="error_page__button">
+            @@include('../../components/buttons/button.html', {
+                "text": "На главную",
+                "link": "#",
+                "type": "button",
+                "has_arrow": false,
+                "class": ""
+            })
+        </div>
+    </div>
 </div>
