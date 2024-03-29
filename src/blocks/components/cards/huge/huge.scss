@@ -1,8 +1,14 @@
 .card_huge {
     padding: 30px 20px;
     background: #F6F6F6;
+    @media all and (max-width: $mobileStart) {
+        padding: 0;
+        background: none;
+    }
     &__image {
         margin-bottom: 21px;
+
+        
     }
     &__lock {
         display: flex;
