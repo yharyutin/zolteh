@@ -5,5 +5,8 @@
         gap: var(--gap, 30px);
         position: sticky;
         top: 50px;
+        @media all and (max-width: $sm) {
+            gap: 20px;
+        }
     }
 }

@@ -1,6 +1,9 @@
 .daily_news {
     position: relative;
     padding-top: 16px;
+    @media all and (max-width: $md) {
+        padding-top: 0;
+    }
     &__in {
         position: sticky;
         top: 50px;

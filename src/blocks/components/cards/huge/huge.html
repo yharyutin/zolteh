@@ -17,10 +17,17 @@
         @@text
     </div>
     <div class="card_huge__bottom">
-        <a href="@@link" class="card_huge__link">
+        <a href="@@link" class="card_huge__link hide_on_mobile">
             <div class="text">читать полностью</div>
             <div class="arrow"><img src="@img/icons/icons.svg#arrow_right_black" alt="arrow_right_black"/></div>
         </a>
+        @@include('../../buttons/button.html', {
+			"text": "Смотреть все новости",
+			"link": "#",
+			"type": "button",
+			"has_arrow": true,
+			"class": "button--black hide_on_desktop"
+		})
         <div class="card_huge__indicators">
             @@if (messages) {
                 <div class="card_huge__indicator">

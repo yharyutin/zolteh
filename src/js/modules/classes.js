@@ -9,6 +9,11 @@ export const Slider = class Slider {
         this.init();
     }
     sliderInit() {
+        if (this.selector instanceof HTMLElement) {
+            console.log('html')
+            this.slider = new Glide(this.selector, this.options).mount()
+            return false;
+        }
         if (!document.querySelector(this.selector)) return;
 
         this.slider = new Glide(this.selector, this.options).mount()

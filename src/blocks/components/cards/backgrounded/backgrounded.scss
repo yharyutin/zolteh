@@ -3,6 +3,9 @@
     padding: 41% 40px 30px 40px;
     text-decoration: none;
     display: block;
+    @media all and (max-width: $sm) {
+        padding: 41% 10px 10px 10px;
+    }
     &--reversed {
         padding: 40px 40px 37.7% 40px;
     }
@@ -78,6 +81,9 @@
         -webkit-line-clamp: 2;
         -webkit-box-orient: vertical;
         max-width: 425px;
+        @media all and (max-width: $sm) {
+            font-size: 16px;
+        }
     }
     &--reversed &__title {
         text-transform: uppercase;

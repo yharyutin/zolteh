@@ -34,7 +34,7 @@
     }
     &__form {
         width: 892px;
-        @media all and (max-width: $mobileStart) {
+        @media all and (max-width: $md) {
             width: 100%;
         }
     }

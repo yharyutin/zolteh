@@ -4,14 +4,11 @@
     display: flex;
     border-bottom: 1px solid rgba(130, 130, 130, 0.20);
     text-decoration: none;
+    @media all and (max-width: $sm) {
+        padding: 14px 0;
+    }
     &:first-child {
         border-top: 1px solid rgba(130, 130, 130, 0.20);
-    }
-    &__title {
-        overflow: hidden;
-        display: -webkit-box;
-        -webkit-line-clamp: 2;
-        -webkit-box-orient: vertical; 
     }
     &__title {
         width: calc(100% - 13px);
@@ -23,6 +20,16 @@
         font-style: normal;
         font-weight: 700;
         line-height: 140%; /* 25.2px */
+
+        overflow: hidden;
+        display: -webkit-box;
+        -webkit-line-clamp: 2;
+        -webkit-box-orient: vertical; 
+
+        @media all and (max-width: $sm) {
+            font-size: 16px;
+            font-weight: 500;
+        }
     }
     &__lock_in {
         width: 17px;
@@ -30,5 +37,8 @@
         position: sticky;
         top: 50px;
         padding-top: 2px;
+        @media all and (max-width: $sm) {
+            width: 13px;
+        }
     }
 }

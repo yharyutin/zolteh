@@ -1,13 +1,16 @@
 .card_huge {
     padding: 30px 20px;
     background: #F6F6F6;
-    @media all and (max-width: $mobileStart) {
+    @media all and (max-width: $md) {
         padding: 0;
         background: none;
     }
     &__image {
         margin-bottom: 21px;
-
+        font-size: 0;
+        @media all and (max-width: $sm) {
+            margin-bottom: 15px;
+        }
         
     }
     &__lock {
@@ -15,6 +18,9 @@
         align-items: center;
         gap: 10px;
         margin-bottom: 20px;
+        @media all and (max-width: $sm) {
+            margin-bottom: 15px;
+        }
         .icon {
             width: 15px;
             font-size: 0;
@@ -38,6 +44,10 @@
         margin-bottom: 10px;
         display: block;
         padding-right: 10px;
+        @media all and (max-width: $sm) {
+            font-size: 18px;
+            padding-right: 0;
+        }
     }
     &__about {
         color: #828282;
@@ -51,6 +61,10 @@
         -webkit-box-orient: vertical; 
         margin-bottom: 20px;
         padding-right: 26px;
+        @media all and (max-width: $sm) {
+            font-size: 14px;
+            margin-bottom: 15px;
+        }
     }
     &__link {
         display: flex;
@@ -72,6 +86,11 @@
         display: flex;
         align-items: center;
         justify-content: space-between;
+        @media all and (max-width: $sm) {
+            flex-direction: column-reverse;
+            align-items: stretch;
+            gap: 20px;
+        }
     }
     &__indicators {
         display: flex;

@@ -89,7 +89,25 @@ document.addEventListener('DOMContentLoaded', () => {
                 gap: 0,
                 perView: 1
             }
-        })
+        }),
+        titledNewsSliders: document.querySelectorAll(".titled_news--slider").forEach(slider => {
+            new Slider({
+                selector: slider,
+                options: {
+                    gap: 20,
+                    perView: 3,
+                    bound: true,
+                    breakpoints: {
+                        1024: {
+                            perView: 2
+                        },
+                        768: {
+                            perView: 1
+                        }
+                    }
+                }
+            })
+        }),
     };
 
 
