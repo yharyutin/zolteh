@@ -2,6 +2,8 @@ import * as globalFunctions from './modules/functions.js';
 globalFunctions.isWebp();
 
 
+import CustomSelect from 'vanilla-js-dropdown';
+
 // import Vue from 'vue/dist/vue.js';
 // import $ from 'jquery';
 
@@ -139,6 +141,11 @@ document.addEventListener('DOMContentLoaded', () => {
                 }
             })
         }),
+        selects: document.querySelectorAll(".general__select--js").forEach(select => {
+            new CustomSelect({
+                elem: select,
+            });
+        })
     };
 
 
