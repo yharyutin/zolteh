@@ -4,11 +4,17 @@
         flex-direction: column;
         gap: 38px;
         max-width: 1046px;
+        @media all and (max-width: $sm) {
+            gap: 30px;
+        }
     }
     &__pagination {
         display: flex;
         align-items: center;
         justify-content: space-between;
         margin-top: 40px;
+        @media all and (max-width: $md) {
+            justify-content: center;
+        }
     }
 }
