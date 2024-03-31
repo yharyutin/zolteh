@@ -212,6 +212,7 @@ body {
         justify-content: space-between;
         border-bottom: 1px solid #000;
         padding-bottom: 10px;
+        gap: 40px;
         .text {
             color: #000;
             font-size: 20px;
@@ -256,6 +257,10 @@ body {
         font-size: 0;
         background: #FFF;
         cursor: pointer;
+        @media all and (max-width: $sm) {
+            width: 28px;
+            height: 28px;
+        }
         &:hover {
             background: #000;
             img {
@@ -378,6 +383,10 @@ body {
     &--huge {
         padding: 21px 38px;
         font-size: 20px;
+        @media all and (max-width: $sm) {
+            padding: 15px;
+            font-size: 18px;
+        }
     }
 }
 

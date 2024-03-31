@@ -72,7 +72,30 @@ document.addEventListener('DOMContentLoaded', () => {
                     before: 0,
                     after: 137
                 },
-                bound: true
+                bound: true,
+                breakpoints: {
+                    1366: {
+                        perView: 3,
+                        peek: {
+                            before: 0,
+                            after: 0
+                        },
+                    },
+                    1024: {
+                        perView: 2,
+                        peek: {
+                            before: 0,
+                            after: 0
+                        },
+                    },
+                    768: {
+                        perView: 1,
+                        peek: {
+                            before: 0,
+                            after: 0
+                        },
+                    }
+                }
             }
         }),
         events: new Slider({
@@ -80,7 +103,15 @@ document.addEventListener('DOMContentLoaded', () => {
             options: {
                 gap: 20,
                 perView: 3,
-                bound: true
+                bound: true,
+                breakpoints: {
+                    1366: {
+                        perView: 2
+                    },
+                    768: {
+                        perView: 1
+                    }
+                }
             }
         }),
         photosGallery: new Slider({

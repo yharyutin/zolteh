@@ -15,16 +15,27 @@ export function isWebp() {
 
 export function transferItems() {
     if (!document.querySelector('[data-transfer-to]')) return;
+
+
+    
     
     if (window.innerWidth < 1025) {
         document.querySelectorAll('[data-transfer-to]').forEach(item => {
+            if (item.closest('.general__append_wrap') && !item.parentNode.classList.contains(item.dataset.transferTo)) {
+                console.log(item.closest('.general__append_wrap').querySelector(`.${item.dataset.transferTo}`));
+                item.closest('.general__append_wrap').querySelector(`.${item.dataset.transferTo}`).appendChild(item);
+            }
             if (document.querySelector(`.${item.dataset.transferTo}`) && !item.parentNode.classList.contains(item.dataset.transferTo)) {
                 document.querySelector(`.${item.dataset.transferTo}`).appendChild(item);
             }
-            // console.log(document.querySelector(`.${item.dataset.transferTo}`));
+            // console.log(document.querySelecto    r(`.${item.dataset.transferTo}`));
         })
     } else {
         document.querySelectorAll('[data-transfer-to]').forEach(item => {
+            if (item.closest('.general__append_wrap') && !item.parentNode.classList.contains(item.dataset.transferBack)) {
+                console.log(item.closest('.general__append_wrap').querySelector(`.${item.dataset.transferBack}`));
+                item.closest('.general__append_wrap').querySelector(`.${item.dataset.transferBack}`).appendChild(item);
+            }
             if (document.querySelector(`.${item.dataset.transferBack}`) && !item.parentNode.classList.contains(item.dataset.transferBack)) {
                 document.querySelector(`.${item.dataset.transferBack}`).appendChild(item);
             }

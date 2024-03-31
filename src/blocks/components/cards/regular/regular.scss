@@ -16,6 +16,9 @@
         .icon {
             width: 16px;
             font-size: 0;
+            @media all and (max-width: $sm) {
+                width: 13px;
+            }
         }
         .text {
             color: #828282;
@@ -35,6 +38,11 @@
         display: -webkit-box;
         -webkit-line-clamp: 4;
         -webkit-box-orient: vertical; 
+        @media all and (max-width: $sm) {
+            font-size: 16px;
+            font-style: normal;
+            font-weight: 500;
+        }
     }
     &__description {
         overflow: hidden;

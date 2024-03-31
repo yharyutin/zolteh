@@ -12,9 +12,12 @@
     &--small {
         padding: 38% 20px 20px 20px;
     }
-    &--with_button {
-        padding: 20px;
+    &--with_button  {
+        padding: 20px !important;
         height: 470px;
+        @media all and (max-width: $sm) {
+            gap: 10px;
+        }
     }
     &:after {
         content: "";

@@ -13,13 +13,23 @@
             'big big long'
             'item2 item3 long';
         grid-gap: 20px;
+
+        @media all and (max-width: $md) {
+            grid-template-areas: none;
+            grid-template-columns: repeat(2, 1fr);
+        }
+        @media all and (max-width: $sm) {
+            grid-template-columns: repeat(1, 1fr);
+        }
     }
     &__item {
-        &:first-child {
-            grid-area: big;
-        }
-        &:nth-child(5) {
-            grid-area: long;
+        @media all and (min-width: $lg) {
+            &:first-child {
+                grid-area: big;
+            }
+            &:nth-child(5) {
+                grid-area: long;
+            }
         }
     }
 }
