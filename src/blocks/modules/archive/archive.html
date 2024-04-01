@@ -1,10 +1,13 @@
 <div class="archive">
     <div class="archive__in">
-        <select name="" id="" class="archive__select">
-            <option value="2024">2024 (3)</option>
-            <option value="2023">2023 (10)</option>
-            <option value="2022">2022 (15)</option>
-        </select>
+        <div class="archive__select">
+            <select name="" id="" class="general__select general__select--js">
+            <!-- <select name="" id="" class="archive__select"> -->
+                <option value="2024">2024 (3)</option>
+                <option value="2023">2023 (10)</option>
+                <option value="2022">2022 (15)</option>
+            </select>
+        </div>
         <div class="archive__items">
             @@for (var i = 0; i < 8; i++) {
                 <a href="#" class="archive__item">

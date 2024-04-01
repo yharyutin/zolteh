@@ -4,10 +4,15 @@
     gap: 10px;
     text-decoration: none;
     &--backgrounded {
-        padding: 14px 23px;
-        background: #F2F2F2;
-        &:not(:last-of-type) {
-            border-bottom: 1px solid #828282;
+        @media all and  (min-width: $sm) {
+            padding: 14px 23px;
+            background: #F2F2F2;
+            &:not(:last-of-type) {
+                border-bottom: 1px solid #828282;
+            }
+        }
+        @media all and  (max-width: $sm) {
+            padding: 10px 0;
         }
     }
     &__image {
@@ -25,5 +30,9 @@
         display: -webkit-box;
         -webkit-line-clamp: 3;
         -webkit-box-orient: vertical;
+        @media all and  (max-width: $sm) {
+            font-size: 16px;
+            font-weight: 500;
+        }
     }
 }

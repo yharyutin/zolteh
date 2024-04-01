@@ -73,7 +73,8 @@
         width: 33px;
         height: 33px;
         border-radius: 50%;
-        border: 1px solid #AC731A;
+        // border: 1px solid #AC731A;
+        background: url('../img/icons/icons.svg#circle') 50% 50% / cover no-repeat;
         position: absolute;
         left: 50%;
         top: 50%;
@@ -876,6 +877,12 @@
         font-weight: 700;
         line-height: normal;
         text-transform: uppercase;
+        text-align: center;
+        @media all and (max-width: $sm)  {
+            font-size: 16px;
+            font-style: normal;
+            font-weight: 700;
+        }
     }
     &--is_inline .air-datepicker-nav--title {
         padding: 11px 40px;
@@ -896,10 +903,18 @@
         text-decoration: none;
         .icon {
             font-size: 0;
+            width: 15px;
+            @media all and (max-width: $sm)  {
+                width: 9px;
+            }
         }
         .text {
             color: #fff;
             text-decoration: none;
+            @media all and (max-width: $sm)  {
+                font-size: 12px;
+                font-weight: 700;
+            }
         }
     }
     &__events_wrap {

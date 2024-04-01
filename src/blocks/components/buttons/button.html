@@ -9,7 +9,12 @@
     </span>
     @@if (has_arrow) {
         <span class="arrow">
-            <img src="@img/icons/icons.svg#arrow_right_black" alt="arrow_right_black"/>
+            @@if (share) {
+                <img src="@img/icons/icons.svg#share" alt="share"/>
+            }
+            @@if (!share) {
+                <img src="@img/icons/icons.svg#arrow_right_black" alt="arrow_right_black"/>
+            }
         </span>
     }
 @@if(link != '') {

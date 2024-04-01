@@ -2,12 +2,14 @@
     <div class="newslist__in">
         @@loop('../../components/cards/detailed/detailed.html', "@@data")
     </div>
-    <div class="newslist__pagination">
-        @@include('../../components/buttons/pagination.html', {
-            "class": ""
-        })
-        <div class="newslist__arrows  hide_on_mobile">
-            @@include('../../components/buttons/arrows.html')
+    @@if (pagination) {
+        <div class="newslist__pagination">
+            @@include('../../components/buttons/pagination.html', {
+                "class": ""
+            })
+            <div class="newslist__arrows  hide_on_mobile">
+                @@include('../../components/buttons/arrows.html')
+            </div>
         </div>
-    </div>
+    }
 </div>
