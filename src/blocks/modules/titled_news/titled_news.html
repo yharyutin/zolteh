@@ -1,4 +1,4 @@
-<div class="titled_news titled_news--slider glide">
+<div class="titled_news titled_news--slider general__append_wrap glide">
     <div class="titled_news__in">
         @@include('../../components/titles/line_title.html', {
             "title": "@@title",
@@ -10,17 +10,10 @@
                 @@loop('../../components/cards/regular/regular.html', "/blocks/modules/titled_news/data.json")
             </div>
         </div>
-        @@include('../../components/buttons/button.html', {
-"share": false,
-			"text": "Смотреть все новости",
-			"link": "#",
-			"type": "button",
-			"has_arrow": true,
-			"class": "button--black button--huge"
-		})
-        <!-- <div class="titled_news__arrows"> -->
-        <div class="titled_news__arrows" data-transfer-to="titled_news__title__arrows" data-transfer-back="titled_news__title__arrows">
+        <div class="titled_news__arrows" data-transfer-to="titled_news__title__arrows" data-transfer-back="titled_news__in">
             @@include('../../components/buttons/arrows.html')
         </div>
+        
+        
     </div>
 </div>
