@@ -345,6 +345,17 @@ body {
         grid-template-columns: repeat(4, 1fr);
         grid-gap: 40px 20px;
     }
+
+    &__rows_news_detail {
+        .detail__short_descrition {
+            color: #646464;
+        }
+    }
+    &__row_gap {
+        display: flex;
+        flex-direction: column;
+        gap: 32px;
+    }
 }
 
 
@@ -400,6 +411,9 @@ body {
     &--full {
         width: 100%;
         box-sizing: border-box;
+    }
+    &--61 {
+        padding: 20px 38px;
     }
 }
 

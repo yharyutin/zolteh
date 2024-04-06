@@ -1,13 +1,13 @@
 @@include('blocks/components/pages/page_top.html', {
-	"page_title" : "Новости",
+	"page_title" : "Россыпные месторождения",
 	"page_link" : "/news.html",
-	"page_back" : true,
+	"page_back" : false,
 	"has_breadcrumbs": true
 })
 
 
-<div class="general__rows">
-	<div class="general__row">
+<div class="general__rows general__rows_news_detail">
+	<div class="general__row general__row_gap">
 		@@include('blocks/modules/photo_detail/top/top.html', {
 			"image": "@img/huge_card.png",
 			"link": "/news_detail.html",
@@ -19,8 +19,6 @@
 			"dislikes": 3,
 			"class": "newslist__item"
 		})
-	</div>
-	<div class="general__row">
 		@@include('blocks/components/banners/image_banner/image_banner.html', {
 			"image": "@img/banner2.png"
 		})
