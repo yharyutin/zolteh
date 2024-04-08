@@ -430,3 +430,33 @@ body {
 .glide__slides {
     white-space: unset;
 }
+
+.info_projects_detail .card_backgrounded {
+    padding: 49% 20px 20px 20px;
+}
+
+
+body * {
+    /* width */
+    &::-webkit-scrollbar {
+        width: 10px;
+        height: 10px;
+    }
+    
+    /* Track */
+    &::-webkit-scrollbar-track {
+        border-radius: 36px;
+        background: rgba(210, 210, 210, 0.28);
+    }
+    
+    /* Handle */
+    &::-webkit-scrollbar-thumb {
+        border-radius: 36px;
+        background: #959595;
+    }
+    
+    /* Handle on hover */
+    &::-webkit-scrollbar-thumb:hover {
+        background: #959595;
+    }
+}

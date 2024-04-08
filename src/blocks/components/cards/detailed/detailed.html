@@ -19,40 +19,42 @@
                     <div class="title">@@title</div>
                     <div class="subtitle">@@text</div>
                 </div>
-                <div class="card_detailed__indicators">
-                    @@if (messages) {
-                        <div class="card_detailed__indicator">
-                            <div class="icon">
-                                <img src="@img/icons/icons.svg#messages_black" alt="messages_black"/>
+                @@if (messages || eyes || likes || dislikes) {
+                    <div class="card_detailed__indicators">
+                        @@if (messages) {
+                            <div class="card_detailed__indicator">
+                                <div class="icon">
+                                    <img src="@img/icons/icons.svg#messages_black" alt="messages_black"/>
+                                </div>
+                                <div class="count">@@messages</div>
                             </div>
-                            <div class="count">@@messages</div>
-                        </div>
-                    }
-                    @@if (eyes) {
-                        <div class="card_detailed__indicator">
-                            <div class="icon">
-                                <img src="@img/icons/icons.svg#eye_black" alt="eye_black"/>
+                        }
+                        @@if (eyes) {
+                            <div class="card_detailed__indicator">
+                                <div class="icon">
+                                    <img src="@img/icons/icons.svg#eye_black" alt="eye_black"/>
+                                </div>
+                                <div class="count">@@eyes</div>
                             </div>
-                            <div class="count">@@eyes</div>
-                        </div>
-                    }
-                    @@if (likes) {
-                        <div class="card_detailed__indicator">
-                            <div class="icon">
-                                <img src="@img/icons/icons.svg#like_black" alt="like_black"/>
+                        }
+                        @@if (likes) {
+                            <div class="card_detailed__indicator">
+                                <div class="icon">
+                                    <img src="@img/icons/icons.svg#like_black" alt="like_black"/>
+                                </div>
+                                <div class="count">@@likes</div>
                             </div>
-                            <div class="count">@@likes</div>
-                        </div>
-                    }
-                    @@if (dislikes) {
-                        <div class="card_detailed__indicator">
-                            <div class="icon">
-                                <img src="@img/icons/icons.svg#dislike_black" alt="dislike_black"/>
+                        }
+                        @@if (dislikes) {
+                            <div class="card_detailed__indicator">
+                                <div class="icon">
+                                    <img src="@img/icons/icons.svg#dislike_black" alt="dislike_black"/>
+                                </div>
+                                <div class="count">@@dislikes</div>
                             </div>
-                            <div class="count">@@dislikes</div>
-                        </div>
-                    }
-                </div>
+                        }
+                    </div>
+                }
             </div>
         </div>
     </div>
