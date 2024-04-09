@@ -3,6 +3,9 @@
     &__image {
         margin-bottom: 20px;
         width: 100%;
+        @media all and (max-width: $sm) {
+            margin-bottom: 9px;
+        }
         img, picture {
             width: 100%;
             display: block;
@@ -17,7 +20,7 @@
             width: 16px;
             font-size: 0;
             @media all and (max-width: $sm) {
-                width: 13px;
+                width: 15px;
             }
         }
         .text {

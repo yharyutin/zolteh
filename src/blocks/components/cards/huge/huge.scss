@@ -96,14 +96,23 @@
         display: flex;
         align-items: center;
         gap: 23px;
+        @media all and (max-width: $sm) {
+            gap: 14px;
+        }
     }
     &__indicator {
         display: flex;
         align-items: center;
         gap: 5px;
+        @media all and (max-width: $sm) {
+            gap: 3px;
+        }
         .icon {
             width: 18px;
             font-size: 0;
+            @media all and (max-width: $sm) {
+                width: 14px;
+            }
         }
         .count {
             color: #818181;
@@ -111,6 +120,9 @@
             font-style: normal;
             font-weight: 400;
             line-height: 140%; /* 14px */
+            @media all and (max-width: $sm) {
+                font-size: 7px;
+            }
         }
     }
 }

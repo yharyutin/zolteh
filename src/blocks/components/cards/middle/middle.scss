@@ -4,7 +4,7 @@
     gap: 14px;
     text-decoration: none;
     @media all and (max-width: $sm) {
-        gap: 10px;
+        gap: 12px;
     }
     &:before {
         content: "";
@@ -57,6 +57,7 @@
         @media all and (max-width: $sm) {
             font-size: 16px;
             font-weight: 500;
+            padding-right: 1px;
         }
         &--full {
             width: 100%;

@@ -111,4 +111,9 @@
         font-weight: 400;
         line-height: 140%; /* 22.4px */
     }
+    &__image {
+        img {
+            max-width: 100%;
+        }
+    }
 }

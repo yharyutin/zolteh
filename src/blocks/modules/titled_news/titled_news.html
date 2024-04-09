@@ -10,6 +10,15 @@
                 @@loop('../../components/cards/regular/regular.html', "/blocks/modules/titled_news/data.json")
             </div>
         </div>
+        @@include('../../components/buttons/button.html', {
+            "share": false,
+			"text": "Смотреть все",
+			"link": "#",
+			"type": "button",
+			"has_arrow": true,
+			"class": "button--black hide_on_desktop"
+		})
+        
         <div class="titled_news__arrows" data-transfer-to="titled_news__title__arrows" data-transfer-back="titled_news__in">
             @@include('../../components/buttons/arrows.html')
         </div>
