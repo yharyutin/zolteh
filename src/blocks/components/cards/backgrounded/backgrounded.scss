@@ -17,6 +17,14 @@
         height: 470px;
         @media all and (max-width: $sm) {
             gap: 10px;
+            height: 336px;
+        }
+    }
+    &--with_button &__button {
+        .button {
+            width: auto;
+            font-size: 14px;
+            padding: 14px 35px;
         }
     }
     &:after {

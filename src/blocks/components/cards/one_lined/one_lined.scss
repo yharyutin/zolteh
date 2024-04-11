@@ -18,6 +18,20 @@
     &__image {
         width: 103px;
         font-size: 0;
+        
+    }
+    &__image_in {
+        position: relative;
+        padding-top: 62%;
+        img {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            object-position: 50% 50%;
+        }
     }
     &__title {
         width: calc(100% - 103px - 10px);

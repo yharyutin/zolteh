@@ -12,6 +12,14 @@
                 </div>
             </div>
         </div>
+        @@include('../../components/buttons/button.html', {
+            "share": false,
+			"text": "Смотреть все",
+			"link": "#",
+			"type": "button",
+			"has_arrow": true,
+			"class": "button--black hide_on_desktop"
+		})
         <div class="events__arrows" data-transfer-to="events__title__arrows" data-transfer-back="events__slider--js">
             @@include('../../components/buttons/arrows.html')
         </div>

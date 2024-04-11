@@ -61,6 +61,9 @@
     font-weight: 700;
     line-height: normal;
     text-transform: uppercase;
+    @media all and (max-width: $sm) {
+        font-size: 11px;
+    }
 }
 
 .air-datepicker-cell.-focus-,
@@ -79,6 +82,10 @@
         left: 50%;
         top: 50%;
         transform: translate(-50%, -50%);
+        @media all and (max-width: $sm) {
+            width: 22px;
+            height: 22px;
+        }
     }
 }
 
@@ -174,6 +181,9 @@
     font-weight: 700;
     line-height: normal;
     text-transform: uppercase;
+    @media all and (max-width: $sm) {
+        font-size: 11px;
+    }
 }
 
 .air-datepicker-body--day-name.-clickable- {
@@ -191,7 +201,10 @@
 .air-datepicker-body--cells.-days- {
     grid-template-columns: repeat(7, var(--adp-day-cell-width));
     grid-auto-rows: var(--adp-day-cell-height);
-    pointer-events: none !important;
+    @media all and (max-width: $sm) {
+        grid-auto-rows: 25px;
+    }
+    // pointer-events: none !important;
 }
 
 .air-datepicker-body--cells.-months- {
@@ -264,6 +277,9 @@
 .air-datepicker-nav--title {
     padding: 18px 40px;
     width: 100%;
+    @media all and (max-width: $sm) {
+        padding: 16px 25px;
+    }
 }
 
 .air-datepicker-nav--title i {
@@ -813,6 +829,9 @@
     box-sizing: content-box;
     padding: 12px 0 5px;
     grid-area: body;
+    @media all and (max-width: $sm) {
+        padding: 6px 0 5px;
+    }
 }
 
 .-only-timepicker- .air-datepicker--content {
@@ -868,6 +887,9 @@
         align-items: center;
         gap: 7px;
         text-decoration: none;
+        @media all and (max-width: $sm) {
+            gap: 3px;
+        }
     }
     &__title,
     .air-datepicker-nav--title {
