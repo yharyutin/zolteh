@@ -4,6 +4,9 @@
         display: flex;
         flex-direction: column;
         gap: 26px;
+        @media all and (max-width: $sm) {
+            gap: 14px;
+        }
         &:not(.noline) {
             &:before {
                 content: "";
@@ -11,6 +14,10 @@
                 width: 180px;
                 height: 8px;
                 background: #000;
+                @media all and (max-width: $sm) {
+                    width: 82px;
+                    height: 4px;
+                }
             }
         }
     }
@@ -34,6 +41,9 @@
         font-weight: 700;
         line-height: 140%; /* 50.4px */
         max-width: 912px;
+        @media all and (max-width: $sm) {
+            font-size: 19px;
+        }
         &--small {
             font-size: 26px;
         }
@@ -44,19 +54,31 @@
         font-style: normal;
         font-weight: 400;
         line-height: 140%; /* 25.2px */
+        @media all and (max-width: $sm) {
+            font-size: 14px;
+        }
     }
     &__indicators {
         display: flex;
         align-items: center;
         gap: 23px;
+        @media all and (max-width: $sm) {
+            gap: 14px;
+        }
     }
     &__indicator {
         display: flex;
         align-items: center;
         gap: 5px;
+        @media all and (max-width: $sm) {
+            gap: 3px;
+        }
         .icon {
             width: 18px;
             font-size: 0;
+            @media all and (max-width: $sm) {
+                width: 14px;
+            }
         }
         .count {
             color: #818181;
@@ -64,6 +86,9 @@
             font-style: normal;
             font-weight: 400;
             line-height: 140%; /* 14px */
+            @media all and (max-width: $sm) {
+                font-size: 7px;
+            }
         }
     }
     &__image {

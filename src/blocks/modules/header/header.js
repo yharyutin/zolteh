@@ -18,6 +18,9 @@ const Header = class Header {
         })
 
         document.querySelector(this.burgerClass).classList.toggle(this.openedClass);
+
+        document.querySelector('body').classList.toggle('overflow-hidden');
+        document.querySelector('html').classList.toggle('overflow-hidden');
     }
 
     calculateBurgerHeight() {
@@ -39,7 +42,9 @@ const Header = class Header {
     }
     init() {
         this.addOpenerClickHandler();
-        this.setBurgerHeight();
+        setTimeout(() => {
+            this.setBurgerHeight();
+        }, 500)
         window.addEventListener('resize', () => {
             this.setBurgerHeight();
         })

@@ -18,12 +18,19 @@
         font-style: normal;
         font-weight: 400;
         line-height: 140%; /* 25.2px */
+        @media all and (max-width: $sm) {
+            font-size: 14px;
+        }
     }
     &__items {
         max-width: 605px;
         display: grid;
         grid-template-columns: repeat(3, 1fr);
         grid-gap: 20px;
+        @media all and (max-width: $sm) {
+            grid-template-columns: repeat(2, 1fr);
+            grid-gap: 11px 19px;
+        }
     }
     &__item {
         display: flex;
@@ -33,6 +40,9 @@
         .icon {
             width: 42px;
             font-size: 0;
+            @media all and (max-width: $sm) {
+                width: 33px;
+            }
         }
         .filename {
             width: calc(100% - 42px - 10px);
@@ -41,6 +51,12 @@
             font-style: normal;
             font-weight: 400;
             line-height: 140%; /* 25.2px */
+            @media all and (max-width: $sm) {
+                font-size: 14px;
+                white-space: nowrap;
+                overflow: hidden;
+                text-overflow: ellipsis;
+            }
         }
     }
 }

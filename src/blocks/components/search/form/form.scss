@@ -4,6 +4,9 @@
         display: flex;
         flex-direction: column;
         gap: 20px;
+        @media all and (max-width: $sm) {
+            gap: 14px;
+        }
     }
     &__form_query {
         border-bottom: 2px solid #000;
@@ -15,12 +18,18 @@
         border: none;
         outline: none;
         padding-right: 20px;
+        @media all and (max-width: $sm) {
+            height: 38px;
+        }
         &, &::placeholder {
             color: #141414;
             font-size: 36px;
             font-style: normal;
             font-weight: 400;
             line-height: normal;
+            @media all and (max-width: $sm) {
+                font-size: 16px;
+            }
         }
     }
     &__form_query_button {
@@ -55,5 +64,8 @@
     }
     &__sort {
         max-width: 253px;
+        @media all and (max-width: $sm) {
+            max-width: 100%;
+        }
     }
 }

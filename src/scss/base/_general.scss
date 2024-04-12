@@ -12,6 +12,9 @@ body {
     font-style: normal;
     font-variation-settings: "slnt" 0;
 }
+.overflow-hidden {
+    overflow: hidden;
+}
 .wrapper {
     &--fullpage {
         display: flex;
@@ -20,6 +23,23 @@ body {
     }
     &__grow {
         flex: 1 1 auto;
+    }
+    &.search_results_page {
+        .general__title {
+            margin-bottom: 4px;
+        }
+        .card_detailed__info {
+            @media all and (max-width: $sm) {
+                &:before {
+                    display: none;
+                }
+            }
+        }
+        .newslist__in {
+            @media all and (max-width: $sm) {
+                gap: 40px;
+            }
+        }
     }
 }
 .general {
@@ -327,6 +347,10 @@ body {
             font-style: normal;
             font-weight: 400;
             line-height: 140%; /* 25.2px */
+            @media all and (max-width: $sm) {
+                font-size: 14px;
+                line-height: 143%;
+            }
         }
         ul {
             padding-left: 28px;
@@ -391,6 +415,11 @@ body {
     align-items: center;
     justify-content: center;
     gap: 15px;
+
+    @media all and (max-width:  $sm) {
+        font-size: 16px;
+        padding: 10px 18px;
+    }
     
     .arrow {
         width: 14px;

@@ -3,6 +3,10 @@
         display: flex;
         align-items: center;
         gap: 11px;
+        @media all and (max-width: $sm) {
+            flex-direction: column;
+            align-items: flex-start;
+        }
     }
     &__title {
         color: #000;
@@ -15,6 +19,9 @@
         display: flex;
         align-items: center;
         gap: 7px;
+        @media all and (max-width: $sm) {
+            flex-wrap: wrap;
+        }
     }
     &__item {
         color: #000;
@@ -26,6 +33,9 @@
         border-radius: 20px;
         border: 1px solid #D7D7D7;
         text-decoration: none;
+        @media all and (max-width: $sm) {
+            padding: 4px 15px;
+        }
         &:hover {
             background: #000;
             color: #fff;

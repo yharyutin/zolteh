@@ -60,6 +60,9 @@
         display: flex;
         align-items: center;
         gap: 12px;
+        @media all and (max-width: $sm) {
+            justify-content: center;
+        }
     }
     &__social {
         display: block;
@@ -79,6 +82,7 @@
         @media all and (max-width: $md) {
             flex-direction: column;
             align-items: flex-start;
+            gap: 14px;
         }
         a {
             color: #E0E0E0;
@@ -88,6 +92,9 @@
             line-height: normal;
             text-transform: uppercase;
             text-decoration: none;
+            @media all and (max-width: $md) {
+                font-size: 18px;
+            }
         }
     }
     &__burger_opener {
@@ -115,8 +122,18 @@
         transform: translateY(-100%);
         transition: all .3s ease;
         overflow: auto;
+        padding: 18px 20px;
+        box-sizing: border-box;
         &.isOpened {
             transform: translateY(0);
         }
+    }
+    &__burger_body_in {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+    .footer__contacts {
+        margin-bottom: 0;
     }
 }
