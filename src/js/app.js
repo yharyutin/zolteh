@@ -21,6 +21,12 @@ document.addEventListener('DOMContentLoaded', () => {
         openerDataSelector: 'tab-id',
         tabDataSelector: 'tab-body'
     });
+    globalFunctions.addTabsSelectChangeHandler({
+        openerDataSelector: '.tabs__select',
+        tabDataSelector: 'tab-body'
+    });
+
+    globalFunctions.addReadAllHandler();
 
     // document.querySelectorAll('select').forEach(select => {
     //     new NiceSelect(select, {searchable: false});
@@ -100,24 +106,33 @@ document.addEventListener('DOMContentLoaded', () => {
                 }
             }
         }),
-        events: new Slider({
-            selector: '.events__slider--js',
-            options: {
-                gap: 20,
-                perView: 3,
-                bound: true,
-                breakpoints: {
-                    1366: {
-                        perView: 2
-                    },
-                    768: {
-                        perView: 1
+        events: document.querySelectorAll(".events__slider--js").forEach(slider => {
+            new Slider({
+                selector: slider,
+                options: {
+                    gap: 20,
+                    perView: 3,
+                    bound: true,
+                    breakpoints: {
+                        1366: {
+                            perView: 2
+                        },
+                        768: {
+                            perView: 1
+                        }
                     }
                 }
-            }
+            })
         }),
         photosGallery: new Slider({
             selector: '.slider_gallery--js',
+            options: {
+                gap: 0,
+                perView: 1
+            }
+        }),
+        specprojectsSlider: new Slider({
+            selector: '.specprojects_mobile_slider',
             options: {
                 gap: 0,
                 perView: 1

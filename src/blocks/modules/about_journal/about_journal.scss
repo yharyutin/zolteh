@@ -16,6 +16,14 @@
         a {
             color: inherit;
         }
+        @media all and (max-width: $md) {
+            height: 240px;
+            overflow: hidden;
+            font-size: 14px;
+            &.isOpened {
+                height: auto;
+            }
+        }
     }
     &__button {
         padding-top: 20px;

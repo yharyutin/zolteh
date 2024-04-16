@@ -8,6 +8,14 @@
         "title": "предстоящие аукционы",
         "data": "/blocks/modules/row_news/data2.json"
     })
+    @@include('../../components/buttons/button.html', {
+        "share": false,
+        "text": "Смотреть все",
+        "link": "#",
+        "type": "button",
+        "has_arrow": true,
+        "class": "button--black hide_on_desktop"
+    })
     <div class="masonry_block">
         <div class="masonry_block__in">
             @@include('../../components/titles/section_title.html', {
@@ -18,5 +26,13 @@
             @@include('../../modules/grid_news/grid_news.html')
         </div>
     </div>
+    @@include('../../components/buttons/button.html', {
+        "share": false,
+        "text": "Смотреть все",
+        "link": "#",
+        "type": "button",
+        "has_arrow": true,
+        "class": "button--black hide_on_desktop"
+    })
     
 </div>

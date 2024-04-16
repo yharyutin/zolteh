@@ -39,7 +39,7 @@
 			"link": "#"
 		})
 	</div>
-	<div class="general__row general__row--two-one">
+	<div class="general__row general__row--two-one general__row--only_one_on_mobile">
 		@@include('blocks/modules/grid_news/grid_news.html')
 		@@include('blocks/modules/row_news/row_news.html', {
 			"title": "Новости сегодня",
@@ -47,7 +47,7 @@
 			"gap": "30px"
 		})
 	</div>
-	<div class="general__row general__row--three">
+	<div class="general__row general__row--three hide_on_mobile">
 		@@loop('blocks/components/cards/middle/middle.html', "/blocks/modules/row_news/data3.json")
 	</div>
 	<div class="general__row">
@@ -88,20 +88,61 @@
 				"title": "приглашаем инвесторов. объекты на продажу",
 				"link": "#"
 			})
+			@@include('blocks/components/buttons/button.html', {
+				"share": false,
+				"text": "Смотреть все",
+				"link": "#",
+				"type": "button",
+				"has_arrow": true,
+				"class": "button--black hide_on_desktop"
+			})
 			@@include('blocks/modules/investors_news/investors_news.html', {
 				"title": "СТАТЬИ ИНВЕСТОРУ",
 				"data": "/blocks/modules/row_news/data2.json"
 			})
+			@@include('blocks/components/buttons/button.html', {
+				"share": false,
+				"text": "Смотреть все",
+				"link": "#",
+				"type": "button",
+				"has_arrow": true,
+				"class": "button--black hide_on_desktop"
+			})
 		</div>
 	</div>
-	<div class="general__row">
+	<div class="general__row specprojects_mobile_slider">
 		@@include('blocks/components/titles/line_title.html', {
             "title": "спецпроекты",
             "link": "#",
-            "class": "general__row_title"
+            "class": "specproject__title"
         })
+		<div class="specproject__arrows hide_on_desktop" data-transfer-to="specproject__title__arrows" data-transfer-back="specproject__title__arrows">
+            @@include('blocks/components/buttons/arrows.html')
+        </div>
 		<div class="general__row_in general__row--one-two">
-			<div class="general__row_columns">
+			<div class="events__items hide_on_desktop">
+				<div class="events__track glide__track" data-glide-el="track">
+					<div class="events__slides glide__slides">
+						@@include('blocks/components/cards/backgrounded/backgrounded.html', {
+							"title": "Глоссарий",
+							"text": "Термины, используемые на рынке драгоценных металлов",
+							"is_locked": true,
+							"image": "@img/card_bg.png",
+							"class": "card_backgrounded--small",
+							"link": "#"
+						})
+						@@include('blocks/components/cards/backgrounded/backgrounded.html', {
+							"title": "Глоссарий",
+							"text": "Термины, используемые на рынке драгоценных металлов",
+							"is_locked": true,
+							"image": "@img/card_bg.png",
+							"class": "card_backgrounded--small",
+							"link": "#"
+						})
+					</div>
+				</div>
+			</div>
+			<div class="general__row_columns hide_on_mobile">
 				@@include('blocks/components/cards/backgrounded/backgrounded.html', {
 					"title": "Глоссарий",
 					"text": "Термины, используемые на рынке драгоценных металлов",
@@ -124,10 +165,18 @@
 				"text": "Редакция журнала 'Золото и технологии' выпускает настенные карты месторождений золота Российской Федерации.",
 				"is_locked": true,
 				"image": "@img/card_bg.png",
-				"class": "card_backgrounded--reversed",
+				"class": "card_backgrounded--reversed hide_on_mobile",
 				"link": "#"
 			})
 		</div>
+		@@include('blocks/components/buttons/button.html', {
+			"share": false,
+			"text": "Смотреть все",
+			"link": "#",
+			"type": "button",
+			"has_arrow": true,
+			"class": "button--black hide_on_desktop"
+		})
 	</div>
 	<div class="general__row general__append_wrap">
 		@@include('blocks/modules/titled_news/titled_news.html', {
@@ -141,8 +190,17 @@
 			"link": "#"
 		})
 	</div>
+	@@include('blocks/components/buttons/button.html', {
+		"share": false,
+		"text": "Смотреть все",
+		"link": "#",
+		"type": "button",
+		"has_arrow": true,
+		"class": "button--black hide_on_desktop"
+	})
 	<div class="general__row">
 		@@include('blocks/modules/events/events.html', {
+"class": "",
 			"title": "мероприятия",
 			"link": "#"
 		})
@@ -153,6 +211,14 @@
 			"link": "#"
 		})
 	</div>
+	@@include('blocks/components/buttons/button.html', {
+		"share": false,
+		"text": "Смотреть все",
+		"link": "#",
+		"type": "button",
+		"has_arrow": true,
+		"class": "button--black hide_on_desktop"
+	})
 	<div class="general__row general__append_wrap">
 		@@include('blocks/modules/titled_news/titled_news.html', {
 			"title": "эксплуатация месторождений",
@@ -171,6 +237,14 @@
 			"link": "#"
 		})
 	</div>
+	@@include('blocks/components/buttons/button.html', {
+		"share": false,
+		"text": "Смотреть все",
+		"link": "#",
+		"type": "button",
+		"has_arrow": true,
+		"class": "button--black hide_on_desktop"
+	})
 	<div class="general__row general__append_wrap">
 		@@include('blocks/modules/titled_news/titled_news.html', {
 			"title": "обзоры",

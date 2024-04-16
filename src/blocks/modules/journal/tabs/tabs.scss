@@ -40,4 +40,20 @@
             display: none;
         }
     }
+    &__select {
+        border: 1px solid #A3A3A3;
+        height: 40px;
+        padding: 0 9px;
+        width: 100%;
+        background: url("data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTkiIGhlaWdodD0iMTAiIHZpZXdCb3g9IjAgMCAxOSAxMCIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPHBhdGggaWQ9IlZlY3RvciIgZD0iTTE3LjUgMS41TDkuNSA4LjVMMS41IDEuNSIgc3Ryb2tlPSJibGFjayIgc3Ryb2tlLXdpZHRoPSIyIiBzdHJva2UtbGluZWNhcD0icm91bmQiIHN0cm9rZS1saW5lam9pbj0icm91bmQiLz4KPC9zdmc+Cg==") calc(100% - 9px) 50% / 16px no-repeat;
+        appearance: none;
+        -moz-appearance: none;
+        -webkit-appearance: none;
+        color: #000;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+        text-transform: uppercase;
+    }
 }

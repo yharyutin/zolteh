@@ -66,5 +66,36 @@ export function addTabsChangeHandler({openerDataSelector = 'tab-id', tabDataSele
     })
 }
 
+export function addTabsSelectChangeHandler({openerDataSelector = '.tabs__select', tabDataSelector = 'tab-body'}) {
+    if (!document.querySelector(openerDataSelector) || !document.querySelector(`[data-${tabDataSelector}]`)) return;
+
+    document.querySelectorAll(openerDataSelector).forEach(opener => {
+        opener.addEventListener('change', (e) => {
+            
+            let value = opener.value;
+            let selector = `[data-${tabDataSelector}="${value}"]`;
+
+            if (document.querySelector(selector)) {
+                document.querySelector(`[data-${tabDataSelector}].isActive`).classList.remove('isActive');
+                
+                document.querySelector(selector).classList.add('isActive');
+            }
+            
+        })
+    })
+}
 
 
+export function addReadAllHandler() {
+
+    if (!document.querySelector('.read_all_button')) return;
+
+    document.querySelectorAll('.read_all_button').forEach(button => {
+        button.addEventListener('click', function() {
+            if (document.querySelector(button.dataset.target)) {
+                document.querySelector(button.dataset.target).classList.toggle('isOpened')
+            }
+        })
+    })
+
+}

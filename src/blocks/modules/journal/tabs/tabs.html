@@ -1,10 +1,15 @@
 <div class="tabs">
     <div class="tabs__in">
-        <div class="tabs__titles">
+        <div class="tabs__titles hide_on_mobile">
             @@for (var c = 0; c < data.length; c++) {
                 <div class="tabs__title `+(c == 0 ? 'isActive' : '')+`" data-tab-id="`+data[c].title+`">`+data[c].title+`</div>
             }
         </div>
+        <select class="tabs__select hide_on_desktop">
+            @@for (var c = 0; c < data.length; c++) {
+                <option value="`+data[c].title+`">`+data[c].title+`</option>
+            }
+        </select>
         <div class="tabs__bodies">
             @@for (var c = 0; c < data.length; c++) {
                 <div class="tabs__body `+(c == 0 ? 'isActive' : '')+`" data-tab-body="`+data[c].title+`">

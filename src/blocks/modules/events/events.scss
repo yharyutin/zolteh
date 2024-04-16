@@ -12,4 +12,9 @@
         align-items: center;
         justify-content: flex-end;
     }
+    &__items,
+    &__track {
+        min-width: 100%;
+        max-width: 100%;
+    }
 }

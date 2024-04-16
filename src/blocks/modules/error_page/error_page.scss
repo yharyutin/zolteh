@@ -25,6 +25,14 @@
         display: flex;
         flex-direction: column;
         gap: 38px;
+        @media all and (max-width: $sm) {
+            width: 100%;
+            padding-left: 20px;
+            padding-right: 20px;
+            box-sizing: border-box;
+            gap: 30px;
+        }
+        
     }
     &__text {
         max-width: 521px;
@@ -35,9 +43,15 @@
         font-style: normal;
         font-weight: 500;
         line-height: normal;
+        @media all and (max-width: $sm) {
+            font-size: 16px;
+        }
     }
     &__button {
         max-width: 253px;
         margin: 0 auto;
+        @media all and (max-width: $sm) {
+            width: 100%;
+        }
     }
 }
