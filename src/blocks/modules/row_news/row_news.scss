@@ -9,4 +9,11 @@
             gap: 20px;
         }
     }
+    &__item {
+        @media all and (max-width: $sm) {
+            &:nth-child(n+4) {
+                display: none !important;
+            }
+        }
+    }
 }

@@ -10,5 +10,15 @@
         display: flex;
         flex-direction: column;
         gap: 30px;
+        @media all and (max-width: $sm) {
+            .row_news__item {
+                &:before {
+                    display: none;
+                }
+                &:nth-cchild(n+4) {
+                    display: none !important;
+                }
+            }
+        }
     }
 }

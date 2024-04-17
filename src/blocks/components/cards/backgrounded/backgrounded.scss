@@ -20,6 +20,11 @@
             height: 336px;
         }
     }
+    &--specprojects {
+        @media all and (max-width: $sm) {
+            padding: 17% 20px 20px 20px;
+        }
+    }
     &--with_button &__button {
         .button {
             width: auto;
