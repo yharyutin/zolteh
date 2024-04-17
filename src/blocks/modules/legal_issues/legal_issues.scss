@@ -17,6 +17,9 @@
         }
         .card_middle__title {
             font-size: 20px;
+            @media all and (max-width: $sm) {
+                font-size: 16px;
+            }
         }
     }
 }

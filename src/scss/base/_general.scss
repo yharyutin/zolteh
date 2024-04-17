@@ -460,7 +460,7 @@ body {
     gap: 15px;
 
     @media all and (max-width:  $sm) {
-        font-size: 16px;
+        font-size: 18px;
         padding: 16px 18px 17px;
     }
     
@@ -483,7 +483,7 @@ body {
         padding: 21px 38px;
         font-size: 20px;
         @media all and (max-width: $sm) {
-            padding: 15px;
+            // padding: 15px;
             font-size: 18px;
         }
     }
