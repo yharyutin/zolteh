@@ -8,14 +8,19 @@
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    <div class="wrapper wrapper--fullpage">
-        @@include('blocks/modules/header/header.html', {})
-		<div class="wrapper__grow">
-			@@include('blocks/modules/error_page/error_page.html', {
-				"code": 404,
-				"text": "страница, на которую Вы пытаетесь попасть, не существует или была удалена"
-			})
-		</div>
+    <div class="wrapper">
+        <div class="wrapper--fullpage">
+            @@include('blocks/modules/header/header.html', {})
+            <div class="wrapper__grow">
+                @@include('blocks/modules/error_page/error_page.html', {
+                    "code": 404,
+                    "text": "страница, на которую Вы пытаетесь попасть, не существует или была удалена"
+                })
+            </div>
+        </div>
+        <div class="hide_on_desktop">
+            @@include('blocks/modules/footer/footer.html', {})
+        </div>
 
 	</div>
     <script src="js/app.min.js"></script>

@@ -20,9 +20,16 @@ body {
         display: flex;
         flex-direction: column;
         height: 100vh;
+        @media all and (max-width: $sm) {
+            height: auto;
+        }
     }
     &__grow {
         flex: 1 1 auto;
+        @media all and (max-width: $sm) {
+            flex: none;
+            height: 393px;
+        }
     }
     &.search_results_page {
         .general__title {
