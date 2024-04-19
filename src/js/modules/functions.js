@@ -68,13 +68,13 @@ export function addTabsChangeHandler({openerDataSelector = 'tab-id', tabDataSele
 
 export function addTabsSelectChangeHandler({openerDataSelector = '.tabs__select', tabDataSelector = 'tab-body'}) {
     if (!document.querySelector(openerDataSelector) || !document.querySelector(`[data-${tabDataSelector}]`)) return;
-
+    document.querySelector(`[data-${tabDataSelector}]`).classList.add('isActive');
     document.querySelectorAll(openerDataSelector).forEach(opener => {
         opener.addEventListener('change', (e) => {
             
             let value = opener.value;
             let selector = `[data-${tabDataSelector}="${value}"]`;
-
+            console.log(value, selector);
             if (document.querySelector(selector)) {
                 document.querySelector(`[data-${tabDataSelector}].isActive`).classList.remove('isActive');
                 

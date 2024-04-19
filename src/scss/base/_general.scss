@@ -384,19 +384,47 @@ body {
         }
     }
     &__select {
-        width: 100%;
-        height: 53px;
-        border-radius: 10px;
-        background: linear-gradient(0deg, #FFF 0%, #FFF 100%), linear-gradient(90deg, #AC731A -34.96%, #BD8E3E 0.13%, #F8EDAF 58.12%, #BD8E3E 103.97%, #AC731A 138.12%);
-        box-shadow: 0px 4px 25.6px 0px rgba(0, 0, 0, 0.09);
-        border: none;
-        padding: 0 12px;
+        &--lined {
+            .js-Dropdown-title {
+                width: 100%;
+                height: 53px;
+                border-radius: 0;
+                border: 2px solid #A3A3A3;
+                padding: 0 20px;
 
-        color: #000;
-        font-size: 18px;
-        font-style: normal;
-        font-weight: 600;
-        line-height: normal;
+                color: #000;
+                font-size: 18px;
+                font-style: normal;
+                font-weight: 600;
+                line-height: normal;
+                @media all and (max-width: $sm) {
+                    border: 1px solid #A3A3A3;
+                    height: 40px;
+                    padding: 0 9px;
+                    font-size: 16px;
+                }
+            }
+            .js-Dropdown-list {
+                background: #fff;
+                box-shadow: none;
+                border-radius: 0;
+                border: 2px solid #A3A3A3;
+                z-index: 2;
+                top: calc(100% - 2px);
+                border-top: none;
+                padding: 20px;
+                @media all and (max-width: $sm) {
+                    border: 1px solid #A3A3A3;
+                    padding: 9px;
+                }
+                li {
+                    padding: 0;
+                    @media all and (max-width: $sm) {
+                        font-size: 16px;
+                    }
+                }
+            }
+        }
     }
     &__row_grid-3 {
         display: grid;
@@ -404,6 +432,7 @@ body {
         grid-gap: 40px 20px;
         @media all and (max-width: $sm) {
             grid-template-columns: repeat(1, 1fr);
+            gap: 30px;
         }
     }
     &__row_grid-4 {
@@ -557,4 +586,106 @@ body * {
 
 .news_detai_item .detail__indicators {
     order: 10;
+}
+
+.calendar_page {
+    @media all and (max-width: $sm) {
+        .calendar:not(.isActive) {
+            display: none;
+        }
+        .air-datepicker--navigation {
+        
+            display: none;
+        }
+    }
+    & > .js-Dropdown {
+        z-index: 3;
+        @media all and (min-width: $sm) {
+            display: none;
+        }
+    }
+    .js-Dropdown-title {
+        height: 35px;
+        border-radius: 5px 5px 0px 0px;
+        border-bottom: 2px solid #AC731A;
+        background: #141414;
+        box-shadow: 0px 1.883px 10.641px 0px rgba(0, 0, 0, 0.06);
+        color: #fff;
+        padding: 8px;
+        font-size: 16px;
+        text-transform: uppercase;
+        &:after {
+            filter: invert(1);
+        }
+    }
+    .js-Dropdown-list {
+        max-height: 138px;
+        overflow: auto;
+        gap: 10px;
+        top: 100%;
+        padding: 15px 0;
+        li {
+            color: #141414;
+            font-size: 16px;
+            font-style: normal;
+            font-weight: 500;
+            line-height: normal;
+            text-transform: uppercase;
+        }
+    }
+    .air-datepicker {
+        @media all and (max-width: $sm) {
+            border-radius: 0 !important;
+        }
+    }
+}
+
+
+.info_projects {
+    &__item {
+        .card_regular__title {
+            @media  all and (max-width: $sm) {
+                color: #444;
+                font-size: 20px;
+                font-style: normal;
+                font-weight: 700;
+                line-height: 140%; /* 28px */
+            }
+        }
+    }
+}
+
+
+.wall_maps_page {
+    .card_regular__title {
+        @media all and (max-width: $sm) {
+            color: #444;
+            font-size: 20px;
+            font-style: normal;
+            font-weight: 700;
+            line-height: 140%; /* 28px */
+        }
+    }
+    .card_regular__description {
+        @media all and (max-width: $sm) {
+            margin: 0;
+            color: #444;
+            font-size: 16px;
+            font-style: normal;
+            font-weight: 500;
+            line-height: 140%; /* 22.4px */
+        }
+    }
+}
+
+.photo_page {
+    .card_regular__title {
+        @media all and (max-width: $sm) {
+            color: #444;
+            font-size: 20px;
+            font-style: normal;
+            font-weight: 700;
+            line-height: 140%; /* 28px */
+        }
+    }
 }

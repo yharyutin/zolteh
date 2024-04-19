@@ -3,7 +3,7 @@
         "title": "Иркутская область",
         "is_locked": false,
         "link": "info_projects_detail.html",
-        "class": "titled_news__item",
+        "class": "info_projects__item",
         "image": "@img/invest_project1.png",
         "description": "",
         "icons": false
@@ -12,7 +12,7 @@
         "title": "Магаданская область",
         "is_locked": false,
         "link": "info_projects_detail.html",
-        "class": "titled_news__item",
+        "class": "info_projects__item",
         "image": "@img/invest_project2.png",
         "description": "",
         "icons": false
@@ -21,7 +21,7 @@
         "title": "Республика Саха (Якутия)",
         "is_locked": false,
         "link": "info_projects_detail.html",
-        "class": "titled_news__item",
+        "class": "info_projects__item",
         "image": "@img/invest_project3.png",
         "description": "",
         "icons": false
@@ -30,7 +30,7 @@
         "title": "Чукотский АО",
         "is_locked": false,
         "link": "info_projects_detail.html",
-        "class": "titled_news__item",
+        "class": "info_projects__item",
         "image": "@img/invest_project4.png",
         "description": "",
         "icons": false

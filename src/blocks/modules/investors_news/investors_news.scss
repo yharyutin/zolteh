@@ -12,9 +12,9 @@
         gap: 30px;
         @media all and (max-width: $sm) {
             .row_news__item {
-                &:before {
-                    display: none;
-                }
+                // &:before {
+                //     display: none;
+                // }
                 &:nth-cchild(n+4) {
                     display: none !important;
                 }

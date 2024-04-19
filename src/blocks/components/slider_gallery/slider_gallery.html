@@ -11,7 +11,7 @@
                 </div>
             </div>
         </div>
-        <div class="slider_gallery__thumbs">
+        <div class="slider_gallery__thumbs hide_on_mobile">
             <div class="slider_gallery__thumbs_in" data-glide-el="controls[nav]">
                 @@for (var i = 0; i < images.length; i++) {
                     <div class="slider_gallery__thumb" data-glide-dir="=`+i+`">
@@ -19,6 +19,9 @@
                     </div>
                 }
             </div>
+        </div>
+        <div class="slider_gallery__arrows">
+            @@include('../../components/buttons/arrows.html')
         </div>
     </div>
 </div>

@@ -3,6 +3,9 @@
         display: grid;
         grid-template-columns: 74.5% calc(25.5% - 20px);
         grid-gap: 20px;
+        @media all and (max-width: $sm) {
+            display: block;
+        }
     }
     &__slide {
         img {
@@ -48,6 +51,11 @@
         gap: 10px;
         height: 100%;
         padding-right: 8px;
+    }
+    &__arrows {
+        display: flex;
+        justify-content: flex-end;
+        padding-top: 10px;
     }
     
 }
