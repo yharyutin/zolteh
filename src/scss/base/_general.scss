@@ -325,8 +325,8 @@ body {
         }
     }
     &__video_column_in {
-        position: sticky;
-        top: 50px;
+        // position: sticky;
+        // top: 50px;
         @media all and (max-width: $sm) {
             .card_one_lined {
                 &:nth-child(n+4) {

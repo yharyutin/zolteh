@@ -5,8 +5,8 @@
         grid-template-areas:
             'small1 small2'
             'big big';
-        position: sticky;
-        top: 50px;
+        // position: sticky;
+        // top: 50px;
         @media all and (max-width: $sm) {
             grid-template-areas:
             'small1'

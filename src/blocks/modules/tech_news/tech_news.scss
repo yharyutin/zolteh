@@ -9,8 +9,8 @@
         display: flex;
         flex-direction: column;
         gap: 30px;
-        position: sticky;
-        top: 50px;
+        // position: sticky;
+        // top: 50px;
         .card_one_lined {
             @media all and (max-width: $sm) {
                 &:nth-child(n+4) {
@@ -20,7 +20,7 @@
         }
     }
     &__big_item {
-        position: sticky;
-        top: 50px;
+        // position: sticky;
+        // top: 50px;
     }
 }

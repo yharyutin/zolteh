@@ -34,8 +34,8 @@
     &__lock_in {
         width: 17px;
         font-size: 0;
-        position: sticky;
-        top: 50px;
+        // position: sticky;
+        // top: 50px;
         padding-top: 2px;
         @media all and (max-width: $sm) {
             width: 15px;
