@@ -36,6 +36,8 @@ const Search = class Search {
     }
     toggleSearch(direction) {
         document.querySelector(this.searchClass).classList.toggle('isOpened');
+        document.querySelector('body').classList.toggle('overflow-hidden');
+        document.querySelector('html').classList.toggle('overflow-hidden');
         setTimeout(() => {
             this.calculateLogoPosition(direction);
         }, direction == '>' ? 500 : 0)
