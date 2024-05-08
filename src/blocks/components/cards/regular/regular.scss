@@ -9,6 +9,9 @@
         img, picture {
             width: 100%;
             display: block;
+            aspect-ratio: 3/2;
+            object-fit: cover;
+            object-position: 50% 50%;
         }
     }
     &__lock {
