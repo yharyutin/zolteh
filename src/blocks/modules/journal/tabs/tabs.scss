@@ -17,6 +17,7 @@
         cursor: pointer;
         position: relative;
         user-select: none;
+        text-decoration: none;
         &:after {
             content: "";
             position: absolute;

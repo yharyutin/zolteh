@@ -1,7 +1,7 @@
-<a href="@@link" class="card_regular @@class">
-    <div class="card_regular__image">
+<div class="card_regular @@class">
+    <a href="@@link" class="card_regular__image">
         <img src="@@image" alt="">
-    </div>
+    </a>
     @@if(is_locked) {
         <div class="card_regular__lock">
             <div class="icon">
@@ -10,13 +10,13 @@
             <div class="text">07.02.24</div>
         </div>
     }
-    <div class="card_regular__title">
+    <a href="@@link" class="card_regular__title">
         @@title
-    </div>
+    </a>
     @@if (description) {
-        <div class="card_regular__description">
+        <a href="@@link" class="card_regular__description">
             @@description
-        </div>
+        </a>
     }
     @@if (icons) {
         <div class="card_detailed__indicators">
@@ -54,4 +54,4 @@
             
         </div>
     }
-</a>
+</div>

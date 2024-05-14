@@ -2,7 +2,7 @@
     <div class="tabs__in">
         <div class="tabs__titles hide_on_mobile">
             @@for (var c = 0; c < data.length; c++) {
-                <div class="tabs__title `+(c == 0 ? 'isActive' : '')+`" data-tab-id="`+data[c].title+`">`+data[c].title+`</div>
+                <a href="#" class="tabs__title `+(c == 0 ? 'isActive' : '')+`" data-tab-id="`+data[c].title+`">`+data[c].title+`</a>
             }
         </div>
         <select class="tabs__select hide_on_desktop">

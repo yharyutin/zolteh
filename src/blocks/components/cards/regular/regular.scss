@@ -1,6 +1,9 @@
 .card_regular {
-    text-decoration: none;
+    * {
+        text-decoration: none;
+    }
     &__image {
+        display: block;
         margin-bottom: 20px;
         width: 100%;
         @media all and (max-width: $sm) {

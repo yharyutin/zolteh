@@ -1,10 +1,10 @@
-<a href="@@link" class="card_detailed @@class">
+<div class="card_detailed @@class">
     <div class="card_detailed__in">
-        <div class="card_detailed__image">
+        <a href="@@link" class="card_detailed__image">
             <div class="card_detailed__image_in">
                 <img src="@@image" alt="">
             </div>
-        </div>
+        </a>
         <div class="card_detailed__info">
             <div class="card_detailed__lock">
                 @@if (is_locked) {
@@ -16,8 +16,8 @@
             </div>
             <div class="card_detailed__info_in">
                 <div class="card_detailed__text">
-                    <div class="title">@@title</div>
-                    <div class="subtitle">@@text</div>
+                    <a href="@@link" class="title">@@title</a>
+                    <a href="@@link" class="subtitle">@@text</a>
                 </div>
                 @@if (messages || eyes || likes || dislikes) {
                     <div class="card_detailed__indicators">
@@ -58,4 +58,4 @@
             </div>
         </div>
     </div>
-</a>
+</div>
