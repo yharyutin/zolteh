@@ -1,28 +1,28 @@
 <div class="archive">
     <div class="archive__in">
         <div class="archive__select general__select--lined">
-            <select name="" id="" class="tabs__select general__select--js">
-            <!-- <select name="" id="" class="archive__select"> -->
-                <option value="2024">2024 (3)</option>
-                <option value="2023">2023 (10)</option>
-                <option value="2022">2022 (15)</option>
-            </select>
+            <div class="js-Dropdown"><button class="js-Dropdown-title js-Dropdown-title--custom">2023 (10)</button>
+                <ul class="js-Dropdown-list js-Dropdown-list--custom">
+                    <li data-value="2024" data-index="0" class=""><a href="#">2024 (3)</a></li>
+                    <li data-value="2023" data-index="1" class="is-selected"><a href="#">2023 (10)</a></li>
+                    <li data-value="2022" data-index="2"><a href="#">2022 (15)</a></li>
+                </ul>
+            </div>
         </div>
         <div class="archive__items">
-            @@for (var i = 0; i < 8; i++) {
-                <a href="#" class="archive__item">
-                    <div class="archive__item_image">
-                        <img src="@img/archive1.png" alt="archive">
-                    </div>
-                    <div class="archive__item_name">
-                        № 3 (61) сентябрь 2023 г.
-                    </div>
+            @@for (var i = 0; i < 8; i++) { <a href="#" class="archive__item">
+                <div class="archive__item_image">
+                    <img src="@img/archive1.png" alt="archive">
+                </div>
+                <div class="archive__item_name">
+                    № 3 (61) сентябрь 2023 г.
+                </div>
                 </a>
-            }
+                }
         </div>
         <div class="newslist__pagination">
             @@include('../../components/buttons/pagination.html', {
-                "class": ""
+            "class": ""
             })
             @@include('../../components/buttons/arrows.html')
         </div>

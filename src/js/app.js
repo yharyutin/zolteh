@@ -163,6 +163,13 @@ document.addEventListener('DOMContentLoaded', () => {
         })
     };
 
+    document.querySelectorAll('.js-Dropdown-title--custom').forEach(title => {
+        title.addEventListener('click', (event) => {
+            console.log(event.target.parentElement, event);
+            event.target.parentElement.querySelector('.js-Dropdown-list--custom').classList.toggle('is-open');
+        })
+    })
+
 
     if (window.app.photosGallery.slider) {
         window.app.photosGallery.slider.on('move.after', function() {

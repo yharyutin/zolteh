@@ -77,4 +77,11 @@
   .js-Dropdown-list li.is-selected {
     font-weight: 600;
   }
+  .js-Dropdown-list li a {
+    color: inherit;
+    text-decoration: none;
+    font-size: inherit;
+    line-height: inherit;
+    font-size: inherit;
+  }
   .js-Dropdown-optgroup {}
