@@ -49,10 +49,15 @@ export function addTabsChangeHandler({openerDataSelector = 'tab-id', tabDataSele
     if (!document.querySelector(`[data-${openerDataSelector}]`) || !document.querySelector(`[data-${tabDataSelector}]`)) return;
 
     document.querySelectorAll(`[data-${openerDataSelector}]`).forEach(opener => {
+        let camelCaseId = openerDataSelector.replace(/-./g, m => m.toUpperCase()[ 1 ])
+        let selector = `[data-${tabDataSelector}="${opener.dataset[camelCaseId]}"]`;
+
+        if (opener.classList.contains('isActive')) {
+            document.querySelector(selector).classList.add('isActive');
+        }
+        
         opener.addEventListener('click', (e) => {
             
-            let camelCaseId = openerDataSelector.replace(/-./g, m => m.toUpperCase()[ 1 ])
-            let selector = `[data-${tabDataSelector}="${e.currentTarget.dataset[camelCaseId]}"]`;
 
             if (document.querySelector(selector)) {
                 document.querySelector(`[data-${openerDataSelector}].isActive`).classList.remove('isActive');
@@ -68,7 +73,7 @@ export function addTabsChangeHandler({openerDataSelector = 'tab-id', tabDataSele
 
 export function addTabsSelectChangeHandler({openerDataSelector = '.tabs__select', tabDataSelector = 'tab-body'}) {
     if (!document.querySelector(openerDataSelector) || !document.querySelector(`[data-${tabDataSelector}]`)) return;
-    document.querySelector(`[data-${tabDataSelector}]`).classList.add('isActive');
+    // document.querySelector(`[data-${tabDataSelector}]`).classList.add('isActive');
     document.querySelectorAll(openerDataSelector).forEach(opener => {
         opener.addEventListener('change', (e) => {
             

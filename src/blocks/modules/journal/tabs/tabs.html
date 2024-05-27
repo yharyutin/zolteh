@@ -2,6 +2,7 @@
     <div class="tabs__in">
         <div class="tabs__titles hide_on_mobile">
             @@for (var c = 0; c < data.length; c++) {
+                
                 <a href="#" class="tabs__title `+(c == 0 ? 'isActive' : '')+`" data-tab-id="`+data[c].title+`">`+data[c].title+`</a>
             }
         </div>
@@ -12,7 +13,7 @@
         </select>
         <div class="tabs__bodies">
             @@for (var c = 0; c < data.length; c++) {
-                <div class="tabs__body `+(c == 0 ? 'isActive' : '')+`" data-tab-body="`+data[c].title+`">
+                <div class="tabs__body" data-tab-body="`+data[c].title+`">
                     @@include("`+data[c].component+`")
                 </div>
             }
