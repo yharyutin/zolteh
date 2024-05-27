@@ -16,15 +16,15 @@ body {
     overflow: hidden;
 }
 .wrapper {
-    &--fullpage {
-        display: flex;
-        flex-direction: column;
-        height: 100vh;
-        @media all and (max-width: $sm) {
-            height: auto;
-        }
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    @media all and (max-width: $sm) {
+        min-height: auto;
     }
     &__grow {
+        display: flex;
+        flex-direction: column;
         flex: 1 1 auto;
         @media all and (max-width: $sm) {
             flex: none;
