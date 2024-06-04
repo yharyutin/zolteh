@@ -1,13 +1,18 @@
 .video {
-    &__in {
+    &__in,
+    &__track,
+    &__slides {
         // position: sticky;
         // top: 50px;
+        height: 100%;
     }
     &__wrap {
         position: relative;
+        height: 100%;
     }
     &__poster {
         font-size: 0;
+        height: 100%;
         @media all and (max-width: $sm) {
             padding-top: 62%;
             img {

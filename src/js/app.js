@@ -106,6 +106,13 @@ document.addEventListener('DOMContentLoaded', () => {
                 }
             }
         }),
+        videos: new Slider({
+            selector: '.video__glide--js',
+            options: {
+                gap: 0,
+                perView: 1
+            }
+        }),
         events: document.querySelectorAll(".events__slider--js").forEach(slider => {
             new Slider({
                 selector: slider,
