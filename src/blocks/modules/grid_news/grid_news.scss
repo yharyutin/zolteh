@@ -15,7 +15,7 @@
         }
     }
     &__item {
-        &--big {
+        &:nth-child(3n+3) {
             grid-area: big;
         }
     }
