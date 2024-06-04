@@ -2,7 +2,7 @@
     {
         "class": "calendar--events",
         "selectedDates": "2024-01-22, 2024-01-23, 2024-01-24, 2024-01-25",
-        "titleMarkup": "<div class='calendar__title'>Январь</div",
+        "titleMarkup": "<div class='calendar__title'>Январь</div>",
         "isInline": true,
         "title": "Январь",
         "events": [

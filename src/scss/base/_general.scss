@@ -11,6 +11,14 @@ body {
     font-optical-sizing: auto;
     font-style: normal;
     font-variation-settings: "slnt" 0;
+    img.has-aspect-ratio {
+        aspect-ratio: var(--aspect, 16/9);
+        object-fit: cover;
+        object-position: 50% 50%;
+    }
+}
+* {
+    text-decoration: none;
 }
 .overflow-hidden {
     overflow: hidden;
