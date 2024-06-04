@@ -25,15 +25,19 @@
         @@if (likes) {
             <div class="detail__indicator">
                 <div class="icon">
-                    <img src="@img/icons/icons.svg#like_black" alt="like_black"/>
+                    <img src="@img/icons/icons.svg#like_black" class="normal" alt="like_black"/>
+                    <img src="@img/icons/icons.svg#like_hover" class="hover" alt="like_hover"/>
+                    <img src="@img/icons/icons.svg#like_active" class="active" alt="like_active"/>
                 </div>
                 <div class="count">@@likes</div>
             </div>
         }
         @@if (dislikes) {
-            <div class="detail__indicator">
+            <div class="detail__indicator active">
                 <div class="icon">
-                    <img src="@img/icons/icons.svg#dislike_black" alt="dislike_black"/>
+                    <img src="@img/icons/icons.svg#dislike_black" class="normal" alt="dislike_black"/>
+                    <img src="@img/icons/icons.svg#dislike_hover" class="hover" alt="dislike_hover"/>
+                    <img src="@img/icons/icons.svg#dislike_active" class="active" alt="dislike_active"/>
                 </div>
                 <div class="count">@@dislikes</div>
             </div>

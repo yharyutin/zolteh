@@ -124,5 +124,23 @@
                 font-size: 7px;
             }
         }
+        &:not(:hover):not(.active) {
+            .icon .hover,
+            .icon .active {
+                display: none;
+            }
+        }
+        &:hover {
+            .icon .normal,
+            .icon .active {
+                display: none;
+            }
+        }
+        &:not(:hover).active {
+            .icon .normal,
+            .icon .hover {
+                display: none;
+            }
+        }
     }
 }
