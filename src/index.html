@@ -270,13 +270,24 @@
             "link": "#",
             "class": "general__row_title"
         })
-		<div class="general__row_in general__row--58p-42p">
+		<div class="general__row_in general__row--58p-42p video__glide--js glide">
 			@@include('blocks/modules/video/video.html', {
 				"poster": "@img/poster.png"
 			})
 			<div class="general__column general__video_column">
-				<div class="general__video_column_in">
-					@@loop('blocks/components/cards/one_lined/one_lined.html', "/blocks/modules/video/data.json")
+				<div class="general__video_column_in" data-glide-el="controls[nav]">
+					@@for($i = 0; $i < 10; $i++) {
+						<div class="card_one_lined  card_one_lined--backgrounded   card_one_lined--backgrounded  " data-glide-dir="=`+ $i +`">
+							<div class="card_one_lined__image">
+								<div class="card_one_lined__image_in">
+									<picture><source srcset="img/tech2.webp" type="image/webp"><img src="img/tech2.png" alt=""></picture>
+								</div>
+							</div>
+							<div class="card_one_lined__title">
+								«Алроса» начнет добычу россыпного золота в Якутии 
+							</div>
+						</div>
+					}
 				</div>
 				
 			</div>

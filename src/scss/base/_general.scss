@@ -327,7 +327,11 @@ body {
     &__video_column_in {
         // position: sticky;
         // top: 50px;
+        height: 477px;
+        overflow: auto;
         @media all and (max-width: $sm) {
+            height: auto;
+            overflow: auto;
             .card_one_lined {
                 &:nth-child(n+4) {
                     display: none !important;

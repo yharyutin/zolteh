@@ -1,4 +1,5 @@
 .video {
+    max-width: calc(100vw - 40px);
     &__in,
     &__track,
     &__slides {
@@ -15,7 +16,8 @@
         height: 100%;
         @media all and (max-width: $sm) {
             padding-top: 62%;
-            img {
+            img,
+            iframe {
                 position: absolute;
                 top: 0;
                 left: 0;
