@@ -1,26 +1,32 @@
 <div class="slider_gallery @@class glide">
     <div class="slider_gallery__in">
         <div class="slider_gallery__slider">
-            <div class="slider_gallery__track glide__track" data-glide-el="track">
+            <div
+                class="slider_gallery__track glide__track"
+                data-glide-el="track"
+            >
                 <div class="slider_gallery__slides glide__slides">
                     @@for (var i = 0; i < images.length; i++) {
-                        <div class="slider_gallery__slide glide__slide">
-                            <img src="`+ images[i] +`" alt="">
-                        </div>
+                    <div class="slider_gallery__slide glide__slide">
+                        <img src="`+ images[i] +`" alt="" />
+                    </div>
                     }
                 </div>
             </div>
         </div>
         <div class="slider_gallery__thumbs hide_on_mobile">
-            <div class="slider_gallery__thumbs_in" data-glide-el="controls[nav]">
+            <div
+                class="slider_gallery__thumbs_in"
+                data-glide-el="controls[nav]"
+            >
                 @@for (var i = 0; i < images.length; i++) {
-                    <div class="slider_gallery__thumb" data-glide-dir="=`+i+`">
-                        <img src="`+ images[i] +`" alt="">
-                    </div>
+                <div class="slider_gallery__thumb" data-glide-dir="=`+i+`">
+                    <img src="`+ images[i] +`" alt="" />
+                </div>
                 }
             </div>
         </div>
-        <div class="slider_gallery__arrows">
+        <div class="slider_gallery__arrows hide_on_desktop">
             @@include('../../components/buttons/arrows.html')
         </div>
     </div>
