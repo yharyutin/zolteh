@@ -1,0 +1,27 @@
+<div class="authentication">
+    <div class="authentication__title">Пожалуйста авторизуйтесь:</div>
+    <form action="" class="authentication__form">
+        <div class="authentication__form-fields" style="--columns: @@columns">
+            <div class="authentication__form-field">
+                <input type="text" placeholder="Введите Ваш логин" />
+            </div>
+            <div class="authentication__form-field">
+                <input type="password" placeholder="Пароль" />
+            </div>
+        </div>
+        <a href="#" class="authentication__form-link">Забыли пароль ?</a>
+        <div class="authentication__form-buttons">
+            @@include('../../components/buttons/button.html', { "share": false,
+            "text": "Войти", "type": "submit", "link": '', "has_arrow": false,
+            "class": "button--black" })
+            @@include('../../components/buttons/button.html', { "share": false,
+            "text": "Зарегестрироваться", "type": "submit", "link": "/reg.html",
+            "has_arrow": false, "class": "button--outlined button--shrink" })
+
+            <div class="authentication__form-politics">
+                Отправляя форму Вы соглашаетесь с
+                <a href="#">политикой конфиденциальности</a>
+            </div>
+        </div>
+    </form>
+</div>

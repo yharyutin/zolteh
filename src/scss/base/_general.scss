@@ -1,4 +1,3 @@
-
 $containerPadding: 20px;
 $containerWidth: 1620px;
 
@@ -198,7 +197,7 @@ body {
             @media all and (max-width: $sm) {
                 display: flex;
                 flex-direction: column-reverse;
-            } 
+            }
         }
         &--only_one_on_mobile {
             @media all and (max-width: $sm) {
@@ -210,10 +209,9 @@ body {
                 }
             }
         }
-        
     }
     &__hr {
-        border-bottom: 1px solid #B6B6B6;
+        border-bottom: 1px solid #b6b6b6;
     }
     &__block_title {
         // padding-top: 20px;
@@ -228,12 +226,11 @@ body {
         display: flex;
         flex-direction: column;
         gap: 20px;
-        &:before  {
+        &:before {
             content: "";
             display: block;
             height: 8px;
             background: #000;
-
         }
         @media all and (max-width: $sm) {
             gap: 10px;
@@ -316,7 +313,7 @@ body {
         width: 42px;
         height: 42px;
         font-size: 0;
-        background: #FFF;
+        background: #fff;
         cursor: pointer;
         @media all and (max-width: $sm) {
             width: 28px;
@@ -341,7 +338,7 @@ body {
             height: auto;
             overflow: auto;
             .card_one_lined {
-                &:nth-child(n+4) {
+                &:nth-child(n + 4) {
                     display: none !important;
                 }
             }
@@ -380,7 +377,9 @@ body {
         display: flex;
         flex-direction: column;
         gap: 30px;
-        p, ul, ul > li {
+        p,
+        ul,
+        ul > li {
             margin: 0;
             color: #646464;
             font-size: 18px;
@@ -405,7 +404,7 @@ body {
                 width: 100%;
                 height: 53px;
                 border-radius: 0;
-                border: 2px solid #A3A3A3;
+                border: 2px solid #a3a3a3;
                 padding: 0 20px;
 
                 color: #000;
@@ -414,7 +413,7 @@ body {
                 font-weight: 600;
                 line-height: normal;
                 @media all and (max-width: $sm) {
-                    border: 1px solid #A3A3A3;
+                    border: 1px solid #a3a3a3;
                     height: 40px;
                     padding: 0 9px;
                     font-size: 16px;
@@ -424,13 +423,13 @@ body {
                 background: #fff;
                 box-shadow: none;
                 border-radius: 0;
-                border: 2px solid #A3A3A3;
+                border: 2px solid #a3a3a3;
                 z-index: 2;
                 top: calc(100% - 2px);
                 border-top: none;
                 padding: 20px;
                 @media all and (max-width: $sm) {
-                    border: 1px solid #A3A3A3;
+                    border: 1px solid #a3a3a3;
                     padding: 9px;
                 }
                 li {
@@ -499,7 +498,15 @@ body {
     text-decoration: none;
     padding: 15px 38px;
     border-radius: 10px;
-    background: linear-gradient(0deg, #FFF 0%, #FFF 100%), linear-gradient(90deg, #AC731A -34.96%, #BD8E3E 0.13%, #F8EDAF 58.12%, #BD8E3E 103.97%, #AC731A 138.12%);
+    background: linear-gradient(0deg, #fff 0%, #fff 100%),
+        linear-gradient(
+            90deg,
+            #ac731a -34.96%,
+            #bd8e3e 0.13%,
+            #f8edaf 58.12%,
+            #bd8e3e 103.97%,
+            #ac731a 138.12%
+        );
     color: #000;
     text-align: center;
     font-size: 18px;
@@ -511,22 +518,25 @@ body {
     justify-content: center;
     gap: 15px;
 
-    @media all and (max-width:  $sm) {
+    @media all and (max-width: $sm) {
         font-size: 18px;
         padding: 16px 18px 17px;
     }
-    
+
     .arrow {
         width: 14px;
         font-size: 0;
     }
     &--black {
         background: #000;
-        color: #FFF;
+        color: #fff;
         font-weight: 400;
         .arrow {
             filter: invert(1);
         }
+    }
+    &--outlined {
+        border: 1px solid #000;
     }
     &--shrink {
         display: inline-flex;
@@ -574,26 +584,25 @@ body {
     padding: 49% 20px 20px 20px;
 }
 
-
 body * {
     /* width */
     &::-webkit-scrollbar {
         width: 10px;
         height: 10px;
     }
-    
+
     /* Track */
     &::-webkit-scrollbar-track {
         border-radius: 36px;
         background: rgba(210, 210, 210, 0.28);
     }
-    
+
     /* Handle */
     &::-webkit-scrollbar-thumb {
         border-radius: 36px;
         background: #959595;
     }
-    
+
     /* Handle on hover */
     &::-webkit-scrollbar-thumb:hover {
         background: #959595;
@@ -610,7 +619,6 @@ body * {
             display: none;
         }
         .air-datepicker--navigation {
-        
             display: none;
         }
     }
@@ -623,7 +631,7 @@ body * {
     .js-Dropdown-title {
         height: 35px;
         border-radius: 5px 5px 0px 0px;
-        border-bottom: 2px solid #AC731A;
+        border-bottom: 2px solid #ac731a;
         background: #141414;
         box-shadow: 0px 1.883px 10.641px 0px rgba(0, 0, 0, 0.06);
         color: #fff;
@@ -656,11 +664,10 @@ body * {
     }
 }
 
-
 .info_projects {
     &__item {
         .card_regular__title {
-            @media  all and (max-width: $sm) {
+            @media all and (max-width: $sm) {
                 color: #444;
                 font-size: 20px;
                 font-style: normal;
@@ -670,7 +677,6 @@ body * {
         }
     }
 }
-
 
 .wall_maps_page {
     .card_regular__title {
