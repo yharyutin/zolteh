@@ -142,5 +142,13 @@
     "class": "row_news__item",
     "image": "",
     "text": ""
+  },
+  {
+    "title": "Страница 'Забыли пароль'",
+    "is_locked": false,
+    "link": "forgot.html",
+    "class": "row_news__item",
+    "image": "",
+    "text": ""
   }
 ]

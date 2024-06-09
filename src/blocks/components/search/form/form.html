@@ -9,10 +9,22 @@
         <div class="search_page__form_result_item">Найдено результатов: 500</div>
         <div class="search_page__form_result_item">Область поиска: раздел - везде</div>
     </div>
-    <div class="search_page__form_detailed">
-        <div class="search_page__form_detailed_opener">Расширенный поиск</div>
+    <div class="search_page__form_detailed_opener search_page__form_detailed_opener--js"></div>
+    <div class="search_page__form_detailed search_page__form_detailed--js">
+        <div class="search_page__form_detailed_title">Расширенный поиск</div>
+        <div class="search_page__form_detailed_select">
+            <select class="general__select general__select--js" name="" id="">
+                <option value="">Выберите раздел</option>
+                <option value="Раздел1">Раздел1</option>
+                <option value="Раздел2">Раздел2</option>
+                <option value="Раздел3">Раздел3</option>
+            </select>
+        </div>
+        @@include('../../buttons/button.html', { "share": false,
+            "text": "Найти", "type": "submit", "link": '', "has_arrow": false,
+            "class": "search_page__form_detailed_button button--black" })
     </div>
-    <div class="search_page__sort">
+    <div class="search_page__sort search_page__sort--js">
         <select class="general__select general__select--js" name="" id="">
             <option value="По релевантности">По релевантности</option>
             <option value="По дате">По дате</option>

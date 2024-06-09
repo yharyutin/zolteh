@@ -42,9 +42,24 @@ const Search = class Search {
             this.calculateLogoPosition(direction);
         }, direction == '>' ? 500 : 0)
     }
+    toggleDetailedSearch() {
+        if (!document.querySelector('.search_page__form_detailed_opener--js')) return;
+        document.querySelector('.search_page__form_detailed_opener--js').addEventListener('click', (event) => {
+            event.currentTarget.classList.toggle('isOpened');
+            console.log('toggleDetailedSearch');
+            if (document.querySelector('.search_page__form_detailed--js')) {
+                document.querySelector('.search_page__form_detailed--js').classList.toggle('isOpened');
+            }
+            if (document.querySelector('.search_page__sort--js')) {
+                document.querySelector('.search_page__sort--js').classList.toggle('isHidden');
+            }
+            
+        })
+    }
     init() {
         this.addOpenHandler();
         this.addCloseHandler();
+        this.toggleDetailedSearch();
     }
 }
 

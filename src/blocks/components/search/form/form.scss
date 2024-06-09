@@ -61,11 +61,42 @@
         line-height: normal;
         text-decoration-line: underline;
         cursor: pointer;
+        &:before {
+            content: "Расширенный поиск";
+        }
+        &.isOpened:before {
+            content: "Скрыть расширенный поиск";
+        }
     }
     &__sort {
+        &.isHidden {
+            display: none;
+        }
         max-width: 253px;
         @media all and (max-width: $sm) {
             max-width: 100%;
         }
+    }
+    &__form_detailed {
+        width: 100%;
+        max-width: 438px;
+        display: none;
+        flex-direction: column;
+        gap: 20px;
+        padding-top: 20px;
+        &.isOpened {
+            display: flex;
+        }
+    }
+    &__form_detailed_title {
+        color: #000;
+        font-size: 20px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+        text-transform: uppercase;
+    }
+    &__form_detailed_button {
+        max-width: 50%;
     }
 }

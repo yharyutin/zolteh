@@ -14,9 +14,27 @@
         grid-template-columns: repeat(var(--columns, 1), 1fr);
         grid-gap: 10px;
         max-width: calc(390px * 2 + 10px);
+
+        @media all and (max-width: $sm) {
+            grid-template-columns: repeat(1, 1fr);
+        }
     }
     &__form-field {
         max-width: 390px;
+        &--captcha {
+            grid-column: 1 / span var(--columns, 1);
+            max-width: 100%;
+            &_in {
+                display: inline-grid;
+                grid-template-columns: repeat(2, 1fr);
+                grid-gap: 10px;
+                width: 100%;
+                @media all and (max-width: $sm) {
+                    grid-template-columns: repeat(1, 1fr);
+                }
+            }
+
+        }
         @media all and (max-width: $sm) {
             max-width: 100%;
         }
@@ -36,6 +54,28 @@
                 font-size: 16px;
             }
         }
+    }
+    &__form-field_description {
+        color: #828282;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+        max-width: 640px;
+    }
+    &__form-field_right {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 10px;
+    }
+    &__form-field--captcha_title {
+        color: #141414;
+        font-size: 20px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+        margin-bottom: 20px;
     }
     &__form-link {
         color: #bd8e3e;

@@ -1,21 +1,49 @@
 <div class="authentication">
-    <div class="authentication__title">Пожалуйста авторизуйтесь:</div>
+    <div class="authentication__title">На указанный в форме e-mail придет запрос на подтверждение регистрации.</div>
     <form action="" class="authentication__form">
         <div class="authentication__form-fields" style="--columns: @@columns">
             <div class="authentication__form-field">
                 <input type="text" placeholder="Введите Ваш логин" />
             </div>
             <div class="authentication__form-field">
-                <input type="password" placeholder="Пароль" />
+                <input type="text" placeholder="Логин (минимум 3 символа)" />
+            </div>
+            <div class="authentication__form-field">
+                <input type="text" placeholder="Фамилия" />
+            </div>
+            <div class="authentication__form-field">
+                <input type="password" placeholder="Придумайте пароль (не менее 6 символов)" />
+            </div>
+            <div class="authentication__form-field">
+                <input type="email" placeholder="E-mail" />
+            </div>
+            <div class="authentication__form-field">
+                <input type="password" placeholder="Повторите пароль" />
+            </div>
+            <div class="authentication__form-field authentication__form-field--captcha">
+                <div class="authentication__form-field--captcha_title">
+                    Защита от автоматической регистрации
+                </div>
+                <div class="authentication__form-field--captcha_in">
+                    <div class="authentication__form-field_left">
+                        <img src="@img/captcha.png" width="100%" alt="">
+                    </div>
+                    <div class="authentication__form-field_right">
+                        <input type="text" placeholder="Введите код с картинки" />
+                        @@include('../../components/buttons/button.html', { "share": false,
+                        "text": "Обновить код", "type": "submit", "link": '', "has_arrow": false,
+                        "class": "button--black button--shrink button--small" })
+                    </div>
+                </div>
             </div>
         </div>
-        <a href="#" class="authentication__form-link">Забыли пароль ?</a>
+        <!-- <a href="#" class="authentication__form-link">Забыли пароль ?</a> -->
         <div class="authentication__form-buttons">
             @@include('../../components/buttons/button.html', { "share": false,
-            "text": "Войти", "type": "submit", "link": '', "has_arrow": false,
+            "text": "Зарегистрироваться", "type": "submit", "link": '', "has_arrow": false,
             "class": "button--black" })
             @@include('../../components/buttons/button.html', { "share": false,
-            "text": "Зарегестрироваться", "type": "submit", "link": '#',
+            "text": "Войти", "type": "submit", "link": 'login.html',
             "has_arrow": false, "class": "button--outlined button--shrink" })
 
             <div class="authentication__form-politics">
