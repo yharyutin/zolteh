@@ -74,7 +74,7 @@ const Calendar = class Calendar {
   init() {
     this.initDatepicker();
     this.addEventsOpenerHandler();
-    this.addTabsChangeHandler();
+    // this.addTabsChangeHandler();
 
     if (document.querySelector(".calendar__top a")) {
       document.querySelectorAll(".calendar__top a").forEach((link) => {

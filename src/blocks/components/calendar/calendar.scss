@@ -947,11 +947,21 @@
         flex-direction: column;
         gap: 15px;
     }
-    &__events {}
+    &__events {
+        @media all and (max-width: $sm) {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+        }
+    }
     &__event {
         display: grid;
         grid-template-columns: max-content min-content auto;
         grid-gap: 7px;
+        @media all and (max-width: $sm) {
+            grid-template-columns: repeat(1, 1fr);
+            gap: 5px;
+        }
     }
     &__events_wrap:not(.isOpened) &__event {
         &:nth-child(n+2) {
