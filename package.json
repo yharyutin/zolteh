@@ -46,6 +46,7 @@
     "air-datepicker": "^3.5.0",
     "gsap": "^3.12.5",
     "jquery": "^3.6.0",
+    "moment": "^2.30.1",
     "vanilla-js-dropdown": "^2.2.0",
     "vue": "^2.6.14"
   }

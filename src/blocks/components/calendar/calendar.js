@@ -1,4 +1,6 @@
 import AirDatepicker from "air-datepicker";
+import moment from "moment";
+moment.locale('ru')
 
 const Calendar = class Calendar {
   constructor({ selector, settings }) {
@@ -21,7 +23,6 @@ const Calendar = class Calendar {
             .content.cloneNode(true),
         );
       }
-      console.log(title);
       this.calendars.push(
         new AirDatepicker(calendar, {
           ...this.settings,
@@ -29,6 +30,7 @@ const Calendar = class Calendar {
           navTitles: {
             days: title.innerHTML,
           },
+          startDate: new Date(`${moment().month(calendar.closest('.calendar').dataset.tabBody).format('MM')}.01.2024`)
         }),
       );
     });
