@@ -11,9 +11,13 @@
         </div>
         <!-- <a href="#" class="authentication__form-link">Забыли пароль ?</a> -->
         <div class="authentication__form-buttons">
-            @@include('../../components/buttons/button.html', { "share": false,
-            "text": "Восстановить пароль", "type": "submit", "link": '',
-            "has_arrow": false, "class": "button--black" })
+            <button
+                type="submit"
+                class="button button--black"
+                data-modal-id="forgot_result_modal"
+            >
+                <span class="text"> Восстановить пароль </span>
+            </button>
         </div>
     </form>
 </div>
