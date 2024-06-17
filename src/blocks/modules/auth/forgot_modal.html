@@ -1,0 +1,19 @@
+<div class="authentication forgot_modal">
+    <form action="forgot_result.html" class="authentication__form">
+        <div class="authentication__form-fields" style="--columns: @@columns">
+            <div class="authentication__form-field">
+                <input type="text" placeholder="Введите Ваш логин или E-mail" />
+            </div>
+            <div class="authentication__form-field_description">
+                Контрольная строка для смены пароля, а также ваши
+                регистрационные данные, будут высланы вам по email.
+            </div>
+        </div>
+        <!-- <a href="#" class="authentication__form-link">Забыли пароль ?</a> -->
+        <div class="authentication__form-buttons">
+            @@include('../../components/buttons/button.html', { "share": false,
+            "text": "Восстановить пароль", "type": "submit", "link": '',
+            "has_arrow": false, "class": "button--black" })
+        </div>
+    </form>
+</div>

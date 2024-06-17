@@ -22,8 +22,10 @@
     &__form-field {
         max-width: 390px;
         &--captcha {
-            grid-column: 1 / span var(--columns, 1);
             max-width: 100%;
+            @media all and (min-width: $sm) {
+                grid-column: 1 / span var(--columns, 1);
+            }
             &_in {
                 display: inline-grid;
                 grid-template-columns: repeat(2, 1fr);
@@ -33,7 +35,6 @@
                     grid-template-columns: repeat(1, 1fr);
                 }
             }
-
         }
         @media all and (max-width: $sm) {
             max-width: 100%;

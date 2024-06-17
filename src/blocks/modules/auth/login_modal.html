@@ -1,0 +1,36 @@
+<div class="authentication login_modal">
+    <form action="" class="authentication__form">
+        <div class="authentication__form-fields" style="--columns: @@columns">
+            <div class="authentication__form-field">
+                <input type="text" placeholder="Введите Ваш логин" />
+            </div>
+            <div class="authentication__form-field">
+                <input type="password" placeholder="Пароль" />
+            </div>
+        </div>
+        <a
+            href="forgot.html"
+            class="authentication__form-link"
+            data-modal-id="forgot"
+            >Забыли пароль ?</a
+        >
+        <div class="authentication__form-buttons">
+            @@include('../../components/buttons/button.html', { "share": false,
+            "text": "Войти", "type": "submit", "link": '', "has_arrow": false,
+            "class": "button--black" })
+
+            <a
+                href="login.html"
+                class="button button--outlined button--shrink"
+                data-modal-id="register"
+            >
+                <span class="text"> Зарегестрироваться </span>
+            </a>
+
+            <div class="authentication__form-politics">
+                Отправляя форму Вы соглашаетесь с
+                <a href="#">политикой конфиденциальности</a>
+            </div>
+        </div>
+    </form>
+</div>

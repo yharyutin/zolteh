@@ -1,13 +1,47 @@
-<div class="modal" data-modal="1">
+<div class="modal" data-modal="register">
     <div class="modal__in">
-        <div class="modal__closer"></div>
-        modal 1
+        <div class="modal__closer">
+            <img
+                src="/img/icons/icons.svg#modal_closer"
+                alt=""
+                data-modal="register"
+            />
+        </div>
+        <div class="modal__body">
+            <div class="modal__title">регистрация</div>
+            @@include('../auth/registration_modal.html', { "columns": 2 })
+        </div>
     </div>
 </div>
 
-<div class="modal" data-modal="2">
+<div class="modal" data-modal="login">
     <div class="modal__in">
-        <div class="modal__closer"></div>
-        modal 2
+        <div class="modal__closer">
+            <img
+                src="/img/icons/icons.svg#modal_closer"
+                alt=""
+                data-modal="register"
+            />
+        </div>
+        <div class="modal__body">
+            <div class="modal__title">войти</div>
+            @@include('../auth/login_modal.html', { "columns": 1 })
+        </div>
+    </div>
+</div>
+
+<div class="modal" data-modal="forgot">
+    <div class="modal__in">
+        <div class="modal__closer">
+            <img
+                src="/img/icons/icons.svg#modal_closer"
+                alt=""
+                data-modal="register"
+            />
+        </div>
+        <div class="modal__body">
+            <div class="modal__title">Восстановление пароля</div>
+            @@include('../auth/forgot_modal.html', { "columns": 1 })
+        </div>
     </div>
 </div>
