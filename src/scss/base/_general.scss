@@ -542,7 +542,9 @@ body {
     align-items: center;
     justify-content: center;
     gap: 15px;
-
+    & > span {
+        pointer-events: none;
+    }
     @media all and (max-width: $sm) {
         font-size: 18px;
         padding: 16px 18px 17px;
