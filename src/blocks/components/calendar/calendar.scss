@@ -829,6 +829,7 @@
     box-sizing: content-box;
     padding: 12px 0 5px;
     grid-area: body;
+    pointer-events: none;
     @media all and (max-width: $sm) {
         padding: 6px 0 5px;
     }
