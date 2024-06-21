@@ -33,6 +33,12 @@
         border-radius: 10px;
         position: relative;
 
+        @media all and (max-width: $sm) {
+            max-width: calc(90vw - 1px);
+            padding: 65px 20px 23px;
+            overflow: auto;
+        }
+
         box-sizing: border-box;
         .register_modal {
             max-width: 800px;
@@ -69,11 +75,25 @@
         .authentication__title {
             color: #606060;
         }
+        .authentication__form-link {
+            @media all and (max-width: $sm) {
+                color: #000;
+                font-size: 16px;
+                font-weight: normal;
+                text-decoration: underline;
+                margin-top: -20px;
+            }
+
+        }
     }
 
     &__body {
         max-height: 70vh;
         overflow: auto;
+        @media all and (max-width: $sm) {
+            overflow: visible;
+            max-height: auto;
+        }
     }
 
     &__closer {
@@ -87,10 +107,10 @@
         transition: all 0s ease;
         @media all and (max-width: $sm) {
             left: auto;
-            right: 10px;
-            top: 10px;
-            width: 30px;
-            height: 30px;
+            right: 20px;
+            top: 20px;
+            width: 40px;
+            height: 40px;
         }
         &:hover {
             transform: rotate(90deg);
