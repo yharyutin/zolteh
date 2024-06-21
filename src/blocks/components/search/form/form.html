@@ -25,9 +25,12 @@
             "class": "search_page__form_detailed_button button--black" })
     </div>
     <div class="search_page__sort search_page__sort--js">
-        <select class="general__select general__select--js" name="" id="">
-            <option value="По релевантности">По релевантности</option>
-            <option value="По дате">По дате</option>
-        </select>
+        <div class="js-Dropdown">
+            <button class="js-Dropdown-title js-Dropdown-title--custom">По релевантности</button>
+            <ul class="js-Dropdown-list js-Dropdown-list--custom">
+                <li data-value="По релевантности" data-index="0" class="is-selected"><a href="#">По релевантности</a></li>
+                <li data-value="По дате" data-index="1"><a href="#">По дате</a></li>
+            </ul>
+        </div>
     </div>
 </div>
