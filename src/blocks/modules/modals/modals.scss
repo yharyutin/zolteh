@@ -43,6 +43,9 @@
         .register_modal {
             max-width: 800px;
         }
+        .authentication__form-buttons .button {
+            min-width: 50%;
+        }
         .forgot_modal {
             max-width: 390px;
             text-align: center;
@@ -88,9 +91,9 @@
     }
 
     &__body {
-        max-height: 70vh;
-        overflow: auto;
+        // overflow: auto;
         @media all and (max-width: $sm) {
+            max-height: 70vh;
             overflow: visible;
             max-height: auto;
         }
