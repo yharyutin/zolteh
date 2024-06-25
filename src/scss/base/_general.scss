@@ -150,6 +150,11 @@ body {
         display: flex;
         flex-direction: column;
         gap: 50px;
+        &--paddinged {
+            @media all and (min-width: $lg) {
+                padding-right: 62px;
+            }
+        }
         @media all and (max-width: $sm) {
             gap: 30px;
         }
