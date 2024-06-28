@@ -40,6 +40,14 @@
     "text": ""
   },
   {
+    "title": "Страница 'Журнал Детальная'",
+    "is_locked": false,
+    "link": "journal_detail.html",
+    "class": "row_news__item",
+    "image": "",
+    "text": ""
+  },
+  {
     "title": "Страница 'Инвестиционные проекты'",
     "is_locked": false,
     "link": "investment_projects.html",

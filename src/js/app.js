@@ -176,6 +176,13 @@ document.addEventListener('DOMContentLoaded', () => {
             event.target.parentElement.querySelector('.js-Dropdown-list--custom').classList.toggle('is-open');
         })
     })
+    
+    if (document.querySelector('.archive_detail__content_items_all--js')) {
+        document.querySelector('.archive_detail__content_items_all--js').addEventListener('click', (event) => {
+            console.log(event.currentTarget);
+            event.currentTarget.closest('.archive_detail__content').classList.toggle('isOpened');
+        })
+    }
 
 
     if (window.app.photosGallery.slider) {

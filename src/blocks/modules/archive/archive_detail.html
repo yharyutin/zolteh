@@ -1,0 +1,44 @@
+<div class="archive_detail">
+    <div class="archive_detail__in">
+        <div class="archive_detail__top">
+            <div class="archive_detail__image">
+                <img src="@img/archive1.png" alt="">
+            </div>
+            <div class="archive_detail__info">
+                <div class="archive_detail__info_in">
+                    <div class="archive_detail__info_top">
+                        <div class="archive_detail__info_date">№ 3 (61) сентябрь 2023 г.</div>
+                        <div class="archive_detail__info_category">Категория: <a href="#">2024</a></div>
+                    </div>
+                    <div class="archive_detail__info_bottom">
+                        <div class="archive_detail__info_price">
+                            1 000 ₽
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="archive_detail__content">
+            <div class="archive_detail__content_title">Содержание</div>
+            <div class="archive_detail__content_items">
+                @@for (var i = 0; i < 10; i++) {
+                    <div class="archive_detail__content_item">
+                        <div class="archive_detail__content_item_name">Рубрика «Аналитика»</div>
+                        <div class="archive_detail__content_item_page"><span>Стр. 10</span> Золото и технология</div>
+                        <div class="archive_detail__content_item_text">Обзор основных событий в золотодобывающей отрасли по итогам сентября 2023 — января 2024 года</div>
+                    </div>
+                }
+            </div>
+            <div class="archive_detail__content_items_all">
+                @@include('../../components/buttons/button.html', {
+                    "share": false,
+                    "text": "",
+                    "link": "",
+                    "type": "button",
+                    "has_arrow": false,
+                    "class": "archive_detail__content_items_all--js button--outlined button--shrink"
+                })
+            </div>
+        </div>
+    </div>
+</div>
