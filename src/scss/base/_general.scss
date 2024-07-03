@@ -382,9 +382,7 @@ body {
         display: flex;
         flex-direction: column;
         gap: 30px;
-        p,
-        ul,
-        ul > li {
+        * {
             margin: 0;
             color: #646464;
             font-size: 18px;
