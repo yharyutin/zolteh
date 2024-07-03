@@ -1,6 +1,6 @@
 .card_backgrounded {
     position: relative;
-    padding: 48% 40px 30px 40px;
+    padding: 35% 40px 30px 40px;
     text-decoration: none;
     display: block;
     @media all and (max-width: $sm) {
@@ -10,7 +10,7 @@
         padding: 40px 40px 37.7% 40px;
     }
     &--small {
-        padding: 38% 20px 20px 20px;
+        padding: 27% 20px 20px 20px;
     }
     &--with_button  {
         padding: 20px !important;
@@ -62,6 +62,9 @@
         justify-content: flex-end;
         gap: 11px;
         height: 100%;
+    }
+    &--reversed &__content {
+        justify-content: flex-start;
     }
     &--small &__content {
         gap: 10px;

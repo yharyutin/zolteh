@@ -3,6 +3,9 @@
         display: flex;
         flex-direction: column;
         gap: 20px;
+        .card_backgrounded {
+            padding-top: 55%;
+        }
         @media all and (max-width: $sm) {
             gap: 10px;
         }
@@ -78,20 +81,20 @@
     }
     &__item_left {
         width: 93px;
+        height: 74px;
         &--hidden {
             display: none;
         }
         img {
             width: 100%;
-            // position: sticky;
-            top: 50px;
-            aspect-ratio: 3/2;
+            height: 100%;
             object-fit: cover;
             object-position: 50% 50%;
         }
     }
     &__item--full &__item_left {
         width: 100%;
+        height: 284px;
     }
     &__item_right {
         display: flex;

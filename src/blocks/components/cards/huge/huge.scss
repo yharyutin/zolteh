@@ -8,6 +8,17 @@
     &__image {
         margin-bottom: 21px;
         font-size: 0;
+        padding-top: 62.5%;
+        position: relative;
+        img {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            object-position: 50% 50%;
+        }
         @media all and (max-width: $sm) {
             margin-bottom: 15px;
         }
