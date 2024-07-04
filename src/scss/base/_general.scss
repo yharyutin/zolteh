@@ -741,3 +741,10 @@ body * {
         }
     }
 }
+
+
+.general__row_investments {
+    .tabs__titles {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
