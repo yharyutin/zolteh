@@ -179,7 +179,13 @@ document.addEventListener('DOMContentLoaded', () => {
     
     if (document.querySelector('.tophead_banner__opener--js')) {
         document.querySelector('.tophead_banner__opener--js').addEventListener('click', (event) => {
-            event.currentTarget.closest('.tophead_banner__in').classList.toggle('isOpened');
+            event.currentTarget.closest('.tophead_banner_image__in').classList.toggle('isOpened');
+        })
+    }
+
+    if (document.querySelector('.tophead_banner_image__opener--js')) {
+        document.querySelector('.tophead_banner_image__opener--js').addEventListener('click', (event) => {
+            event.currentTarget.closest('.tophead_banner_image__in').classList.toggle('isOpened');
         })
     }
 
