@@ -24,8 +24,10 @@
     }
     &__item {
         @media all and (min-width: $lg) {
+            padding-top: 163px;
             &:first-child {
                 grid-area: big;
+                padding-top: 49%;
             }
             &:nth-child(5) {
                 grid-area: long;
