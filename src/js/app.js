@@ -177,6 +177,12 @@ document.addEventListener('DOMContentLoaded', () => {
         })
     })
     
+    if (document.querySelector('.tophead_banner__opener--js')) {
+        document.querySelector('.tophead_banner__opener--js').addEventListener('click', (event) => {
+            event.currentTarget.closest('.tophead_banner__in').classList.toggle('isOpened');
+        })
+    }
+
     if (document.querySelector('.archive_detail__content_items_all--js')) {
         document.querySelector('.archive_detail__content_items_all--js').addEventListener('click', (event) => {
             console.log(event.currentTarget);
